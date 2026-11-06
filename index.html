@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta Tecnológica Integral & Simulación Leasing 36 Meses | Positronpharma & TECNOVOA</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49'
+            },
+            accent: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glassmorphism {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .slide-section {
+      scroll-margin-top: 80px;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 glassmorphism border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <span class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
+          <span class="text-sky-400">TECNOVOA</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-sky-950 border border-sky-800 text-sky-300 font-semibold uppercase tracking-wider">Soluciones TI</span>
+        </span>
+        <span class="text-slate-600 font-light text-xl">|</span>
+        <div class="flex items-center space-x-2">
+          <img src="logo_positron.png" alt="Positronpharma" class="h-8 object-contain brightness-110">
+          <span class="text-sm font-semibold tracking-wide text-slate-300">Positronpharma S.A.</span>
+        </div>
+      </div>
+      
+      <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="#vision" class="text-slate-300 hover:text-sky-400 transition">Visión</a>
+        <a href="#catalogo" class="text-slate-300 hover:text-sky-400 transition">Catálogo 53 Equipos</a>
+        <a href="#handhelds" class="text-slate-300 hover:text-sky-400 transition">Despacho SAP</a>
+        <a href="#simulador" class="text-sky-400 font-semibold hover:text-sky-300 flex items-center gap-1.5 bg-sky-950/60 px-3.5 py-1.5 rounded-lg border border-sky-800">
+          <i data-lucide="calculator" class="w-4 h-4"></i> Simulador Leasing
+        </a>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <span class="text-xs text-slate-400 font-mono hidden sm:inline">RUT: 76.089.296-3</span>
+        <a href="#simulador" class="px-4 py-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-xs uppercase tracking-wider rounded-lg shadow-lg shadow-sky-500/20 transition">
+          Ver Propuesta
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="vision" class="relative pt-36 pb-20 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.15),rgba(255,255,255,0))]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-950/80 border border-sky-800/80 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-6">
+          <i data-lucide="shield-check" class="w-4 h-4"></i> Renovación Tecnológica Integral 2026-2029
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Modernización & Continuidad Operativa en <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">Leasing Tecnológico</span>
+        </h1>
+        <p class="mt-6 text-lg text-slate-300 leading-relaxed">
+          Diseñado para **Positronpharma S.A.**: 53 equipos de última generación (Lenovo Ultra, Zebra 5G, Brother, Epson y HP) bajo un modelo OPEX a 36 meses con garantía Premier On-site, reemplazo continuo y cumplimiento normativo en despacho de radiofármacos.
+        </p>
+        
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="text-slate-400 text-xs font-medium uppercase tracking-wider">Parque Total</div>
+            <div class="text-2xl font-bold text-white mt-1">53 Equipos</div>
+            <div class="text-xs text-sky-400 mt-0.5">Laptops, AIOs, Handhelds, Tablets</div>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="text-slate-400 text-xs font-medium uppercase tracking-wider">Plazo Leasing</div>
+            <div class="text-2xl font-bold text-white mt-1">36 Meses</div>
+            <div class="text-xs text-emerald-400 mt-0.5">Modelo OPEX 100% Gasto</div>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="text-slate-400 text-xs font-medium uppercase tracking-wider">SLA Garantía</div>
+            <div class="text-2xl font-bold text-white mt-1">3 Años On-Site</div>
+            <div class="text-xs text-sky-400 mt-0.5">Premier Support + ADP</div>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+            <div class="text-slate-400 text-xs font-medium uppercase tracking-wider">Cuota Base Est.</div>
+            <div class="text-2xl font-bold text-sky-400 mt-1">~$1,54 M /mes</div>
+            <div class="text-xs text-slate-400 mt-0.5">Neto mensual referencial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Puntos Estratégicos -->
+  <section class="py-12 bg-slate-900/40 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex items-start space-x-4">
+          <div class="p-3 bg-sky-500/10 border border-sky-500/20 rounded-xl text-sky-400 shrink-0">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-white">Ecosistema Estandarizado</h3>
+            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+              Equipos ThinkPad con procesadores Intel® Core™ Ultra y arquitectura IA integrada, garantizando compatibilidad total con software corporativo y 3 años sin obsolescencia.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-blue-400 shrink-0">
+            <i data-lucide="truck" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-white">Despacho Normativo SAP</h3>
+            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+              Terminales móviles Zebra TC27 con 5G y stylus para recepción con firma digital en clínicas y hospitales, cumpliendo con la exigencia regulatoria de radiofármacos.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400 shrink-0">
+            <i data-lucide="lock" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-white">Privacidad & Seguridad RRHH</h3>
+            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
+              Impresión segura protegida por código PIN para resguardar contratos laborales y liquidaciones de sueldo, combinando tecnología láser con tintas pigmentadas indelebles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Equipos -->
+  <section id="catalogo" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 slide-section">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-sky-400 text-xs font-semibold uppercase tracking-wider">Hardware Validado con Inventario Mayorista</span>
+        <h2 class="text-3xl font-black text-white mt-1">Catálogo del Parque TI Propuesto</h2>
+      </div>
+      <p class="text-sm text-slate-400 max-w-md mt-2 md:mt-0">
+        Configuraciones oficiales de canal mayorista (Intcomex, Tecnoglobal, Ingram Micro y Nexsys) con disponibilidad inmediata.
+      </p>
+    </div>
+
+    <!-- Grid de Equipos -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Item 1: ThinkPad E14 Gen 7 -->
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start">
+            <span class="px-2.5 py-1 rounded-md bg-sky-950 border border-sky-800 text-sky-400 font-bold text-xs">29 Unidades</span>
+            <span class="text-xs text-slate-400 font-mono">P/N: 21SY002QCL</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mt-4">Lenovo ThinkPad E14 Gen 7</h3>
+          <p class="text-xs text-slate-400 mt-1">Notebook Estándar Administrativo / Operaciones</p>
+          
+          <ul class="mt-4 space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-sky-400"></i> Intel® Core™ Ultra 5 225U (12C, NPU AI Boost)</li>
+            <li class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-sky-400"></i> 14" WUXGA (1920×1200) IPS Antirreflejo</li>
+            <li class="flex items-center gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-sky-400"></i> 16 GB DDR5-5600 + 512 GB SSD PCIe 4.0 Opal 2.0</li>
+            <li class="flex items-center gap-2"><i data-lucide="shield" class="w-3.5 h-3.5 text-sky-400"></i> Garantía 3 Años On-site incluida</li>
+          </ul>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
+          <div>
+            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
+            <div class="text-xl font-bold text-sky-400">$34.200 <span class="text-xs font-normal text-slate-400">/mes</span></div>
+          </div>
+          <span class="text-xs text-slate-400">Venta: $1.150.000 neto</span>
+        </div>
+      </div>
+
+      <!-- Item 2: ThinkPad T14 Gen 6 -->
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start">
+            <span class="px-2.5 py-1 rounded-md bg-blue-950 border border-blue-800 text-blue-400 font-bold text-xs">6 Unidades</span>
+            <span class="text-xs text-slate-400 font-mono">P/N: 21QD001GCL</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mt-4">Lenovo ThinkPad T14 Gen 6</h3>
+          <p class="text-xs text-slate-400 mt-1">Notebook Alto Rendimiento / Jefaturas & Movilidad</p>
+          
+          <ul class="mt-4 space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-blue-400"></i> Intel® Core™ Ultra 7 255U (hasta 5.2 GHz)</li>
+            <li class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-blue-400"></i> 14" WUXGA IPS 400 nits bajo consumo</li>
+            <li class="flex items-center gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-blue-400"></i> 16 GB DDR5 + 512 GB SSD Performance</li>
+            <li class="flex items-center gap-2"><i data-lucide="shield-alert" class="w-3.5 h-3.5 text-blue-400"></i> 3 Años Premier Support + ADP (Daño Accidental)</li>
+          </ul>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
+          <div>
+            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
+            <div class="text-xl font-bold text-sky-400">$49.200 <span class="text-xs font-normal text-slate-400">/mes</span></div>
+          </div>
+          <span class="text-xs text-slate-400">Venta: $1.700.000 neto</span>
+        </div>
+      </div>
+
+      <!-- Item 3: All in One ThinkCentre Neo 50a -->
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start">
+            <span class="px-2.5 py-1 rounded-md bg-purple-950 border border-purple-800 text-purple-400 font-bold text-xs">3 Unidades</span>
+            <span class="text-xs text-slate-400 font-mono">P/N: 13QH004HCS</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mt-4">ThinkCentre Neo 50a 24" G6</h3>
+          <p class="text-xs text-slate-400 mt-1">All in One Puesto Fijo Recepción & Adm.</p>
+          
+          <ul class="mt-4 space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-purple-400"></i> Intel® Core™ Ultra 5 226V (Arc Graphics 130V)</li>
+            <li class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-purple-400"></i> Pantalla 23,8" FHD IPS Antirreflejo</li>
+            <li class="flex items-center gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-purple-400"></i> 16 GB LPDDR5X-8533 + 512 GB SSD Opal</li>
+            <li class="flex items-center gap-2"><i data-lucide="shield" class="w-3.5 h-3.5 text-purple-400"></i> Garantía 3 Años On-Site de fábrica</li>
+          </ul>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
+          <div>
+            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
+            <div class="text-xl font-bold text-sky-400">$35.333 <span class="text-xs font-normal text-slate-400">/mes</span></div>
+          </div>
+          <span class="text-xs text-slate-400">Venta: $1.200.000 neto</span>
+        </div>
+      </div>
+
+      <!-- Item 4: Zebra TC27 5G -->
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start">
+            <span class="px-2.5 py-1 rounded-md bg-amber-950 border border-amber-800 text-amber-400 font-bold text-xs">8 Unidades</span>
+            <span class="text-xs text-slate-400 font-mono">P/N: WCMTB-T27B6ABC2-A6</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mt-4">Zebra TC27 5G Industrial</h3>
+          <p class="text-xs text-slate-400 mt-1">Handheld Despacho Radiofármacos & SAP</p>
+          
+          <ul class="mt-4 space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="wifi" class="w-3.5 h-3.5 text-amber-400"></i> Móvil 5G / 4G LTE + Wi-Fi 6E + GPS en ruta</li>
+            <li class="flex items-center gap-2"><i data-lucide="scan-barcode" class="w-3.5 h-3.5 text-amber-400"></i> Escáner 2D SE4710 integrado + Pantalla 6" FHD+</li>
+            <li class="flex items-center gap-2"><i data-lucide="pen-tool" class="w-3.5 h-3.5 text-amber-400"></i> Kit Stylus Cautivo con tether + Handstrap ergonómico</li>
+            <li class="flex items-center gap-2"><i data-lucide="droplets" class="w-3.5 h-3.5 text-amber-400"></i> Certificación IP65 / IP68 (soporta desinfección química)</li>
+          </ul>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
+          <div>
+            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
+            <div class="text-xl font-bold text-sky-400">$22.833 <span class="text-xs font-normal text-slate-400">/mes</span></div>
+          </div>
+          <span class="text-xs text-slate-400">Venta: $750.000 neto</span>
+        </div>
+      </div>
+
+      <!-- Item 5: Lenovo IdeaTab 11" 5G -->
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start">
+            <span class="px-2.5 py-1 rounded-md bg-teal-950 border border-teal-800 text-teal-400 font-bold text-xs">5 Unidades</span>
+            <span class="text-xs text-slate-400 font-mono">P/N: ZAFM0762CL</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mt-4">Lenovo IdeaTab 11" 2.5K 5G</h3>
+          <p class="text-xs text-slate-400 mt-1">Tablet Supervisión de Planta & Formularios</p>
+          
+          <ul class="mt-4 space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="tablet" class="w-3.5 h-3.5 text-teal-400"></i> Pantalla 11" 2.5K (2560×1600) IPS 500 nits</li>
+            <li class="flex items-center gap-2"><i data-lucide="signal" class="w-3.5 h-3.5 text-teal-400"></i> Conectividad 5G Sub-6 / LTE + Wi-Fi</li>
+            <li class="flex items-center gap-2"><i data-lucide="keyboard" class="w-3.5 h-3.5 text-teal-400"></i> **Incluye:** Folio Keyboard (Teclado) + Pen Plus</li>
+            <li class="flex items-center gap-2"><i data-lucide="layers" class="w-3.5 h-3.5 text-teal-400"></i> 6 GB RAM + 128 GB UFS + Android 15</li>
+          </ul>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
+          <div>
+            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
+            <div class="text-xl font-bold text-sky-400">$10.430 <span class="text-xs font-normal text-slate-400">/mes</span></div>
+          </div>
+          <span class="text-xs text-slate-400">Venta: $350.000 neto</span>
+        </div>
+      </div>
+
+      <!-- Item 6: Impresoras RRHH -->
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start">
+            <span class="px-2.5 py-1 rounded-md bg-rose-950 border border-rose-800 text-rose-400 font-bold text-xs">2 Unidades</span>
+            <span class="text-xs text-slate-400 font-mono">Brother + Epson</span>
+          </div>
+          <h3 class="text-xl font-bold text-white mt-4">Dúo Impresión RRHH Exclusivo</h3>
+          <p class="text-xs text-slate-400 mt-1">Láser Color Segura + Tanque Tinta Continua</p>
+          
+          <ul class="mt-4 space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2"><i data-lucide="lock" class="w-3.5 h-3.5 text-rose-400"></i> **Brother MFC-L3760CDW:** Impresión con PIN seguro</li>
+            <li class="flex items-center gap-2"><i data-lucide="printer" class="w-3.5 h-3.5 text-rose-400"></i> **Epson EcoTank L6490:** Tinta pigmentada indeleble</li>
+            <li class="flex items-center gap-2"><i data-lucide="network" class="w-3.5 h-3.5 text-rose-400"></i> Ambas con Red Ethernet para aislamiento en VLAN</li>
+            <li class="flex items-center gap-2"><i data-lucide="copy" class="w-3.5 h-3.5 text-rose-400"></i> Dúplex automático + ADF alimentador continuo</li>
+          </ul>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
+          <div>
+            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Total Ambas</div>
+            <div class="text-xl font-bold text-sky-400">$35.000 <span class="text-xs font-normal text-slate-400">/mes</span></div>
+          </div>
+          <span class="text-xs text-slate-400">Venta: $1.150.000 neto</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección Especial: Despacho Radiofármacos con SAP -->
+  <section id="handhelds" class="py-16 bg-slate-900/60 border-y border-slate-800 slide-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-800/80 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4">
+            <i data-lucide="shield-alert" class="w-4 h-4"></i> Exigencia Normativa Transporte de Radiofármacos
+          </div>
+          <h2 class="text-3xl font-black text-white">Despacho Digital con Trazabilidad & Firma en SAP</h2>
+          <p class="mt-4 text-slate-300 leading-relaxed text-sm">
+            La nueva normativa exige el registro mandatorio en ruta del **RUT del conductor, patente del furgón autorizado y firma de recepción conforme del tecnólogo médico** en las clínicas receptoras.
+          </p>
+          
+          <div class="mt-6 space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-lg bg-slate-800 text-sky-400 shrink-0 mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+              <div>
+                <strong class="text-white text-sm">Firma Cautiva en Destino:</strong>
+                <p class="text-xs text-slate-400">Stylus metálico anclado por cordón retráctil que evita extravíos en mesones hospitalarios.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-lg bg-slate-800 text-sky-400 shrink-0 mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+              <div>
+                <strong class="text-white text-sm">Integración con SAP B1 / S4HANA:</strong>
+                <p class="text-xs text-slate-400">La firma, GPS y estampa de tiempo se adjuntan automáticamente en el documento de entrega de SAP (adjunto PDF).</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="p-2 rounded-lg bg-slate-800 text-sky-400 shrink-0 mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+              <div>
+                <strong class="text-white text-sm">Operación Offline en Búnkeres Clínicos:</strong>
+                <p class="text-xs text-slate-400">Permite firmar en subterráneos sin cobertura celular y sincroniza los datos al regresar al furgón.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-slate-950 p-6 rounded-2xl border border-slate-800">
+          <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+            <i data-lucide="cpu" class="w-5 h-5 text-amber-400"></i> Comparativa de Handhelds
+          </h3>
+          <div class="space-y-3">
+            <div class="p-3 rounded-xl bg-amber-950/20 border border-amber-800/40">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-amber-400 text-sm">Zebra TC27 5G (Recomendada)</span>
+                <span class="text-xs font-bold text-white">$22.833/mes</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Conectividad celular 5G, lector 2D, estándar en salud, certificación IP68 y 3 años Zebra OneCare.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-slate-200 text-sm">Nustar 65 (Económica)</span>
+                <span class="text-xs font-bold text-slate-300">$16.090/mes</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Pantalla 6.5", Android 14, 6GB RAM, IP67. Incluye funda protectora y vidrio templado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulador Interactivo de Leasing -->
+  <section id="simulador" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 slide-section">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-sky-400 text-xs font-semibold uppercase tracking-wider">Herramienta de Decisión Financiera</span>
+      <h2 class="text-3xl font-black text-white mt-1">Simulador Dinámico de Cuotas Leasing 36 Meses</h2>
+      <p class="text-sm text-slate-400 mt-2">
+        Ajusta las cantidades por línea de equipo o añade kits de accesorios para recalcular la cuota mensual neta en tiempo real.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Controles del Simulador -->
+      <div class="lg:col-span-7 bg-slate-900/80 border border-slate-800 rounded-2xl p-6 space-y-5">
+        <h3 class="text-base font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
+          <i data-lucide="sliders" class="w-4 h-4 text-sky-400"></i> Composición del Parque (Unidades)
+        </h3>
+
+        <!-- Fila 1: E14 -->
+        <div class="flex items-center justify-between text-sm">
+          <div>
+            <div class="font-semibold text-white">ThinkPad E14 Gen 7 (Ultra 5)</div>
+            <div class="text-xs text-slate-400">Cuota unitaria: $34.200/mes</div>
+          </div>
+          <div class="flex items-center space-x-3">
+            <button onclick="updateQty('e14', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
+            <span id="qty-e14" class="w-8 text-center font-bold text-sky-400">29</span>
+            <button onclick="updateQty('e14', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
+          </div>
+        </div>
+
+        <!-- Fila 2: T14 -->
+        <div class="flex items-center justify-between text-sm">
+          <div>
+            <div class="font-semibold text-white">ThinkPad T14 Gen 6 (Ultra 7)</div>
+            <div class="text-xs text-slate-400">Cuota unitaria: $49.200/mes</div>
+          </div>
+          <div class="flex items-center space-x-3">
+            <button onclick="updateQty('t14', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
+            <span id="qty-t14" class="w-8 text-center font-bold text-sky-400">6</span>
+            <button onclick="updateQty('t14', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
+          </div>
+        </div>
+
+        <!-- Fila 3: AIO -->
+        <div class="flex items-center justify-between text-sm">
+          <div>
+            <div class="font-semibold text-white">All in One Neo 50a 24"</div>
+            <div class="text-xs text-slate-400">Cuota unitaria: $35.333/mes</div>
+          </div>
+          <div class="flex items-center space-x-3">
+            <button onclick="updateQty('aio', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
+            <span id="qty-aio" class="w-8 text-center font-bold text-sky-400">3</span>
+            <button onclick="updateQty('aio', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
+          </div>
+        </div>
+
+        <!-- Fila 4: Zebra -->
+        <div class="flex items-center justify-between text-sm">
+          <div>
+            <div class="font-semibold text-white">Handheld Zebra TC27 5G</div>
+            <div class="text-xs text-slate-400">Cuota unitaria: $22.833/mes</div>
+          </div>
+          <div class="flex items-center space-x-3">
+            <button onclick="updateQty('zebra', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
+            <span id="qty-zebra" class="w-8 text-center font-bold text-sky-400">8</span>
+            <button onclick="updateQty('zebra', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
+          </div>
+        </div>
+
+        <!-- Fila 5: Tablets -->
+        <div class="flex items-center justify-between text-sm">
+          <div>
+            <div class="font-semibold text-white">Tablet Lenovo IdeaTab 11" 5G</div>
+            <div class="text-xs text-slate-400">Cuota unitaria: $10.430/mes</div>
+          </div>
+          <div class="flex items-center space-x-3">
+            <button onclick="updateQty('tablet', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
+            <span id="qty-tablet" class="w-8 text-center font-bold text-sky-400">5</span>
+            <button onclick="updateQty('tablet', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
+          </div>
+        </div>
+
+        <!-- Fila 6: Impresoras -->
+        <div class="flex items-center justify-between text-sm border-b border-slate-800 pb-4">
+          <div>
+            <div class="font-semibold text-white">Dúo Impresoras RRHH (Láser + Tanque)</div>
+            <div class="text-xs text-slate-400">Cuota combinada: $35.000/mes</div>
+          </div>
+          <div class="flex items-center space-x-3">
+            <button onclick="updateQty('imp', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
+            <span id="qty-imp" class="w-8 text-center font-bold text-sky-400">1</span>
+            <button onclick="updateQty('imp', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
+          </div>
+        </div>
+
+        <!-- Add-ons Accesorios -->
+        <div class="pt-2">
+          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3">Kits de Accesorios Opcionales:</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-slate-700">
+              <input type="checkbox" id="kit-movilidad" onchange="calculateTotal()" class="rounded text-sky-500 bg-slate-900 border-slate-700">
+              <span><strong>Kit Movilidad:</strong> Mochila B210 + Candado (+$750/mes x laptop)</span>
+            </label>
+            <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-slate-700">
+              <input type="checkbox" id="kit-pantallas" onchange="calculateTotal()" class="rounded text-sky-500 bg-slate-900 border-slate-700">
+              <span><strong>Kit 2da Pantalla:</strong> ThinkVision 27" IPS (+$3.400/mes x 10 puestos)</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resultados del Resumen Financiero -->
+      <div class="lg:col-span-5 bg-gradient-to-b from-slate-900 to-slate-950 border border-sky-500/30 rounded-2xl p-6 relative overflow-hidden shadow-2xl">
+        <div class="absolute -right-12 -top-12 w-40 h-40 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <h3 class="text-base font-bold text-white flex items-center gap-2">
+          <i data-lucide="receipt" class="w-5 h-5 text-sky-400"></i> Resumen de Cuota Mensual
+        </h3>
+
+        <div class="mt-6 p-5 rounded-xl bg-slate-950 border border-slate-800/80 text-center">
+          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Cuota Mensual Neta (36 Meses)</div>
+          <div id="total-cuota" class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-400 mt-2">$1.662.814</div>
+          <div class="text-xs text-slate-400 mt-1">CLP Neto + IVA (Facturación mensual)</div>
+          <div id="total-cuota-usd" class="text-xs text-slate-500 mt-0.5">~USD 1.703 / mes (Ref. $976)</div>
+        </div>
+
+        <div class="mt-6 space-y-2.5 text-xs">
+          <div class="flex justify-between text-slate-300">
+            <span>Total Equipos Activos:</span>
+            <span id="res-equipos" class="font-bold text-white">53 unidades</span>
+          </div>
+          <div class="flex justify-between text-slate-300">
+            <span>Capex Total de Referencia:</span>
+            <span id="res-capex" class="font-bold text-white">$56.050.000 neto</span>
+          </div>
+          <div class="flex justify-between text-slate-300">
+            <span>Soporte & Garantía:</span>
+            <span class="font-semibold text-emerald-400">3 Años On-site Premier</span>
+          </div>
+          <div class="flex justify-between text-slate-300">
+            <span>Tratamiento Tributario:</span>
+            <span class="font-semibold text-sky-400">100% Gasto Operacional (OPEX)</span>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-slate-800">
+          <button onclick="window.print()" class="w-full py-3 bg-sky-500 hover:bg-sky-400 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition shadow-lg shadow-sky-500/20 flex items-center justify-center gap-2">
+            <i data-lucide="printer" class="w-4 h-4"></i> Exportar Simulación / Imprimir
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Corporativo -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center space-x-3">
+        <span class="font-bold text-white text-base">TECNOVOA SPA</span>
+        <span>·</span>
+        <span>Av. Pedro de Valdivia N° 273, Of. 606, Providencia, Santiago</span>
+      </div>
+      <div class="text-center sm:text-right">
+        <div>Contacto Comercial: <strong>Cristian Díaz</strong> | <a href="mailto:cristian@tecnovoa.cl" class="text-sky-400 hover:underline">cristian@tecnovoa.cl</a></div>
+        <div class="mt-0.5 text-slate-500">Propuesta confidencial preparada exclusivamente para Positronpharma S.A.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Inicializar Iconos Lucide
+    lucide.createIcons();
+
+    // Estado del Simulador
+    const prices = {
+      e14: 34200,
+      t14: 49200,
+      aio: 35333,
+      zebra: 22833,
+      tablet: 10430,
+      imp: 35000
+    };
+
+    const capex = {
+      e14: 1150000,
+      t14: 1700000,
+      aio: 1200000,
+      zebra: 750000,
+      tablet: 350000,
+      imp: 1150000
+    };
+
+    let quantities = {
+      e14: 29,
+      t14: 6,
+      aio: 3,
+      zebra: 8,
+      tablet: 5,
+      imp: 1
+    };
+
+    function updateQty(item, delta) {
+      quantities[item] = Math.max(0, quantities[item] + delta);
+      document.getElementById('qty-' + item).innerText = quantities[item];
+      calculateTotal();
+    }
+
+    function calculateTotal() {
+      let totalCuota = 0;
+      let totalCapex = 0;
+      let totalEquipos = 0;
+
+      for (let item in quantities) {
+        totalCuota += quantities[item] * prices[item];
+        totalCapex += quantities[item] * capex[item];
+        if (item === 'imp') {
+          totalEquipos += quantities[item] * 2; // Láser + Tanque
+        } else {
+          totalEquipos += quantities[item];
+        }
+      }
+
+      // Addons
+      const kitMovilidad = document.getElementById('kit-movilidad').checked;
+      const kitPantallas = document.getElementById('kit-pantallas').checked;
+
+      if (kitMovilidad) {
+        totalCuota += (quantities.e14 + quantities.t14) * 750;
+        totalCapex += (quantities.e14 + quantities.t14) * 25000;
+      }
+
+      if (kitPantallas) {
+        totalCuota += 10 * 3400; // 10 monitores
+        totalCapex += 10 * 115000;
+      }
+
+      // Actualizar UI
+      document.getElementById('total-cuota').innerText = '$' + totalCuota.toLocaleString('es-CL');
+      document.getElementById('total-cuota-usd').innerText = '~USD ' + Math.round(totalCuota / 976).toLocaleString('en-US') + ' / mes (Ref. $976)';
+      document.getElementById('res-equipos').innerText = totalEquipos + ' unidades';
+      document.getElementById('res-capex').innerText = '$' + totalCapex.toLocaleString('es-CL') + ' neto';
+    }
+
+    // Run inicial
+    calculateTotal();
+  </script>
+</body>
+</html>
+
