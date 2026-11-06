@@ -35,7 +35,7 @@
 
 ## 🏛️ Alianza Estratégica & Ecosistema de Fabricantes (Vendors)
 
-Este proyecto consolida hardware empresarial de misión crítica respaldado por inventario oficial de mayoristas autorizados en Chile (**Intcomex, Tecnoglobal, Ingram Micro y Nexsys**):
+Este proyecto consolida hardware empresarial de misión crítica respaldado directamente por los principales fabricantes mundiales de tecnología con contratos de garantía oficial y soporte de fábrica en Chile (**Lenovo, Zebra Technologies, Brother y Epson**):
 
 <div align="center">
   <table border="0" style="border-collapse: collapse; border: none;">
