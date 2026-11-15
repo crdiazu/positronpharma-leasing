@@ -1,656 +1,1028 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Propuesta Tecnológica Integral & Simulación Leasing 36 Meses | Positronpharma & TECNOVOA</title>
-  <!-- Tailwind CSS CDN -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Positronpharma S.A. × TECNOVOA | Propuesta Comercial Parque TI 53 Equipos (COT-1370)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            brand: {
-              50: '#f0f7ff',
-              100: '#e0effe',
-              500: '#0284c7',
-              600: '#0369a1',
-              700: '#075985',
-              800: '#0c4a6e',
-              900: '#082f49'
+            tn: {
+              navy: '#031a3d',
+              primary: '#0758a6',
+              cyan: '#00add7',
+              cyanLight: '#2cc4ea',
+              surface: '#f2f8fc',
+              ink: '#0a2347',
+              muted: '#4a6080',
+              border: '#d0e3ef',
+              success: '#0f9d6b',
             },
-            accent: {
-              400: '#38bdf8',
-              500: '#0ea5e9',
-              600: '#0284c7'
-            }
-          }
-        }
-      }
-    }
+          },
+          fontFamily: {
+            display: ['Sora', 'sans-serif'],
+            sans: ['Figtree', 'sans-serif'],
+          },
+        },
+      },
+    };
   </script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
     body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: 'Figtree', sans-serif;
+      color: #0a2347;
+      background-color: #f2f8fc;
     }
-    .glassmorphism {
-      background: rgba(15, 23, 42, 0.75);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Sora', sans-serif;
     }
-    .slide-section {
-      scroll-margin-top: 80px;
+    .tn-hero-bg {
+      background: linear-gradient(135deg, #031a3d 0%, #0758a6 62%, #05366e 100%);
+    }
+    .tn-card {
+      background: #ffffff;
+      border: 1px solid #d0e3ef;
+      border-radius: 1rem;
+      box-shadow: 0 6px 24px -10px rgba(3, 26, 61, 0.08);
+    }
+    .tn-tab-btn.active {
+      background-color: #031a3d;
+      color: #ffffff;
+      border-color: #031a3d;
+    }
+    .tn-mode-btn.active {
+      background-color: #0758a6;
+      color: #ffffff;
+      border-color: #0758a6;
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: #ffffff !important; }
+      .tn-card { box-shadow: none !important; break-inside: avoid; }
+      .tn-hero-bg { background: #031a3d !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+<body class="antialiased selection:bg-tn-cyan selection:text-white">
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full z-50 glassmorphism border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      <div class="flex items-center space-x-4">
-        <span class="text-2xl font-black tracking-tight text-white flex items-center gap-2">
-          <span class="text-sky-400">TECNOVOA</span>
-          <span class="text-xs px-2 py-0.5 rounded-full bg-sky-950 border border-sky-800 text-sky-300 font-semibold uppercase tracking-wider">Soluciones TI</span>
-        </span>
-        <span class="text-slate-600 font-light text-xl">|</span>
-        <div class="flex items-center space-x-2">
-          <img src="logo_positron.png" alt="Positronpharma" class="h-8 object-contain brightness-110">
-          <span class="text-sm font-semibold tracking-wide text-slate-300">Positronpharma S.A.</span>
+  <!-- Barra Superior Corporativa TECNOVOA -->
+  <nav class="sticky top-0 z-50 bg-tn-navy/95 backdrop-blur-md border-b border-white/10 text-white no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-4 min-w-0">
+        <a href="#resumen" class="flex items-center gap-3 shrink-0">
+          <img src="assets/logo_tecnovoa.png" alt="TECNOVOA" class="h-7 w-auto brightness-0 invert" onerror="this.style.display='none'" />
+          <span class="hidden sm:inline-block h-5 w-px bg-white/20"></span>
+          <span class="hidden md:inline-block text-xs font-semibold tracking-wider uppercase text-tn-cyanLight">Unidad 06 · EndUser</span>
+        </a>
+        <div class="hidden sm:flex items-center gap-2 pl-2 border-l border-white/15">
+          <img src="assets/logo_positron.png" alt="Positronpharma" class="h-6 w-auto rounded bg-white px-1.5 py-0.5 object-contain" onerror="this.src='logo_positron.png'" />
+          <span class="text-xs font-medium text-slate-200 truncate">Positronpharma S.A. · COT-1370</span>
         </div>
       </div>
-      
-      <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
-        <a href="#vision" class="text-slate-300 hover:text-sky-400 transition">Visión</a>
-        <a href="#catalogo" class="text-slate-300 hover:text-sky-400 transition">Catálogo 53 Equipos</a>
-        <a href="#handhelds" class="text-slate-300 hover:text-sky-400 transition">Despacho SAP</a>
-        <a href="#simulador" class="text-sky-400 font-semibold hover:text-sky-300 flex items-center gap-1.5 bg-sky-950/60 px-3.5 py-1.5 rounded-lg border border-sky-800">
-          <i data-lucide="calculator" class="w-4 h-4"></i> Simulador Leasing
-        </a>
+
+      <div class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wide text-slate-200">
+        <a href="#resumen" class="hover:text-tn-cyanLight transition">Resumen 53 Eq.</a>
+        <a href="#bloque-firme" class="hover:text-tn-cyanLight transition">A Firme (C/D/E)</a>
+        <a href="#computo-lenovo" class="hover:text-tn-cyanLight transition">Cómputo Lenovo (A)</a>
+        <a href="#sap-handhelds" class="hover:text-tn-cyanLight transition">Trazabilidad SAP</a>
+        <a href="#documentos" class="hover:text-tn-cyanLight transition">Documentos COT</a>
+        <a href="#simulador" class="hover:text-tn-cyanLight transition">Simulador</a>
       </div>
 
-      <div class="flex items-center space-x-3">
-        <span class="text-xs text-slate-400 font-mono hidden sm:inline">RUT: 76.089.296-3</span>
-        <a href="#simulador" class="px-4 py-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-semibold text-xs uppercase tracking-wider rounded-lg shadow-lg shadow-sky-500/20 transition">
-          Ver Propuesta
+      <div class="flex items-center gap-2 shrink-0">
+        <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/15 border border-white/15 text-xs font-semibold transition" title="Imprimir o guardar como PDF">
+          <i data-lucide="printer" class="w-3.5 h-3.5 text-tn-cyanLight"></i>
+          <span>PDF</span>
+        </button>
+        <a href="slides.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-tn-cyan hover:bg-tn-cyanLight text-tn-navy text-xs font-bold shadow-sm transition">
+          <i data-lucide="presentation" class="w-3.5 h-3.5"></i>
+          <span>Presentación</span>
         </a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="vision" class="relative pt-36 pb-20 overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.15),rgba(255,255,255,0))]"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-      <div class="text-center max-w-3xl mx-auto">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-950/80 border border-sky-800/80 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-6">
-          <i data-lucide="shield-check" class="w-4 h-4"></i> Renovación Tecnológica Integral 2026-2029
-        </div>
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-          Modernización & Continuidad Operativa en <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">Leasing Tecnológico</span>
-        </h1>
-        <p class="mt-6 text-lg text-slate-300 leading-relaxed">
-          Diseñado para **Positronpharma S.A.**: 53 equipos de última generación (Lenovo Ultra, Zebra 5G, Brother, Epson y HP) bajo un modelo OPEX a 36 meses con garantía Premier On-site, reemplazo continuo y cumplimiento normativo en despacho de radiofármacos.
-        </p>
-        
-        <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
-          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-            <div class="text-slate-400 text-xs font-medium uppercase tracking-wider">Parque Total</div>
-            <div class="text-2xl font-bold text-white mt-1">53 Equipos</div>
-            <div class="text-xs text-sky-400 mt-0.5">Laptops, AIOs, Handhelds, Tablets</div>
+  <!-- Hero Corporativo TECNOVOA × Positronpharma -->
+  <header id="resumen" class="tn-hero-bg text-white relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-tn-cyan/15 blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16 relative z-10">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-10">
+        <div class="max-w-2xl space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-tn-cyan/40 text-tn-cyanLight text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-tn-cyan"></span>
+            Propuesta Técnico-Comercial Oficial · Vigencia 15–30/11/2026
           </div>
-          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-            <div class="text-slate-400 text-xs font-medium uppercase tracking-wider">Plazo Leasing</div>
-            <div class="text-2xl font-bold text-white mt-1">36 Meses</div>
-            <div class="text-xs text-emerald-400 mt-0.5">Modelo OPEX 100% Gasto</div>
-          </div>
-          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-            <div class="text-slate-400 text-xs font-medium uppercase tracking-wider">SLA Garantía</div>
-            <div class="text-2xl font-bold text-white mt-1">3 Años On-Site</div>
-            <div class="text-xs text-sky-400 mt-0.5">Premier Support + ADP</div>
-          </div>
-          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-            <div class="text-slate-400 text-xs font-medium uppercase tracking-wider">Cuota Base Est.</div>
-            <div class="text-2xl font-bold text-sky-400 mt-1">~$1,54 M /mes</div>
-            <div class="text-xs text-slate-400 mt-0.5">Neto mensual referencial</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Puntos Estratégicos -->
-  <section class="py-12 bg-slate-900/40 border-y border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="flex items-start space-x-4">
-          <div class="p-3 bg-sky-500/10 border border-sky-500/20 rounded-xl text-sky-400 shrink-0">
-            <i data-lucide="zap" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-base font-bold text-white">Ecosistema Estandarizado</h3>
-            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
-              Equipos ThinkPad con procesadores Intel® Core™ Ultra y arquitectura IA integrada, garantizando compatibilidad total con software corporativo y 3 años sin obsolescencia.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start space-x-4">
-          <div class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-blue-400 shrink-0">
-            <i data-lucide="truck" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-base font-bold text-white">Despacho Normativo SAP</h3>
-            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
-              Terminales móviles Zebra TC27 con 5G y stylus para recepción con firma digital en clínicas y hospitales, cumpliendo con la exigencia regulatoria de radiofármacos.
-            </p>
-          </div>
-        </div>
-        <div class="flex items-start space-x-4">
-          <div class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400 shrink-0">
-            <i data-lucide="lock" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-base font-bold text-white">Privacidad & Seguridad RRHH</h3>
-            <p class="text-sm text-slate-400 mt-1.5 leading-relaxed">
-              Impresión segura protegida por código PIN para resguardar contratos laborales y liquidaciones de sueldo, combinando tecnología láser con tintas pigmentadas indelebles.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+            Renovación Parque TI <span class="text-tn-cyanLight">53 Equipos</span> Positronpharma
+          </h1>
 
-  <!-- Catálogo de Equipos -->
-  <section id="catalogo" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 slide-section">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-      <div>
-        <span class="text-sky-400 text-xs font-semibold uppercase tracking-wider">Hardware Certificado por Fabricantes Oficiales</span>
-        <h2 class="text-3xl font-black text-white mt-1">Catálogo del Parque TI Propuesto</h2>
-      </div>
-      <p class="text-sm text-slate-400 max-w-md mt-2 md:mt-0">
-        Configuraciones corporativas certificadas con disponibilidad inmediata y soporte oficial directo de Lenovo, Zebra Technologies, Brother y Epson.
-      </p>
-    </div>
-
-    <!-- Grid de Equipos -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Item 1: ThinkPad E14 Gen 7 -->
-      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-start">
-            <span class="px-2.5 py-1 rounded-md bg-sky-950 border border-sky-800 text-sky-400 font-bold text-xs">29 Unidades</span>
-            <span class="text-xs text-slate-400 font-mono">P/N: 21SY002QCL</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mt-4">Lenovo ThinkPad E14 Gen 7</h3>
-          <p class="text-xs text-slate-400 mt-1">Notebook Estándar Administrativo / Operaciones</p>
-          
-          <ul class="mt-4 space-y-2 text-xs text-slate-300">
-            <li class="flex items-center gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-sky-400"></i> Intel® Core™ Ultra 5 225U (12C, NPU AI Boost)</li>
-            <li class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-sky-400"></i> 14" WUXGA (1920×1200) IPS Antirreflejo</li>
-            <li class="flex items-center gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-sky-400"></i> 16 GB DDR5-5600 + 512 GB SSD PCIe 4.0 Opal 2.0</li>
-            <li class="flex items-center gap-2"><i data-lucide="shield" class="w-3.5 h-3.5 text-sky-400"></i> Garantía 3 Años On-site incluida</li>
-          </ul>
-        </div>
-        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
-          <div>
-            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
-            <div class="text-xl font-bold text-sky-400">$34.200 <span class="text-xs font-normal text-slate-400">/mes</span></div>
-          </div>
-          <span class="text-xs text-slate-400">Venta: $1.150.000 neto</span>
-        </div>
-      </div>
-
-      <!-- Item 2: ThinkPad T14 Gen 6 -->
-      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-start">
-            <span class="px-2.5 py-1 rounded-md bg-blue-950 border border-blue-800 text-blue-400 font-bold text-xs">6 Unidades</span>
-            <span class="text-xs text-slate-400 font-mono">P/N: 21QD001GCL</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mt-4">Lenovo ThinkPad T14 Gen 6</h3>
-          <p class="text-xs text-slate-400 mt-1">Notebook Alto Rendimiento / Jefaturas & Movilidad</p>
-          
-          <ul class="mt-4 space-y-2 text-xs text-slate-300">
-            <li class="flex items-center gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-blue-400"></i> Intel® Core™ Ultra 7 255U (hasta 5.2 GHz)</li>
-            <li class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-blue-400"></i> 14" WUXGA IPS 400 nits bajo consumo</li>
-            <li class="flex items-center gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-blue-400"></i> 16 GB DDR5 + 512 GB SSD Performance</li>
-            <li class="flex items-center gap-2"><i data-lucide="shield-alert" class="w-3.5 h-3.5 text-blue-400"></i> 3 Años Premier Support + ADP (Daño Accidental)</li>
-          </ul>
-        </div>
-        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
-          <div>
-            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
-            <div class="text-xl font-bold text-sky-400">$49.200 <span class="text-xs font-normal text-slate-400">/mes</span></div>
-          </div>
-          <span class="text-xs text-slate-400">Venta: $1.700.000 neto</span>
-        </div>
-      </div>
-
-      <!-- Item 3: All in One ThinkCentre Neo 50a -->
-      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-start">
-            <span class="px-2.5 py-1 rounded-md bg-purple-950 border border-purple-800 text-purple-400 font-bold text-xs">3 Unidades</span>
-            <span class="text-xs text-slate-400 font-mono">P/N: 13QH004HCS</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mt-4">ThinkCentre Neo 50a 24" G6</h3>
-          <p class="text-xs text-slate-400 mt-1">All in One Puesto Fijo Recepción & Adm.</p>
-          
-          <ul class="mt-4 space-y-2 text-xs text-slate-300">
-            <li class="flex items-center gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-purple-400"></i> Intel® Core™ Ultra 5 226V (Arc Graphics 130V)</li>
-            <li class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-purple-400"></i> Pantalla 23,8" FHD IPS Antirreflejo</li>
-            <li class="flex items-center gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-purple-400"></i> 16 GB LPDDR5X-8533 + 512 GB SSD Opal</li>
-            <li class="flex items-center gap-2"><i data-lucide="shield" class="w-3.5 h-3.5 text-purple-400"></i> Garantía 3 Años On-Site de fábrica</li>
-          </ul>
-        </div>
-        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
-          <div>
-            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
-            <div class="text-xl font-bold text-sky-400">$35.333 <span class="text-xs font-normal text-slate-400">/mes</span></div>
-          </div>
-          <span class="text-xs text-slate-400">Venta: $1.200.000 neto</span>
-        </div>
-      </div>
-
-      <!-- Item 4: Zebra TC27 5G -->
-      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-start">
-            <span class="px-2.5 py-1 rounded-md bg-amber-950 border border-amber-800 text-amber-400 font-bold text-xs">8 Unidades</span>
-            <span class="text-xs text-slate-400 font-mono">P/N: WCMTB-T27B6ABC2-A6</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mt-4">Zebra TC27 5G Industrial</h3>
-          <p class="text-xs text-slate-400 mt-1">Handheld Despacho Radiofármacos & SAP</p>
-          
-          <ul class="mt-4 space-y-2 text-xs text-slate-300">
-            <li class="flex items-center gap-2"><i data-lucide="wifi" class="w-3.5 h-3.5 text-amber-400"></i> Móvil 5G / 4G LTE + Wi-Fi 6E + GPS en ruta</li>
-            <li class="flex items-center gap-2"><i data-lucide="scan-barcode" class="w-3.5 h-3.5 text-amber-400"></i> Escáner 2D SE4710 integrado + Pantalla 6" FHD+</li>
-            <li class="flex items-center gap-2"><i data-lucide="pen-tool" class="w-3.5 h-3.5 text-amber-400"></i> Kit Stylus Cautivo con tether + Handstrap ergonómico</li>
-            <li class="flex items-center gap-2"><i data-lucide="droplets" class="w-3.5 h-3.5 text-amber-400"></i> Certificación IP65 / IP68 (soporta desinfección química)</li>
-          </ul>
-        </div>
-        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
-          <div>
-            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
-            <div class="text-xl font-bold text-sky-400">$22.833 <span class="text-xs font-normal text-slate-400">/mes</span></div>
-          </div>
-          <span class="text-xs text-slate-400">Venta: $750.000 neto</span>
-        </div>
-      </div>
-
-      <!-- Item 5: Lenovo IdeaTab 11" 5G -->
-      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-start">
-            <span class="px-2.5 py-1 rounded-md bg-teal-950 border border-teal-800 text-teal-400 font-bold text-xs">5 Unidades</span>
-            <span class="text-xs text-slate-400 font-mono">P/N: ZAFM0762CL</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mt-4">Lenovo IdeaTab 11" 2.5K 5G</h3>
-          <p class="text-xs text-slate-400 mt-1">Tablet Supervisión de Planta & Formularios</p>
-          
-          <ul class="mt-4 space-y-2 text-xs text-slate-300">
-            <li class="flex items-center gap-2"><i data-lucide="tablet" class="w-3.5 h-3.5 text-teal-400"></i> Pantalla 11" 2.5K (2560×1600) IPS 500 nits</li>
-            <li class="flex items-center gap-2"><i data-lucide="signal" class="w-3.5 h-3.5 text-teal-400"></i> Conectividad 5G Sub-6 / LTE + Wi-Fi</li>
-            <li class="flex items-center gap-2"><i data-lucide="keyboard" class="w-3.5 h-3.5 text-teal-400"></i> **Incluye:** Folio Keyboard (Teclado) + Pen Plus</li>
-            <li class="flex items-center gap-2"><i data-lucide="layers" class="w-3.5 h-3.5 text-teal-400"></i> 6 GB RAM + 128 GB UFS + Android 15</li>
-          </ul>
-        </div>
-        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
-          <div>
-            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Leasing Unitaria</div>
-            <div class="text-xl font-bold text-sky-400">$10.430 <span class="text-xs font-normal text-slate-400">/mes</span></div>
-          </div>
-          <span class="text-xs text-slate-400">Venta: $350.000 neto</span>
-        </div>
-      </div>
-
-      <!-- Item 6: Impresoras RRHH -->
-      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-6 hover:border-sky-500/40 transition flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-start">
-            <span class="px-2.5 py-1 rounded-md bg-rose-950 border border-rose-800 text-rose-400 font-bold text-xs">2 Unidades</span>
-            <span class="text-xs text-slate-400 font-mono">Brother + Epson</span>
-          </div>
-          <h3 class="text-xl font-bold text-white mt-4">Dúo Impresión RRHH Exclusivo</h3>
-          <p class="text-xs text-slate-400 mt-1">Láser Color Segura + Tanque Tinta Continua</p>
-          
-          <ul class="mt-4 space-y-2 text-xs text-slate-300">
-            <li class="flex items-center gap-2"><i data-lucide="lock" class="w-3.5 h-3.5 text-rose-400"></i> **Brother MFC-L3760CDW:** Impresión con PIN seguro</li>
-            <li class="flex items-center gap-2"><i data-lucide="printer" class="w-3.5 h-3.5 text-rose-400"></i> **Epson EcoTank L6490:** Tinta pigmentada indeleble</li>
-            <li class="flex items-center gap-2"><i data-lucide="network" class="w-3.5 h-3.5 text-rose-400"></i> Ambas con Red Ethernet para aislamiento en VLAN</li>
-            <li class="flex items-center gap-2"><i data-lucide="copy" class="w-3.5 h-3.5 text-rose-400"></i> Dúplex automático + ADF alimentador continuo</li>
-          </ul>
-        </div>
-        <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-baseline justify-between">
-          <div>
-            <div class="text-[10px] text-slate-400 uppercase tracking-wider">Cuota Total Ambas</div>
-            <div class="text-xl font-bold text-sky-400">$35.000 <span class="text-xs font-normal text-slate-400">/mes</span></div>
-          </div>
-          <span class="text-xs text-slate-400">Venta: $1.150.000 neto</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Sección Especial: Despacho Radiofármacos con SAP -->
-  <section id="handhelds" class="py-16 bg-slate-900/60 border-y border-slate-800 slide-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        <div class="lg:col-span-7">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-800/80 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            <i data-lucide="shield-alert" class="w-4 h-4"></i> Exigencia Normativa Transporte de Radiofármacos
-          </div>
-          <h2 class="text-3xl font-black text-white">Despacho Digital con Trazabilidad & Firma en SAP</h2>
-          <p class="mt-4 text-slate-300 leading-relaxed text-sm">
-            La nueva normativa exige el registro mandatorio en ruta del **RUT del conductor, patente del furgón autorizado y firma de recepción conforme del tecnólogo médico** en las clínicas receptoras.
+          <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
+            Arquitectura modular separada en <strong class="text-white">Bloque Operacional A Firme</strong> (Tablets 5G, Handhelds SAP Honeywell y Multifunción RRHH) más <strong class="text-white">Cómputo Corporativo Lenovo 3 Años On-Site + ADP</strong>, optimizada bajo el presupuesto referencial del cliente.
           </p>
-          
-          <div class="mt-6 space-y-4">
-            <div class="flex items-start gap-3">
-              <div class="p-2 rounded-lg bg-slate-800 text-sky-400 shrink-0 mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+
+          <div class="flex flex-wrap gap-3 pt-1 text-xs">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 border border-white/15">
+              <i data-lucide="building-2" class="w-3.5 h-3.5 text-tn-cyanLight"></i>
+              <strong>Positronpharma S.A.</strong> · RUT 76.089.296-3
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 border border-white/15">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-tn-cyanLight"></i>
+              Rancagua N° 878, Providencia
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 border border-white/15">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-tn-cyanLight"></i>
+              Atención: Laura Tomassi · Felipe (TI) · Diego (Finanzas)
+            </span>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-2 no-print">
+            <a href="#simulador" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-tn-cyan hover:bg-tn-cyanLight text-tn-navy font-bold text-sm transition shadow-lg">
+              <i data-lucide="calculator" class="w-4 h-4"></i>
+              Abrir Simulador Interactivo
+            </a>
+            <a href="#documentos" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold text-sm transition">
+              <i data-lucide="file-text" class="w-4 h-4 text-tn-cyanLight"></i>
+              Ver 4 Cotizaciones (A / C / D / E)
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta Resumen Ejecutivo de Inversión -->
+        <div class="w-full lg:w-[440px] bg-white text-tn-ink rounded-2xl p-6 shadow-2xl border border-tn-border shrink-0">
+          <div class="flex items-center justify-between border-b border-tn-border pb-3">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-tn-primary">Consolidado Parque Completo</span>
+              <div class="text-lg font-extrabold text-tn-navy">53 Equipos · 4 Folios</div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-tn-success text-[11px] font-bold">
+              −$ 1.724.077 bajo ppto.
+            </span>
+          </div>
+
+          <div class="mt-4 space-y-3 text-sm">
+            <div class="flex items-center justify-between p-3 rounded-xl bg-tn-surface border border-tn-border">
               <div>
-                <strong class="text-white text-sm">Firma Cautiva en Destino:</strong>
-                <p class="text-xs text-slate-400">Stylus metálico anclado por cordón retráctil que evita extravíos en mesones hospitalarios.</p>
+                <div class="font-bold text-tn-navy text-xs uppercase tracking-wide">1. Bloque A Firme (C + D + E)</div>
+                <div class="text-xs text-tn-muted">8 Handhelds · 2 Imp. Epson · 5 Tablets (15 eq.)</div>
+              </div>
+              <div class="text-right">
+                <div class="font-extrabold text-tn-navy">$ 8.692.001</div>
+                <div class="text-[11px] text-tn-muted">Neto · $ 10.343.481 c/IVA</div>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <div class="p-2 rounded-lg bg-slate-800 text-sky-400 shrink-0 mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+
+            <div class="flex items-center justify-between p-3 rounded-xl bg-tn-surface border border-tn-border">
               <div>
-                <strong class="text-white text-sm">Integración con SAP B1 / S4HANA:</strong>
-                <p class="text-xs text-slate-400">La firma, GPS y estampa de tiempo se adjuntan automáticamente en el documento de entrega de SAP (adjunto PDF).</p>
+                <div class="font-bold text-tn-navy text-xs uppercase tracking-wide">2. Cómputo Lenovo (COT-1370-A)</div>
+                <div class="text-xs text-tn-muted">29 i5 + 6 U7 + 3 AIO · 3Y On-Site + ADP (38 eq.)</div>
+              </div>
+              <div class="text-right">
+                <div class="font-extrabold text-tn-navy">$ 41.633.922</div>
+                <div class="text-[11px] text-tn-muted">Neto · $ 49.544.367 c/IVA</div>
               </div>
             </div>
-            <div class="flex items-start gap-3">
-              <div class="p-2 rounded-lg bg-slate-800 text-sky-400 shrink-0 mt-0.5"><i data-lucide="check-circle-2" class="w-4 h-4"></i></div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-tn-border">
+            <div class="flex items-baseline justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-tn-muted">Total Parque Neto</span>
+              <span class="text-3xl font-black text-tn-primary">$ 50.325.923</span>
+            </div>
+            <div class="flex items-center justify-between text-xs text-tn-muted mt-1">
+              <span>IVA 19%: $ 9.561.925</span>
+              <span class="font-bold text-tn-navy">Total c/IVA: $ 59.887.848</span>
+            </div>
+            <div class="mt-3 p-2.5 rounded-lg bg-emerald-50/70 border border-emerald-200 flex items-center justify-between text-xs">
+              <span class="text-emerald-900 font-medium">Presupuesto Referencial Cliente</span>
+              <span class="font-bold text-tn-success">$ 52.050.000 neto ✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+    <!-- Bloque 1: Partidas A Firme (C, D, E) -->
+    <section id="bloque-firme" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-tn-border pb-4">
+        <div>
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-tn-cyan">
+            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Listas para Orden de Compra Inmediata
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy mt-1">
+            Partidas A Firme · Terreno, Planta y RRHH (15 Equipos)
+          </h2>
+        </div>
+        <div class="text-left md:text-right">
+          <div class="text-xs text-tn-muted uppercase font-semibold">Subtotal A Firme</div>
+          <div class="text-2xl font-black text-tn-primary">$ 8.692.001 <span class="text-xs font-medium text-tn-muted">neto ($ 10.343.481 c/IVA)</span></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- COT-1370-E: Tablets -->
+        <article class="tn-card p-6 flex flex-col justify-between border-t-4 border-t-tn-cyan">
+          <div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-md bg-cyan-50 border border-cyan-200 text-tn-primary font-bold text-xs">COT-1370-E · 5 Unidades</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-50 text-tn-success font-bold text-[11px]">A FIRME</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-tn-navy mt-4">Lenovo IdeaTab 11" 2.5K 5G Kit</h3>
+            <p class="text-xs font-mono text-tn-muted mt-0.5">P/N: ZAFM0221CL · Android 15</p>
+
+            <ul class="mt-4 space-y-2 text-xs text-tn-ink">
+              <li class="flex items-start gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-tn-cyan shrink-0 mt-0.5"></i><span><strong>MediaTek Dimensity 6300</strong> + conectividad 5G móvil</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-tn-cyan shrink-0 mt-0.5"></i><span><strong>8 GB RAM / 256 GB</strong> almacenamiento interno</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="tablet" class="w-3.5 h-3.5 text-tn-cyan shrink-0 mt-0.5"></i><span>Pantalla 11" 2.5K IPS alta nitidez en planta</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="keyboard" class="w-3.5 h-3.5 text-tn-cyan shrink-0 mt-0.5"></i><span><strong>Kit completo incluido:</strong> Folio Keyboard + Lenovo Tab Pen</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-tn-border flex items-end justify-between">
+            <div>
+              <div class="text-[11px] text-tn-muted uppercase font-semibold">Neto Línea (5 uds.)</div>
+              <div class="text-xl font-black text-tn-navy">$ 1.509.365</div>
+              <div class="text-[11px] text-tn-muted">c/IVA: $ 1.796.144</div>
+            </div>
+            <div class="text-right">
+              <div class="text-[11px] text-tn-muted">Unitario Neto</div>
+              <div class="text-sm font-bold text-tn-primary">$ 301.873</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- COT-1370-C: Handhelds Honeywell -->
+        <article class="tn-card p-6 flex flex-col justify-between border-t-4 border-t-amber-500">
+          <div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-md bg-amber-50 border border-amber-200 text-amber-800 font-bold text-xs">COT-1370-C · 8 Unidades</span>
+              <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-900 font-bold text-[11px]">VIG. 20/11/2026</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-tn-navy mt-4">Honeywell ScanPal EDA52 4G LTE</h3>
+            <p class="text-xs font-mono text-tn-muted mt-0.5">EDA52-11AE64N21RK + SVCEDA52-SG3N</p>
+
+            <ul class="mt-4 space-y-2 text-xs text-tn-ink">
+              <li class="flex items-start gap-2"><i data-lucide="radio" class="w-3.5 h-3.5 text-amber-600 shrink-0 mt-0.5"></i><span><strong>4G LTE</strong> + Wi-Fi AC + NFC · <strong>4 GB RAM / 64 GB</strong> · GMS</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="scan-barcode" class="w-3.5 h-3.5 text-amber-600 shrink-0 mt-0.5"></i><span>Imager 2D S0703 DataMatrix / PDF417 farmacéutico</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-600 shrink-0 mt-0.5"></i><span>Sellado <strong>IP67</strong> + <strong>Gold Maintenance 3 años</strong> fábrica</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="info" class="w-3.5 h-3.5 text-amber-600 shrink-0 mt-0.5"></i><span>Terminal + servicio (sin accesorios adicionales)</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-tn-border flex items-end justify-between">
+            <div>
+              <div class="text-[11px] text-tn-muted uppercase font-semibold">Neto Línea (8 uds.)</div>
+              <div class="text-xl font-black text-tn-navy">$ 6.176.312</div>
+              <div class="text-[11px] text-tn-muted">c/IVA: $ 7.349.811</div>
+            </div>
+            <div class="text-right">
+              <div class="text-[11px] text-tn-muted">Unitario Neto</div>
+              <div class="text-sm font-bold text-tn-primary">$ 772.039</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- COT-1370-D: Impresoras RRHH -->
+        <article class="tn-card p-6 flex flex-col justify-between border-t-4 border-t-tn-success">
+          <div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-md bg-emerald-50 border border-emerald-200 text-tn-success font-bold text-xs">COT-1370-D · 2 Unidades</span>
+              <span class="px-2 py-0.5 rounded bg-emerald-50 text-tn-success font-bold text-[11px]">OPCIÓN 1 A FIRME</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-tn-navy mt-4">Epson WorkForce Pro WF-C5891</h3>
+            <p class="text-xs font-mono text-tn-muted mt-0.5">P/N: C11CK27301 · PrecisionCore Heat-Free</p>
+
+            <ul class="mt-4 space-y-2 text-xs text-tn-ink">
+              <li class="flex items-start gap-2"><i data-lucide="zap" class="w-3.5 h-3.5 text-tn-success shrink-0 mt-0.5"></i><span>Multifunción color <strong>25 ppm</strong> · Dúplex 1 pasada ADF</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="lock" class="w-3.5 h-3.5 text-tn-success shrink-0 mt-0.5"></i><span>Seguridad RRHH: liberación <strong>PIN / LDAP / 802.1X</strong></span></li>
+              <li class="flex items-start gap-2"><i data-lucide="droplets" class="w-3.5 h-3.5 text-tn-success shrink-0 mt-0.5"></i><span>Tinta pigmentada DURABrite Ultra resistente al agua</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="layers" class="w-3.5 h-3.5 text-tn-success shrink-0 mt-0.5"></i><span>Opción base de inversión más eficiente; comparativa 3 modelos en folio D</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-tn-border flex items-end justify-between">
+            <div>
+              <div class="text-[11px] text-tn-muted uppercase font-semibold">Neto Línea (2 uds.)</div>
+              <div class="text-xl font-black text-tn-navy">$ 1.006.324</div>
+              <div class="text-[11px] text-tn-muted">c/IVA: $ 1.197.526</div>
+            </div>
+            <div class="text-right">
+              <div class="text-[11px] text-tn-muted">Unitario Neto</div>
+              <div class="text-sm font-bold text-tn-primary">$ 503.162</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bloque 2: Cómputo Corporativo Lenovo (COT-1370-A) -->
+    <section id="computo-lenovo" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-tn-border pb-4">
+        <div>
+          <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-tn-primary">
+            <i data-lucide="laptop" class="w-4 h-4"></i> Estándar Corporativo 3 Años On-Site + ADP
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy mt-1">
+            Cómputo Corporativo Lenovo · COT-1370-A (38 Equipos)
+          </h2>
+        </div>
+        <div class="text-left md:text-right">
+          <div class="text-xs text-tn-muted uppercase font-semibold">Subtotal Cómputo</div>
+          <div class="text-2xl font-black text-tn-primary">$ 41.633.922 <span class="text-xs font-medium text-tn-muted">neto ($ 49.544.367 c/IVA)</span></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Notebook Estándar -->
+        <article class="tn-card p-6 flex flex-col justify-between border-t-4 border-t-tn-primary">
+          <div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-md bg-blue-50 border border-blue-200 text-tn-primary font-bold text-xs">29 Unidades</span>
+              <span class="text-[11px] font-mono text-tn-muted">Ref. 21SG009HCL</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-tn-navy mt-4">Lenovo ThinkBook 14 / ThinkPad E14</h3>
+            <p class="text-xs text-tn-muted mt-0.5">Perfil Operación Administrativa, Finanzas & Calidad</p>
+
+            <ul class="mt-4 space-y-2 text-xs text-tn-ink">
+              <li class="flex items-start gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-tn-primary shrink-0 mt-0.5"></i><span><strong>Intel Core i5 / Core 5</strong> corporativo</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-tn-primary shrink-0 mt-0.5"></i><span><strong>16 GB RAM</strong> · <strong>512 GB SSD NVMe</strong></span></li>
+              <li class="flex items-start gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-tn-primary shrink-0 mt-0.5"></i><span>Pantalla 14" FHD / WUXGA antirreflejo · Win 11 Pro</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-tn-success shrink-0 mt-0.5"></i><span><strong>3 Años Garantía On-Site + ADP (36M)</strong> incluido</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-tn-border flex items-end justify-between">
+            <div>
+              <div class="text-[11px] text-tn-muted uppercase font-semibold">Neto Línea (29 uds.)</div>
+              <div class="text-xl font-black text-tn-navy">$ 28.710.000</div>
+              <div class="text-[11px] text-tn-muted">c/IVA: $ 34.164.900</div>
+            </div>
+            <div class="text-right">
+              <div class="text-[11px] text-tn-muted">Unitario Neto</div>
+              <div class="text-sm font-bold text-tn-primary">$ 990.000</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Notebook Jefaturas U7 -->
+        <article class="tn-card p-6 flex flex-col justify-between border-t-4 border-t-tn-navy">
+          <div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-md bg-slate-100 border border-slate-300 text-tn-navy font-bold text-xs">6 Unidades</span>
+              <span class="text-[11px] font-mono text-tn-muted">Ref. 21QD001FCL</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-tn-navy mt-4">Lenovo ThinkPad T14 Gen 6</h3>
+            <p class="text-xs text-tn-muted mt-0.5">Perfil Jefaturas, Dirección Técnica & Ingeniería</p>
+
+            <ul class="mt-4 space-y-2 text-xs text-tn-ink">
+              <li class="flex items-start gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-tn-navy shrink-0 mt-0.5"></i><span><strong>Intel Core Ultra 7 (U7)</strong> alto desempeño + NPU IA</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-tn-navy shrink-0 mt-0.5"></i><span><strong>32 GB RAM</strong> · <strong>512 GB SSD NVMe</strong></span></li>
+              <li class="flex items-start gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-tn-navy shrink-0 mt-0.5"></i><span>Pantalla 14" WUXGA IPS · Chasis Serie T · Win 11 Pro</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-tn-success shrink-0 mt-0.5"></i><span><strong>3 Años Garantía On-Site + ADP (36M)</strong> incluido</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-tn-border flex items-end justify-between">
+            <div>
+              <div class="text-[11px] text-tn-muted uppercase font-semibold">Neto Línea (6 uds.)</div>
+              <div class="text-xl font-black text-tn-navy">$ 9.900.000</div>
+              <div class="text-[11px] text-tn-muted">c/IVA: $ 11.781.000</div>
+            </div>
+            <div class="text-right">
+              <div class="text-[11px] text-tn-muted">Unitario Neto</div>
+              <div class="text-sm font-bold text-tn-primary">$ 1.650.000</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- All in One Neo 50a -->
+        <article class="tn-card p-6 flex flex-col justify-between border-t-4 border-t-indigo-600">
+          <div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="px-2.5 py-1 rounded-md bg-indigo-50 border border-indigo-200 text-indigo-800 font-bold text-xs">3 Unidades</span>
+              <span class="text-[11px] font-mono text-tn-muted">P/N: 13QH004HCS</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-tn-navy mt-4">Lenovo ThinkCentre Neo 50a 24</h3>
+            <p class="text-xs text-tn-muted mt-0.5">Estaciones Fijas Recepción, Bodega y Planta</p>
+
+            <ul class="mt-4 space-y-2 text-xs text-tn-ink">
+              <li class="flex items-start gap-2"><i data-lucide="cpu" class="w-3.5 h-3.5 text-indigo-600 shrink-0 mt-0.5"></i><span><strong>Intel Core i5 / Core 5</strong> escritorio corporativo</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="hard-drive" class="w-3.5 h-3.5 text-indigo-600 shrink-0 mt-0.5"></i><span><strong>16 GB RAM</strong> · <strong>512 GB SSD NVMe</strong></span></li>
+              <li class="flex items-start gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-600 shrink-0 mt-0.5"></i><span>All-in-One 23.8" FHD + teclado + mouse · Win 11 Pro</span></li>
+              <li class="flex items-start gap-2"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-tn-success shrink-0 mt-0.5"></i><span><strong>3 Años Garantía On-Site + ADP (36M)</strong> incluido</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-tn-border flex items-end justify-between">
+            <div>
+              <div class="text-[11px] text-tn-muted uppercase font-semibold">Neto Línea (3 uds.)</div>
+              <div class="text-xl font-black text-tn-navy">$ 3.023.922</div>
+              <div class="text-[11px] text-tn-muted">c/IVA: $ 3.598.467</div>
+            </div>
+            <div class="text-right">
+              <div class="text-[11px] text-tn-muted">Unitario Neto</div>
+              <div class="text-sm font-bold text-tn-primary">$ 1.007.974</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Especial: Trazabilidad SAP Radiofármacos -->
+    <section id="sap-handhelds" class="tn-card p-6 sm:p-8 bg-gradient-to-br from-white to-tn-surface">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="shield-alert" class="w-4 h-4"></i> Exigencia Normativa Transporte de Radiofármacos
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy">
+            Despacho Digital con Trazabilidad &amp; Firma en SAP
+          </h2>
+          <p class="text-sm text-tn-muted leading-relaxed">
+            Los 8 terminales Honeywell ScanPal EDA52 (COT-1370-C) aseguran el registro obligatorio en ruta del <strong class="text-tn-ink">RUT del conductor, patente del vehículo autorizado y firma electrónica conforme en clínica</strong> con respaldo Gold Maintenance de 3 años.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2 text-xs">
+            <div class="p-3.5 rounded-xl bg-white border border-tn-border">
+              <div class="font-bold text-tn-navy mb-1 flex items-center gap-1.5"><i data-lucide="scan-barcode" class="w-4 h-4 text-tn-cyan"></i> Captura 2D Rápida</div>
+              <p class="text-tn-muted">Lectura de lotes e identificación DataMatrix mediante imager S0703.</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-tn-border">
+              <div class="font-bold text-tn-navy mb-1 flex items-center gap-1.5"><i data-lucide="wifi-off" class="w-4 h-4 text-tn-cyan"></i> Operación Offline</div>
+              <p class="text-tn-muted">Firma conforme en búnkeres clínicos y sincronización automática vía 4G LTE.</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-white border border-tn-border">
+              <div class="font-bold text-tn-navy mb-1 flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-tn-success"></i> Gold 3 Años</div>
+              <p class="text-tn-muted">Cobertura oficial Honeywell de 36 meses para continuidad de despacho.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-tn-navy text-white rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-white/15 pb-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-tn-cyanLight">Flujo Operacional en Ruta</span>
+            <span class="text-[11px] font-mono text-slate-300">EDA52 → SAP</span>
+          </div>
+          <ol class="space-y-3 text-xs">
+            <li class="flex gap-3">
+              <span class="w-6 h-6 rounded-full bg-tn-cyan text-tn-navy font-extrabold flex items-center justify-center shrink-0">1</span>
+              <div><strong class="block text-white">Validación en Planta</strong><span class="text-slate-300">Escaneo de despacho, asignación de chofer y patente en ruta.</span></div>
+            </li>
+            <li class="flex gap-3">
+              <span class="w-6 h-6 rounded-full bg-tn-cyan text-tn-navy font-extrabold flex items-center justify-center shrink-0">2</span>
+              <div><strong class="block text-white">Entrega en Clínica Receptora</strong><span class="text-slate-300">Firma digital del tecnólogo médico en pantalla 5.5" Gorilla Glass.</span></div>
+            </li>
+            <li class="flex gap-3">
+              <span class="w-6 h-6 rounded-full bg-tn-cyan text-tn-navy font-extrabold flex items-center justify-center shrink-0">3</span>
+              <div><strong class="block text-white">Respaldo Auditado SAP</strong><span class="text-slate-300">Estampa horaria + comprobante adjunto automáticamente a la guía.</span></div>
+            </li>
+          </ol>
+          <div class="pt-3 border-t border-white/15 flex items-center justify-between text-xs">
+            <span class="text-slate-300">Vigencia precio especial Honeywell:</span>
+            <span class="font-bold text-amber-300">Hasta 20/11/2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Documentos Oficiales por Folio (COT-1370-A / C / D / E) -->
+    <section id="documentos" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-tn-border pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Detalle Oficial por Documento Emitido</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy mt-1">
+            Expediente Comercial Positronpharma (4 Folios)
+          </h2>
+        </div>
+        <div class="flex flex-wrap gap-2 no-print" role="tablist">
+          <button onclick="selectDocTab('A')" id="tab-doc-A" class="tn-tab-btn active px-3.5 py-2 rounded-lg border border-tn-border text-xs font-bold transition">COT-1370-A · Cómputo</button>
+          <button onclick="selectDocTab('C')" id="tab-doc-C" class="tn-tab-btn px-3.5 py-2 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-bold transition">COT-1370-C · Handhelds</button>
+          <button onclick="selectDocTab('D')" id="tab-doc-D" class="tn-tab-btn px-3.5 py-2 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-bold transition">COT-1370-D · Impresoras</button>
+          <button onclick="selectDocTab('E')" id="tab-doc-E" class="tn-tab-btn px-3.5 py-2 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-bold transition">COT-1370-E · Tablets</button>
+        </div>
+      </div>
+
+      <div id="doc-panel" class="tn-card p-6 sm:p-8"></div>
+    </section>
+
+    <!-- Simulador Interactivo Financiero & Parque -->
+    <section id="simulador" class="space-y-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Herramienta de Evaluación Comercial</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy mt-1">
+          Simulador del Parque TI &amp; Modalidades de Pago
+        </h2>
+        <p class="text-sm text-tn-muted mt-2">
+          Ajusta cantidades, selecciona el modelo de impresora RRHH de COT-1370-D y compara <strong class="text-tn-ink">Compra Directa</strong>, <strong class="text-tn-ink">3 Cuotas</strong> o <strong class="text-tn-ink">Leasing Operativo 36 Meses referencial</strong>.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Panel de Configuración -->
+        <div class="lg:col-span-7 tn-card p-6 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-3 border-b border-tn-border pb-4">
+            <h3 class="text-base font-extrabold text-tn-navy flex items-center gap-2">
+              <i data-lucide="sliders" class="w-4 h-4 text-tn-cyan"></i> Composición del Parque
+            </h3>
+            <button onclick="resetBaseline()" class="px-3 py-1.5 rounded-lg bg-tn-surface hover:bg-blue-50 border border-tn-border text-xs font-bold text-tn-primary transition">
+              Restaurar Base 53 Eq.
+            </button>
+          </div>
+
+          <div class="space-y-4">
+            <!-- E14 -->
+            <div class="flex items-center justify-between gap-4 p-3 rounded-xl bg-tn-surface/60 border border-tn-border/70">
               <div>
-                <strong class="text-white text-sm">Operación Offline en Búnkeres Clínicos:</strong>
-                <p class="text-xs text-slate-400">Permite firmar en subterráneos sin cobertura celular y sincroniza los datos al regresar al furgón.</p>
+                <div class="text-xs font-bold text-tn-primary uppercase">COT-1370-A · Cómputo</div>
+                <div class="text-sm font-bold text-tn-navy">Laptop Estándar Lenovo i5 · 16 GB / 512 GB · 3Y+ADP</div>
+                <div class="text-xs text-tn-muted">Unitario neto: $ 990.000</div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <button onclick="updateQty('e14', -1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">-</button>
+                <span id="qty-e14" class="w-9 text-center font-extrabold text-tn-primary">29</span>
+                <button onclick="updateQty('e14', 1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">+</button>
+              </div>
+            </div>
+
+            <!-- T14 -->
+            <div class="flex items-center justify-between gap-4 p-3 rounded-xl bg-tn-surface/60 border border-tn-border/70">
+              <div>
+                <div class="text-xs font-bold text-tn-primary uppercase">COT-1370-A · Cómputo</div>
+                <div class="text-sm font-bold text-tn-navy">Laptop Jefaturas Lenovo U7 · 32 GB / 512 GB · 3Y+ADP</div>
+                <div class="text-xs text-tn-muted">Unitario neto: $ 1.650.000</div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <button onclick="updateQty('t14', -1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">-</button>
+                <span id="qty-t14" class="w-9 text-center font-extrabold text-tn-primary">6</span>
+                <button onclick="updateQty('t14', 1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">+</button>
+              </div>
+            </div>
+
+            <!-- AIO -->
+            <div class="flex items-center justify-between gap-4 p-3 rounded-xl bg-tn-surface/60 border border-tn-border/70">
+              <div>
+                <div class="text-xs font-bold text-tn-primary uppercase">COT-1370-A · Cómputo</div>
+                <div class="text-sm font-bold text-tn-navy">All-in-One Lenovo Neo 50a 24" i5 · 16 GB / 512 GB · 3Y+ADP</div>
+                <div class="text-xs text-tn-muted">Unitario neto: $ 1.007.974</div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <button onclick="updateQty('aio', -1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">-</button>
+                <span id="qty-aio" class="w-9 text-center font-extrabold text-tn-primary">3</span>
+                <button onclick="updateQty('aio', 1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">+</button>
+              </div>
+            </div>
+
+            <!-- EDA52 -->
+            <div class="flex items-center justify-between gap-4 p-3 rounded-xl bg-amber-50/50 border border-amber-200/80">
+              <div>
+                <div class="text-xs font-bold text-amber-800 uppercase">COT-1370-C · A Firme</div>
+                <div class="text-sm font-bold text-tn-navy">Handheld Honeywell EDA52 4G + Gold 3 Años</div>
+                <div class="text-xs text-tn-muted">Unitario neto: $ 772.039</div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <button onclick="updateQty('eda52', -1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">-</button>
+                <span id="qty-eda52" class="w-9 text-center font-extrabold text-tn-primary">8</span>
+                <button onclick="updateQty('eda52', 1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">+</button>
+              </div>
+            </div>
+
+            <!-- Tablets -->
+            <div class="flex items-center justify-between gap-4 p-3 rounded-xl bg-cyan-50/50 border border-cyan-200/80">
+              <div>
+                <div class="text-xs font-bold text-tn-primary uppercase">COT-1370-E · A Firme</div>
+                <div class="text-sm font-bold text-tn-navy">Tablet Lenovo IdeaTab 11" 5G Kit (KB + Pen)</div>
+                <div class="text-xs text-tn-muted">Unitario neto: $ 301.873</div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <button onclick="updateQty('tablet', -1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">-</button>
+                <span id="qty-tablet" class="w-9 text-center font-extrabold text-tn-primary">5</span>
+                <button onclick="updateQty('tablet', 1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">+</button>
+              </div>
+            </div>
+
+            <!-- Impresoras con selector COT-1370-D -->
+            <div class="p-3 rounded-xl bg-emerald-50/50 border border-emerald-200/80 space-y-2.5">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <div class="text-xs font-bold text-tn-success uppercase">COT-1370-D · A Firme</div>
+                  <div class="text-sm font-bold text-tn-navy">Multifunción Color RRHH</div>
+                  <div class="text-xs text-tn-muted" id="imp-unit-label">Unitario neto: $ 503.162</div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <button onclick="updateQty('imp', -1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">-</button>
+                  <span id="qty-imp" class="w-9 text-center font-extrabold text-tn-primary">2</span>
+                  <button onclick="updateQty('imp', 1)" class="w-8 h-8 rounded-lg bg-white border border-tn-border hover:bg-tn-navy hover:text-white font-bold transition">+</button>
+                </div>
+              </div>
+              <div>
+                <label for="printer-model" class="block text-[11px] font-bold text-tn-muted uppercase mb-1">Modelo seleccionado (COT-1370-D):</label>
+                <select id="printer-model" onchange="calculateTotal()" class="w-full rounded-lg border border-tn-border bg-white px-3 py-2 text-xs font-semibold text-tn-navy focus:outline-none focus:ring-2 focus:ring-tn-cyan">
+                  <option value="wfc5891" selected>Opción 1 (Base A Firme): Epson WorkForce Pro WF-C5891 — $ 503.162 neto/u</option>
+                  <option value="emc800">Opción 2: Epson WorkForce Pro EM-C800 — $ 570.218 neto/u</option>
+                  <option value="l8970">Opción 3: Brother MFC-L8970CDW Láser Color — $ 817.938 neto/u</option>
+                </select>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="lg:col-span-5 bg-slate-950 p-6 rounded-2xl border border-slate-800">
-          <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
-            <i data-lucide="cpu" class="w-5 h-5 text-amber-400"></i> Comparativa de Handhelds
-          </h3>
-          <div class="space-y-3">
-            <div class="p-3 rounded-xl bg-amber-950/20 border border-amber-800/40">
-              <div class="flex justify-between items-center">
-                <span class="font-bold text-amber-400 text-sm">Zebra TC27 5G (Recomendada)</span>
-                <span class="text-xs font-bold text-white">$22.833/mes</span>
+        <!-- Panel de Resultados & Gráfica -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="tn-card p-6 bg-tn-navy text-white border-tn-navy">
+            <div class="flex items-center justify-between border-b border-white/15 pb-3">
+              <div>
+                <span class="text-[11px] uppercase tracking-wider text-tn-cyanLight font-bold">Total Simulado</span>
+                <div class="text-sm text-slate-300"><span id="total-units">53</span> equipos seleccionados</div>
               </div>
-              <p class="text-xs text-slate-400 mt-1">Conectividad celular 5G, lector 2D, estándar en salud, certificación IP68 y 3 años Zebra OneCare.</p>
+              <span id="budget-badge" class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                Bajo Ppto. Cliente
+              </span>
             </div>
-            <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
-              <div class="flex justify-between items-center">
-                <span class="font-bold text-slate-200 text-sm">Nustar 65 (Económica)</span>
-                <span class="text-xs font-bold text-slate-300">$16.090/mes</span>
+
+            <!-- Selector de Modalidad -->
+            <div class="grid grid-cols-3 gap-2 mt-4 no-print">
+              <button onclick="setPaymentMode('directa')" id="mode-directa" class="tn-mode-btn active px-2 py-2 rounded-lg border border-white/20 text-[11px] font-bold transition">Contado / 30d</button>
+              <button onclick="setPaymentMode('cuotas3')" id="mode-cuotas3" class="tn-mode-btn px-2 py-2 rounded-lg border border-white/20 bg-white/5 text-[11px] font-bold transition">3 Cuotas</button>
+              <button onclick="setPaymentMode('leasing36')" id="mode-leasing36" class="tn-mode-btn px-2 py-2 rounded-lg border border-white/20 bg-white/5 text-[11px] font-bold transition">Leasing 36M</button>
+            </div>
+
+            <!-- Slider Factor Leasing -->
+            <div id="leasing-controls" class="hidden mt-4 p-3 rounded-xl bg-white/10 border border-white/15 space-y-2 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-200 font-semibold">Factor mensual referencial:</span>
+                <span id="leasing-factor-label" class="font-extrabold text-tn-cyanLight">3,00% / mes</span>
               </div>
-              <p class="text-xs text-slate-400 mt-1">Pantalla 6.5", Android 14, 6GB RAM, IP67. Incluye funda protectora y vidrio templado.</p>
+              <input type="range" id="leasing-factor" min="2.80" max="3.30" step="0.05" value="3.00" oninput="calculateTotal()" class="w-full accent-tn-cyan" />
+              <p class="text-[11px] text-slate-300">Cuota mensual referencial sujeta a evaluación de entidad financiera.</p>
+            </div>
+
+            <div class="mt-5">
+              <div id="primary-metric-label" class="text-xs uppercase tracking-wider text-slate-300 font-semibold">Inversión Total Neta</div>
+              <div id="primary-metric-value" class="text-3xl sm:text-4xl font-black text-tn-cyanLight mt-1">$ 50.325.923</div>
+              <div id="secondary-metric-value" class="text-xs text-slate-300 mt-1">IVA 19%: $ 9.561.925 · Total c/IVA: $ 59.887.848</div>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-white/15 space-y-2 text-xs">
+              <div class="flex justify-between">
+                <span class="text-slate-300">Bloque A Firme (C + D + E):</span>
+                <span id="subtotal-firme" class="font-bold text-white">$ 8.692.001 neto</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-300">Cómputo Lenovo (COT-1370-A):</span>
+                <span id="subtotal-computo" class="font-bold text-white">$ 41.633.922 neto</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slate-300">Vs. Presupuesto ($ 52.050.000):</span>
+                <span id="budget-diff" class="font-bold text-emerald-300">−$ 1.724.077</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tn-card p-6">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-tn-muted mb-3">Distribución de Inversión Neta</h4>
+            <div class="h-56">
+              <canvas id="budgetChart"></canvas>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Simulador Interactivo de Leasing -->
-  <section id="simulador" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 slide-section">
-    <div class="text-center max-w-3xl mx-auto mb-12">
-      <span class="text-sky-400 text-xs font-semibold uppercase tracking-wider">Herramienta de Decisión Financiera</span>
-      <h2 class="text-3xl font-black text-white mt-1">Simulador Dinámico de Cuotas Leasing 36 Meses</h2>
-      <p class="text-sm text-slate-400 mt-2">
-        Ajusta las cantidades por línea de equipo o añade kits de accesorios para recalcular la cuota mensual neta en tiempo real.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-      
-      <!-- Controles del Simulador -->
-      <div class="lg:col-span-7 bg-slate-900/80 border border-slate-800 rounded-2xl p-6 space-y-5">
-        <h3 class="text-base font-bold text-white flex items-center gap-2 border-b border-slate-800 pb-3">
-          <i data-lucide="sliders" class="w-4 h-4 text-sky-400"></i> Composición del Parque (Unidades)
-        </h3>
-
-        <!-- Fila 1: E14 -->
-        <div class="flex items-center justify-between text-sm">
-          <div>
-            <div class="font-semibold text-white">ThinkPad E14 Gen 7 (Ultra 5)</div>
-            <div class="text-xs text-slate-400">Cuota unitaria: $34.200/mes</div>
-          </div>
-          <div class="flex items-center space-x-3">
-            <button onclick="updateQty('e14', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
-            <span id="qty-e14" class="w-8 text-center font-bold text-sky-400">29</span>
-            <button onclick="updateQty('e14', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
-          </div>
+    <!-- Footer Corporativo TECNOVOA SPA & Datos OC -->
+    <footer class="tn-card p-6 sm:p-8 bg-white border-t-4 border-t-tn-navy">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+        <div class="space-y-2">
+          <img src="assets/logo_tecnovoa.png" alt="TECNOVOA" class="h-7 w-auto" onerror="this.style.display='none'" />
+          <div class="font-extrabold text-tn-navy text-sm pt-1">TECNOVOA SPA</div>
+          <p class="text-tn-muted">RUT: 77.194.064-1 · Unidad 06: SW y HW EndUser</p>
+          <p class="text-tn-muted">Av. Pedro de Valdivia N° 273, Of. 606, Providencia, Santiago</p>
         </div>
 
-        <!-- Fila 2: T14 -->
-        <div class="flex items-center justify-between text-sm">
-          <div>
-            <div class="font-semibold text-white">ThinkPad T14 Gen 6 (Ultra 7)</div>
-            <div class="text-xs text-slate-400">Cuota unitaria: $49.200/mes</div>
-          </div>
-          <div class="flex items-center space-x-3">
-            <button onclick="updateQty('t14', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
-            <span id="qty-t14" class="w-8 text-center font-bold text-sky-400">6</span>
-            <button onclick="updateQty('t14', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
-          </div>
+        <div class="space-y-1.5">
+          <div class="font-extrabold text-tn-navy text-xs uppercase tracking-wider">Ejecutivo Comercial</div>
+          <p class="font-bold text-tn-primary text-sm">Cristián Díaz Urra</p>
+          <p class="text-tn-ink">Tel / WhatsApp: +56 9 4943 8288</p>
+          <p class="text-tn-ink">Email: cristian@tecnovoa.cl · www.tecnovoa.cl</p>
         </div>
 
-        <!-- Fila 3: AIO -->
-        <div class="flex items-center justify-between text-sm">
-          <div>
-            <div class="font-semibold text-white">All in One Neo 50a 24"</div>
-            <div class="text-xs text-slate-400">Cuota unitaria: $35.333/mes</div>
-          </div>
-          <div class="flex items-center space-x-3">
-            <button onclick="updateQty('aio', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
-            <span id="qty-aio" class="w-8 text-center font-bold text-sky-400">3</span>
-            <button onclick="updateQty('aio', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
-          </div>
-        </div>
-
-        <!-- Fila 4: Zebra -->
-        <div class="flex items-center justify-between text-sm">
-          <div>
-            <div class="font-semibold text-white">Handheld Zebra TC27 5G</div>
-            <div class="text-xs text-slate-400">Cuota unitaria: $22.833/mes</div>
-          </div>
-          <div class="flex items-center space-x-3">
-            <button onclick="updateQty('zebra', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
-            <span id="qty-zebra" class="w-8 text-center font-bold text-sky-400">8</span>
-            <button onclick="updateQty('zebra', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
-          </div>
-        </div>
-
-        <!-- Fila 5: Tablets -->
-        <div class="flex items-center justify-between text-sm">
-          <div>
-            <div class="font-semibold text-white">Tablet Lenovo IdeaTab 11" 5G</div>
-            <div class="text-xs text-slate-400">Cuota unitaria: $10.430/mes</div>
-          </div>
-          <div class="flex items-center space-x-3">
-            <button onclick="updateQty('tablet', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
-            <span id="qty-tablet" class="w-8 text-center font-bold text-sky-400">5</span>
-            <button onclick="updateQty('tablet', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
-          </div>
-        </div>
-
-        <!-- Fila 6: Impresoras -->
-        <div class="flex items-center justify-between text-sm border-b border-slate-800 pb-4">
-          <div>
-            <div class="font-semibold text-white">Dúo Impresoras RRHH (Láser + Tanque)</div>
-            <div class="text-xs text-slate-400">Cuota combinada: $35.000/mes</div>
-          </div>
-          <div class="flex items-center space-x-3">
-            <button onclick="updateQty('imp', -1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">-</button>
-            <span id="qty-imp" class="w-8 text-center font-bold text-sky-400">1</span>
-            <button onclick="updateQty('imp', 1)" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-200 hover:bg-slate-700 flex items-center justify-center font-bold">+</button>
-          </div>
-        </div>
-
-        <!-- Add-ons Accesorios -->
-        <div class="pt-2">
-          <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3">Kits de Accesorios Opcionales:</h4>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-            <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-slate-700">
-              <input type="checkbox" id="kit-movilidad" onchange="calculateTotal()" class="rounded text-sky-500 bg-slate-900 border-slate-700">
-              <span><strong>Kit Movilidad:</strong> Mochila B210 + Candado (+$750/mes x laptop)</span>
-            </label>
-            <label class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer hover:border-slate-700">
-              <input type="checkbox" id="kit-pantallas" onchange="calculateTotal()" class="rounded text-sky-500 bg-slate-900 border-slate-700">
-              <span><strong>Kit 2da Pantalla:</strong> ThinkVision 27" IPS (+$3.400/mes x 10 puestos)</span>
-            </label>
-          </div>
+        <div class="space-y-1.5">
+          <div class="font-extrabold text-tn-navy text-xs uppercase tracking-wider">Datos Facturación &amp; Transferencia</div>
+          <p class="text-tn-ink"><strong>Banco Santander</strong> · Cta. Cte. N° <strong>76189390</strong></p>
+          <p class="text-tn-ink">Notificar pago / OC: <strong>finanzas@tecnovoa.cl</strong></p>
+          <p class="text-tn-muted pt-1">Indicar folio correspondiente (COT-1370-A / C / D / E) en la Orden de Compra.</p>
         </div>
       </div>
+    </footer>
 
-      <!-- Resultados del Resumen Financiero -->
-      <div class="lg:col-span-5 bg-gradient-to-b from-slate-900 to-slate-950 border border-sky-500/30 rounded-2xl p-6 relative overflow-hidden shadow-2xl">
-        <div class="absolute -right-12 -top-12 w-40 h-40 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <h3 class="text-base font-bold text-white flex items-center gap-2">
-          <i data-lucide="receipt" class="w-5 h-5 text-sky-400"></i> Resumen de Cuota Mensual
-        </h3>
-
-        <div class="mt-6 p-5 rounded-xl bg-slate-950 border border-slate-800/80 text-center">
-          <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Cuota Mensual Neta (36 Meses)</div>
-          <div id="total-cuota" class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-400 mt-2">$1.662.814</div>
-          <div class="text-xs text-slate-400 mt-1">CLP Neto + IVA (Facturación mensual)</div>
-          <div id="total-cuota-usd" class="text-xs text-slate-500 mt-0.5">~USD 1.703 / mes (Ref. $976)</div>
-        </div>
-
-        <div class="mt-6 space-y-2.5 text-xs">
-          <div class="flex justify-between text-slate-300">
-            <span>Total Equipos Activos:</span>
-            <span id="res-equipos" class="font-bold text-white">53 unidades</span>
-          </div>
-          <div class="flex justify-between text-slate-300">
-            <span>Capex Total de Referencia:</span>
-            <span id="res-capex" class="font-bold text-white">$56.050.000 neto</span>
-          </div>
-          <div class="flex justify-between text-slate-300">
-            <span>Soporte & Garantía:</span>
-            <span class="font-semibold text-emerald-400">3 Años On-site Premier</span>
-          </div>
-          <div class="flex justify-between text-slate-300">
-            <span>Tratamiento Tributario:</span>
-            <span class="font-semibold text-sky-400">100% Gasto Operacional (OPEX)</span>
-          </div>
-        </div>
-
-        <div class="mt-8 pt-6 border-t border-slate-800">
-          <button onclick="window.print()" class="w-full py-3 bg-sky-500 hover:bg-sky-400 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition shadow-lg shadow-sky-500/20 flex items-center justify-center gap-2">
-            <i data-lucide="printer" class="w-4 h-4"></i> Exportar Simulación / Imprimir
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer Corporativo -->
-  <footer class="border-t border-slate-800 bg-slate-950 py-12 text-slate-400 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-      <div class="flex items-center space-x-3">
-        <span class="font-bold text-white text-base">TECNOVOA SPA</span>
-        <span>·</span>
-        <span>Av. Pedro de Valdivia N° 273, Of. 606, Providencia, Santiago</span>
-      </div>
-      <div class="text-center sm:text-right">
-        <div>Contacto Comercial: <strong>Cristian Díaz</strong> | <a href="mailto:cristian@tecnovoa.cl" class="text-sky-400 hover:underline">cristian@tecnovoa.cl</a></div>
-        <div class="mt-0.5 text-slate-500">Propuesta confidencial preparada exclusivamente para Positronpharma S.A.</div>
-      </div>
-    </div>
-  </footer>
+  </main>
 
   <script>
-    // Inicializar Iconos Lucide
-    lucide.createIcons();
+    const BASE_QUANTITIES = { e14: 29, t14: 6, aio: 3, eda52: 8, tablet: 5, imp: 2 };
+    let quantities = { ...BASE_QUANTITIES };
+    let paymentMode = 'directa';
+    const CLIENT_BUDGET = 52050000;
 
-    // Estado del Simulador
-    const prices = {
-      e14: 34200,
-      t14: 49200,
-      aio: 35333,
-      zebra: 22833,
-      tablet: 10430,
-      imp: 35000
+    const UNIT_PRICES = {
+      e14: 990000,
+      t14: 1650000,
+      aio: 1007974,
+      eda52: 772039,
+      tablet: 301873,
     };
 
-    const capex = {
-      e14: 1150000,
-      t14: 1700000,
-      aio: 1200000,
-      zebra: 750000,
-      tablet: 350000,
-      imp: 1150000
+    const PRINTER_OPTIONS = {
+      wfc5891: { name: 'Epson WorkForce Pro WF-C5891 (C11CK27301)', price: 503162 },
+      emc800: { name: 'Epson WorkForce Pro EM-C800 (C11CK19301)', price: 570218 },
+      l8970: { name: 'Brother MFC-L8970CDW Láser Color', price: 817938 },
     };
 
-    let quantities = {
-      e14: 29,
-      t14: 6,
-      aio: 3,
-      zebra: 8,
-      tablet: 5,
-      imp: 1
+    const DOC_FOLIOS = {
+      A: {
+        folio: 'COT-1370-A',
+        title: 'Parque Cómputo Corporativo Lenovo (38 Equipos)',
+        badge: 'Estándar Corporativo 3 Años On-Site + ADP',
+        vigencia: '15–30/11/2026',
+        entrega: '5–10 días hábiles tras recepción OC',
+        rows: [
+          ['Notebook Estándar Lenovo i5 · 16 GB / 512 GB · 3Y On-Site + ADP (Ref. 21SG009HCL)', '29', '$ 990.000', '$ 28.710.000'],
+          ['Notebook Jefaturas Lenovo Ultra 7 · 32 GB / 512 GB · 3Y On-Site + ADP (Ref. 21QD001FCL)', '6', '$ 1.650.000', '$ 9.900.000'],
+          ['All-in-One Lenovo Neo 50a 24" i5 · 16 GB / 512 GB · 3Y On-Site + ADP (13QH004HCS)', '3', '$ 1.007.974', '$ 3.023.922'],
+        ],
+        neto: '$ 41.633.922',
+        iva: '$ 7.910.445',
+        total: '$ 49.544.367',
+        note: 'Incluye garantía 3 años On-Site y cobertura de Daño Accidental (ADP) de fábrica para las 38 unidades.',
+      },
+      C: {
+        folio: 'COT-1370-C',
+        title: 'Handhelds Honeywell ScanPal EDA52 + Gold 3 Años (8 Unidades)',
+        badge: 'A FIRME · Despacho Radiofármacos SAP',
+        vigencia: 'Especial hasta 20/11/2026',
+        entrega: 'Importación / despacho coordinado tras OC',
+        rows: [
+          ['Honeywell ScanPal EDA52 4G LTE · 4 GB / 64 GB · Imager 2D S0703 · IP67 · GMS (EDA52-11AE64N21RK) + Gold Maintenance 3 Años (SVCEDA52-SG3N)', '8', '$ 772.039', '$ 6.176.312'],
+        ],
+        neto: '$ 6.176.312',
+        iva: '$ 1.173.499',
+        total: '$ 7.349.811',
+        note: 'Configuración sin accesorios adicionales. Incluye servicio oficial Honeywell Gold Maintenance por 36 meses.',
+      },
+      D: {
+        folio: 'COT-1370-D',
+        title: 'Impresoras Multifunción Color RRHH — Comparativa 3 Modelos (2 Unidades)',
+        badge: 'A FIRME · Opción 1 Seleccionada',
+        vigencia: 'Hasta 30/11/2026',
+        entrega: 'Stock inmediato (3–5 días hábiles)',
+        rows: [
+          ['Opción 1 (Base A Firme): Epson WorkForce Pro WF-C5891 (C11CK27301) · 25 ppm · PIN/LDAP', '2', '$ 503.162', '$ 1.006.324'],
+          ['Opción 2 (Alternativa): Epson WorkForce Pro EM-C800 (C11CK19301) · Alta capacidad', '2', '$ 570.218', '$ 1.140.436'],
+          ['Opción 3 (Alternativa Láser): Brother MFC-L8970CDW · Láser color departamental', '2', '$ 817.938', '$ 1.635.876'],
+        ],
+        neto: '$ 1.006.324 (Base WF-C5891)',
+        iva: '$ 191.202',
+        total: '$ 1.197.526',
+        note: 'Al elegir Opción 1 WF-C5891 como base a firme, la línea suma $ 1.006.324 neto ($ 1.197.526 c/IVA).',
+      },
+      E: {
+        folio: 'COT-1370-E',
+        title: 'Tablets Lenovo IdeaTab 11" 2.5K 5G Kit (5 Unidades)',
+        badge: 'A FIRME · Stock Inmediato',
+        vigencia: '15–30/11/2026',
+        entrega: '3–5 días hábiles tras recepción OC',
+        rows: [
+          ['Lenovo IdeaTab 11" 2.5K 5G (ZAFM0221CL) · MediaTek D6300 · 8 GB / 256 GB · Android 15 · Incluye Folio Keyboard + Lenovo Tab Pen', '5', '$ 301.873', '$ 1.509.365'],
+        ],
+        neto: '$ 1.509.365',
+        iva: '$ 286.779',
+        total: '$ 1.796.144',
+        note: 'Kit completo listo para operación en terreno y planta con teclado Folio y lápiz óptico incluidos.',
+      },
     };
+
+    let budgetChart = null;
+
+    function fmtCLP(val) {
+      return '$ ' + Math.round(val).toLocaleString('es-CL');
+    }
+
+    function selectDocTab(code) {
+      ['A', 'C', 'D', 'E'].forEach((k) => {
+        const btn = document.getElementById(`tab-doc-${k}`);
+        if (k === code) {
+          btn.classList.add('active');
+          btn.classList.remove('bg-white', 'text-tn-ink');
+        } else {
+          btn.classList.remove('active');
+          btn.classList.add('bg-white', 'text-tn-ink');
+        }
+      });
+
+      const doc = DOC_FOLIOS[code];
+      const rowsHtml = doc.rows.map((r) => `
+        <tr class="border-b border-tn-border/70">
+          <td class="py-3 pr-4 font-medium text-tn-ink">${r[0]}</td>
+          <td class="py-3 px-3 text-center font-bold text-tn-navy">${r[1]}</td>
+          <td class="py-3 px-3 text-right font-semibold text-tn-muted">${r[2]}</td>
+          <td class="py-3 pl-3 text-right font-extrabold text-tn-navy">${r[3]}</td>
+        </tr>
+      `).join('');
+
+      document.getElementById('doc-panel').innerHTML = `
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-tn-border pb-4">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-1 rounded-md bg-tn-navy text-white font-bold text-xs">${doc.folio}</span>
+              <span class="px-2.5 py-1 rounded-md bg-tn-surface border border-tn-border text-tn-primary font-bold text-xs">${doc.badge}</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-tn-navy mt-2">${doc.title}</h3>
+          </div>
+          <div class="text-xs text-tn-muted md:text-right space-y-0.5">
+            <div><strong>Vigencia:</strong> ${doc.vigencia}</div>
+            <div><strong>Entrega:</strong> ${doc.entrega}</div>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto mt-4">
+          <table class="w-full text-xs text-left">
+            <thead>
+              <tr class="border-b-2 border-tn-border text-tn-muted uppercase tracking-wider">
+                <th class="py-2.5 pr-4">Descripción Técnica / SKU</th>
+                <th class="py-2.5 px-3 text-center">Cant.</th>
+                <th class="py-2.5 px-3 text-right">Unit. Neto</th>
+                <th class="py-2.5 pl-3 text-right">Total Neto</th>
+              </tr>
+            </thead>
+            <tbody>${rowsHtml}</tbody>
+          </table>
+        </div>
+
+        <div class="mt-5 pt-4 border-t border-tn-border flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <p class="text-xs text-tn-muted max-w-xl">${doc.note}</p>
+          <div class="bg-tn-surface border border-tn-border rounded-xl px-4 py-3 text-right shrink-0 space-y-0.5 text-xs">
+            <div><span class="text-tn-muted">Subtotal Neto:</span> <strong class="text-tn-navy text-sm">${doc.neto}</strong></div>
+            <div><span class="text-tn-muted">IVA 19%:</span> <strong class="text-tn-ink">${doc.iva}</strong></div>
+            <div><span class="text-tn-muted">Total c/IVA:</span> <strong class="text-tn-primary text-sm">${doc.total}</strong></div>
+          </div>
+        </div>
+      `;
+    }
 
     function updateQty(item, delta) {
       quantities[item] = Math.max(0, quantities[item] + delta);
-      document.getElementById('qty-' + item).innerText = quantities[item];
+      document.getElementById(`qty-${item}`).innerText = quantities[item];
+      calculateTotal();
+    }
+
+    function resetBaseline() {
+      quantities = { ...BASE_QUANTITIES };
+      Object.keys(BASE_QUANTITIES).forEach((k) => {
+        document.getElementById(`qty-${k}`).innerText = quantities[k];
+      });
+      document.getElementById('printer-model').value = 'wfc5891';
+      setPaymentMode('directa');
+    }
+
+    function setPaymentMode(mode) {
+      paymentMode = mode;
+      ['directa', 'cuotas3', 'leasing36'].forEach((m) => {
+        const btn = document.getElementById(`mode-${m}`);
+        if (m === mode) {
+          btn.classList.add('active');
+          btn.classList.remove('bg-white/5');
+        } else {
+          btn.classList.remove('active');
+          btn.classList.add('bg-white/5');
+        }
+      });
+      const leasingBox = document.getElementById('leasing-controls');
+      leasingBox.classList.toggle('hidden', mode !== 'leasing36');
       calculateTotal();
     }
 
     function calculateTotal() {
-      let totalCuota = 0;
-      let totalCapex = 0;
-      let totalEquipos = 0;
+      const printerKey = document.getElementById('printer-model').value;
+      const printer = PRINTER_OPTIONS[printerKey];
+      document.getElementById('imp-unit-label').innerText = `Unitario neto: ${fmtCLP(printer.price)}`;
 
-      for (let item in quantities) {
-        totalCuota += quantities[item] * prices[item];
-        totalCapex += quantities[item] * capex[item];
-        if (item === 'imp') {
-          totalEquipos += quantities[item] * 2; // Láser + Tanque
-        } else {
-          totalEquipos += quantities[item];
-        }
+      const sE14 = quantities.e14 * UNIT_PRICES.e14;
+      const sT14 = quantities.t14 * UNIT_PRICES.t14;
+      const sAIO = quantities.aio * UNIT_PRICES.aio;
+      const sComputo = sE14 + sT14 + sAIO;
+
+      const sEDA = quantities.eda52 * UNIT_PRICES.eda52;
+      const sTab = quantities.tablet * UNIT_PRICES.tablet;
+      const sImp = quantities.imp * printer.price;
+      const sFirme = sEDA + sTab + sImp;
+
+      const totalNeto = sComputo + sFirme;
+      const iva = Math.round(totalNeto * 0.19);
+      const totalCiva = totalNeto + iva;
+      const totalUnits = Object.values(quantities).reduce((a, b) => a + b, 0);
+
+      document.getElementById('total-units').innerText = totalUnits;
+      document.getElementById('subtotal-firme').innerText = `${fmtCLP(sFirme)} neto`;
+      document.getElementById('subtotal-computo').innerText = `${fmtCLP(sComputo)} neto`;
+
+      const diff = totalNeto - CLIENT_BUDGET;
+      const diffEl = document.getElementById('budget-diff');
+      const badgeEl = document.getElementById('budget-badge');
+      if (diff <= 0) {
+        diffEl.innerText = `−${fmtCLP(Math.abs(diff))}`;
+        diffEl.className = 'font-bold text-emerald-300';
+        badgeEl.innerText = 'Bajo Ppto. Cliente';
+        badgeEl.className = 'px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30';
+      } else {
+        diffEl.innerText = `+${fmtCLP(diff)}`;
+        diffEl.className = 'font-bold text-amber-300';
+        badgeEl.innerText = 'Sobre Ppto. Ref.';
+        badgeEl.className = 'px-2.5 py-1 rounded-full text-[11px] font-bold bg-amber-500/20 text-amber-300 border border-amber-400/30';
       }
 
-      // Addons
-      const kitMovilidad = document.getElementById('kit-movilidad').checked;
-      const kitPantallas = document.getElementById('kit-pantallas').checked;
+      const labelEl = document.getElementById('primary-metric-label');
+      const valueEl = document.getElementById('primary-metric-value');
+      const secEl = document.getElementById('secondary-metric-value');
 
-      if (kitMovilidad) {
-        totalCuota += (quantities.e14 + quantities.t14) * 750;
-        totalCapex += (quantities.e14 + quantities.t14) * 25000;
+      if (paymentMode === 'directa') {
+        labelEl.innerText = 'Inversión Total Neta (Contado / 30 días)';
+        valueEl.innerText = fmtCLP(totalNeto);
+        secEl.innerText = `IVA 19%: ${fmtCLP(iva)} · Total c/IVA: ${fmtCLP(totalCiva)}`;
+      } else if (paymentMode === 'cuotas3') {
+        const cuotaNeto = Math.round(totalNeto / 3);
+        const cuotaCiva = Math.round(totalCiva / 3);
+        labelEl.innerText = 'Cuota Mensual Neta (3 Cuotas · 30/60/90d)';
+        valueEl.innerText = `${fmtCLP(cuotaNeto)} /mes`;
+        secEl.innerText = `Cuota c/IVA: ${fmtCLP(cuotaCiva)} · Total Neto: ${fmtCLP(totalNeto)}`;
+      } else {
+        const factorPct = parseFloat(document.getElementById('leasing-factor').value);
+        document.getElementById('leasing-factor-label').innerText = `${factorPct.toFixed(2).replace('.', ',')}% / mes`;
+        const cuotaLeasing = Math.round(totalNeto * (factorPct / 100));
+        labelEl.innerText = 'Cuota Referencial Leasing 36 Meses (Neto)';
+        valueEl.innerText = `~${fmtCLP(cuotaLeasing)} /mes`;
+        secEl.innerText = `Base financiada: ${fmtCLP(totalNeto)} neto · Referencial sujeto a evaluación`;
       }
 
-      if (kitPantallas) {
-        totalCuota += 10 * 3400; // 10 monitores
-        totalCapex += 10 * 115000;
-      }
-
-      // Actualizar UI
-      document.getElementById('total-cuota').innerText = '$' + totalCuota.toLocaleString('es-CL');
-      document.getElementById('total-cuota-usd').innerText = '~USD ' + Math.round(totalCuota / 976).toLocaleString('en-US') + ' / mes (Ref. $976)';
-      document.getElementById('res-equipos').innerText = totalEquipos + ' unidades';
-      document.getElementById('res-capex').innerText = '$' + totalCapex.toLocaleString('es-CL') + ' neto';
+      updateChart([sE14, sT14, sAIO, sEDA, sTab, sImp]);
     }
 
-    // Run inicial
-    calculateTotal();
+    function updateChart(values) {
+      const ctx = document.getElementById('budgetChart').getContext('2d');
+      const data = {
+        labels: ['Laptop i5 (29)', 'Laptop U7 (6)', 'AIO Neo 50a (3)', 'Handheld EDA52 (8)', 'Tablets 5G (5)', 'Imp. RRHH (2)'],
+        datasets: [{
+          data: values,
+          backgroundColor: ['#0758a6', '#031a3d', '#4f46e5', '#d97706', '#00add7', '#0f9d6b'],
+          borderWidth: 2,
+          borderColor: '#ffffff',
+        }],
+      };
+
+      if (budgetChart) {
+        budgetChart.data = data;
+        budgetChart.update();
+        return;
+      }
+
+      budgetChart = new Chart(ctx, {
+        type: 'doughnut',
+        data,
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '64%',
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: {
+                color: '#0a2347',
+                boxWidth: 10,
+                font: { size: 11, family: 'Figtree' },
+              },
+            },
+            tooltip: {
+              callbacks: {
+                label: (item) => `${item.label}: ${fmtCLP(item.raw)} neto`,
+              },
+            },
+          },
+        },
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      selectDocTab('A');
+      calculateTotal();
+    });
   </script>
 </body>
 </html>
-

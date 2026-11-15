@@ -1,145 +1,37 @@
-<div align="center">
+# Positronpharma S.A. × TECNOVOA — Propuesta Parque TI 53 Equipos (COT-1370)
 
-  <table border="0" style="border-collapse: collapse; border: none;">
-    <tr style="border: none;">
-      <td align="center" style="padding: 15px; border: none;">
-        <img src="assets/logo_tecnovoa.png" alt="TECNOVOA SPA" height="48" style="height: 48px; max-height: 48px;">
-      </td>
-      <td align="center" style="padding: 15px; font-size: 24px; color: #64748b; border: none;">✕</td>
-      <td align="center" style="padding: 15px; border: none;">
-        <img src="assets/logo_positron.png" alt="Positronpharma S.A." height="42" style="height: 42px; max-height: 42px;">
-      </td>
-    </tr>
-  </table>
+[![Portal Cliente & Simulador](https://img.shields.io/badge/Portal_Interactivo-GitHub_Pages-00add7?style=for-the-badge)](https://crdiazu.github.io/positronpharma-leasing/)
+[![Presentación Ejecutiva](https://img.shields.io/badge/Presentación_TECNOVOA-Reveal.js-031a3d?style=for-the-badge)](https://crdiazu.github.io/positronpharma-leasing/slides.html)
 
-  # Renovación Integral de Parque Tecnológico & Continuidad Operativa
-  ### Proyecto Corporativo en Modalidad Leasing Tecnológico (36 Meses)
-  
-  **Cliente:** Positronpharma S.A. &nbsp;|&nbsp; **RUT:** 76.089.296-3 &nbsp;|&nbsp; **Sector:** Salud Humana & Radiofármacos  
-  **Integrador Tecnológico:** TECNOVOA SPA &nbsp;|&nbsp; **Asesor Comercial:** Cristian Díaz ([cristian@tecnovoa.cl](mailto:cristian@tecnovoa.cl))
-
-  <p>
-    <a href="https://crdiazu.github.io/positronpharma-leasing/">
-      <img src="https://img.shields.io/badge/Live_Demo-Simulador_Interactivo_Web-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Simulador Web">
-    </a>
-    <a href="https://crdiazu.github.io/positronpharma-leasing/slides.html">
-      <img src="https://img.shields.io/badge/Presentación-Executive_Slides-4f46e5?style=for-the-badge&logo=revealdotjs&logoColor=white" alt="Slides Reveal.js">
-    </a>
-    <img src="https://img.shields.io/badge/Plazo-36_Meses_OPEX-10b981?style=for-the-badge" alt="Plazo 36 Meses">
-    <img src="https://img.shields.io/badge/Garantía-3_Años_Premier_On--site-0ea5e9?style=for-the-badge" alt="Garantía On-Site">
-  </p>
-
-</div>
+Portal comercial interactivo y presentación ejecutiva en identidad corporativa **TECNOVOA SpA** para la renovación integral de **53 equipos** de **Positronpharma S.A.** (RUT `76.089.296-3` · Av. Rancagua N° 878, Providencia).
 
 ---
 
-## 🏛️ Alianza Estratégica & Ecosistema de Fabricantes (Vendors)
+## Arquitectura de la Propuesta (4 Folios · Total Neto `$ 50.325.923`)
 
-Este proyecto consolida hardware empresarial de misión crítica respaldado directamente por los principales fabricantes mundiales de tecnología con contratos de garantía oficial y soporte de fábrica en Chile (**Lenovo, Zebra Technologies, Brother y Epson**):
-
-<div align="center">
-  <table border="0" style="border-collapse: collapse; border: none;">
-    <tr style="border: none;">
-      <td align="center" width="20%" style="padding: 10px; border: none;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Lenovo_logo_2015.svg" alt="Lenovo" height="30"><br>
-        <sub><strong>Lenovo ThinkPad / ThinkCentre</strong><br>35 Laptops Ultra + 3 AIOs + 5 Tablets</sub>
-      </td>
-      <td align="center" width="20%" style="padding: 10px; border: none;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Zebra_Technologies_logo.svg" alt="Zebra" height="30"><br>
-        <sub><strong>Zebra Technologies</strong><br>8 Handhelds TC27 5G (Despacho SAP)</sub>
-      </td>
-      <td align="center" width="20%" style="padding: 10px; border: none;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Brother_logo.svg/1280px-Brother_logo.svg.png" alt="Brother" height="26"><br>
-        <sub><strong>Brother At Your Side</strong><br>Multifuncional Láser Color con PIN</sub>
-      </td>
-      <td align="center" width="20%" style="padding: 10px; border: none;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Epson_logo.svg/1280px-Epson_logo.svg.png" alt="Epson" height="26"><br>
-        <sub><strong>Epson EcoTank</strong><br>Multifunción Tinta Pigmentada RRHH</sub>
-      </td>
-      <td align="center" width="20%" style="padding: 10px; border: none;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/1200px-HP_logo_2012.svg.png" alt="HP" height="30"><br>
-        <sub><strong>HP Enterprise</strong><br>Alternativa Managed / Smart Tank</sub>
-      </td>
-    </tr>
-  </table>
-</div>
+| Bloque | Folio | Línea de Equipamiento | Cant. | Unitario Neto | Subtotal Neto | Total c/IVA |
+| :--- | :---: | :--- | :---: | ---: | ---: | ---: |
+| **A Firme** | `COT-1370-E` | Tablets Lenovo IdeaTab 11" 2.5K 5G Kit (`ZAFM0221CL`, KB + Pen) | 5 | `$ 301.873` | `$ 1.509.365` | `$ 1.796.144` |
+| **A Firme** | `COT-1370-C` | Handhelds Honeywell EDA52 4G + Gold Maintenance 3 Años *(vig. 20/11)* | 8 | `$ 772.039` | `$ 6.176.312` | `$ 7.349.811` |
+| **A Firme** | `COT-1370-D` | Impresoras RRHH **Epson WorkForce Pro WF-C5891** *(base a firme)* | 2 | `$ 503.162` | `$ 1.006.324` | `$ 1.197.526` |
+| **Subtotal** | **C + D + E** | **Bloque A Firme (15 equipos)** | **15** | — | **`$ 8.692.001`** | **`$ 10.343.481`** |
+| **Cómputo** | `COT-1370-A` | Notebooks Estándar Lenovo i5 · 16 GB / 512 GB · **3Y On-Site + ADP** | 29 | `$ 990.000` | `$ 28.710.000` | `$ 34.164.900` |
+| **Cómputo** | `COT-1370-A` | Notebooks Jefaturas Lenovo Ultra 7 · 32 GB / 512 GB · **3Y On-Site + ADP** | 6 | `$ 1.650.000` | `$ 9.900.000` | `$ 11.781.000` |
+| **Cómputo** | `COT-1370-A` | All-in-One Lenovo ThinkCentre Neo 50a 24" i5 · 16/512 · **3Y On-Site + ADP** | 3 | `$ 1.007.974` | `$ 3.023.922` | `$ 3.598.467` |
+| **Subtotal** | **COT-1370-A** | **Cómputo Corporativo Lenovo (38 equipos · 3Y + ADP)** | **38** | — | **`$ 41.633.922`** | **`$ 49.544.367`** |
+| **TOTAL** | **4 Folios** | **Parque Completo Positronpharma S.A.** *(−$ 1.724.077 bajo ppto.)* | **53** | — | **`$ 50.325.923`** | **`$ 59.887.848`** |
 
 ---
 
-## 🎯 Resumen Ejecutivo del Negocio
+## Componentes Publicados
 
-El proyecto responde a dos requerimientos estratégicos de **Positronpharma S.A.**:
-1. **Renovación y Estandarización de Parque TI (53 Equipos):** Reemplazo de equipamiento heterogéneo y obsoleto por plataformas homogéneas Lenovo ThinkPad con procesadores **Intel® Core™ Ultra** con NPU para Inteligencia Artificial y garantía **Premier Support On-site de 3 Años con ADP** (protección contra derrames y caídas accidentales).
-2. **Cumplimiento Normativo en Despacho de Radiofármacos (SAP):** Implementación de 8 terminales industriales **Zebra TC27 5G** con lápiz stylus cautivo para captura de firma en destino por tecnólogo médico, registro de chofer y patente del furgón, e integración automática con SAP.
-3. **Optimización Financiera (OPEX 100% Gasto):** Adquisición vía Leasing Tecnológico a 36 meses financiado por DLL / CSI Leasing, eliminando desembolsos de capital (Capex) y reduciendo la carga impositiva.
+- **`index.html`**: Portal Cliente y Simulador Interactivo (selector de documentos `COT-1370-A/C/D/E`, comparador de impresoras `WF-C5891` / `EM-C800` / `MFC-L8970CDW`, ajuste dinámico de cantidades y comparación Contado / 3 Cuotas / Leasing 36M referencial).
+- **`slides.html`**: Presentación ejecutiva en formato **Reveal.js** con línea gráfica **TECNOVOA** (`#031a3d`, `#0758a6`, `#00add7`, tipografías `Sora` y `Figtree`).
 
 ---
 
-## 📊 Matriz Consolidada de Equipamiento (53 Equipos)
+## Contacto Comercial
 
-| # | Línea | Cant. | P/N Oficial | Descripción Técnica | Stock Validado | Inversión Neta (CLP) | Cuota Est. 36m (Neto CLP) |
-| :---: | :--- | :---: | :--- | :--- | :---: | :---: | :---: |
-| **1** | **Notebook Estándar** | 29 | `21SY002QCL` | **ThinkPad E14 Gen 7:** Intel Core Ultra 5 225U, 16GB DDR5, 512GB SSD Opal 2.0, 14" WUXGA, W11P, 3Y Onsite | 216 uds | $33.350.000 | **$991.800 / mes** |
-| **2** | **Notebook Rendimiento** | 6 | `21QD001GCL` | **ThinkPad T14 Gen 6:** Intel Core Ultra 7 255U, 16GB DDR5, 512GB SSD Perf., 14" WUXGA 400nits, 3Y Premier + ADP | 204 uds | $10.200.000 | **$295.200 / mes** |
-| **3** | **Multifunción Láser Color** | 1 | `MFC-L3760CDW` | **Brother MFC-L3760CDW:** 28 ppm, Dúplex, Red, Impresión Segura por PIN (RRHH / Contratos) | 9 uds | $650.000 | **$19.800 / mes** |
-| **4** | **Multifunción Tanque Tinta** | 1 | `C11CJ88303` | **Epson EcoTank L6490:** Tintas Pigmentadas DURABrite resistentes al agua, ADF, Dúplex, Red | 51 uds | $500.000 | **$15.200 / mes** |
-| **5** | **Tablet 5G Supervisión** | 5 | `ZAFM0762CL` | **Lenovo IdeaTab 11" 2.5K 5G:** Dimensity 6300, 6GB/128GB, Teclado Folio + Pen Plus incluidos | 200+ uds | $1.750.000 | **$52.150 / mes** |
-| **6** | **All in One 24" Puesto Fijo** | 3 | `13QH004HCS` | **ThinkCentre Neo 50a 24 G6:** Core Ultra 5 226V, 16GB RAM, 512GB SSD, 23.8" FHD IPS, 3Y Onsite | 292 uds | $3.600.000 | **$106.000 / mes** |
-| **7** | **Handheld Industrial SAP** | 8 | `WCMTB-T27B6ABC2-A6` | **Zebra TC27 5G:** Pantalla 6" FHD+, Escáner 2D SE4710, Handstrap, Stylus Tether Metálico | >20 uds | $6.000.000 | **$182.664 / mes** |
-| — | **TOTAL PARQUE BASE** | **53** | — | **Ecosistema Corporativo Estandarizado Llave en Mano** | — | **$56.050.000** | **$1.662.814 / mes** |
-
-> *(Nota financiera: La cuota estimada mensual de ~$1.662.814 CLP neta (~USD 1.703/mes) incluye equipamiento, licencias Windows 11 Pro, garantías de 3 años y soporte técnico).*
-
----
-
-## 🌐 Herramientas Interactivas Disponibles
-
-Este repositorio cuenta con dos herramientas web listas para presentación:
-
-### 1. [Dashboard & Simulador Dinámico de Cuotas (`index.html`)](https://crdiazu.github.io/positronpharma-leasing/)
-- Permite al comité comercial y financiero de Positronpharma simular en tiempo real variaciones de cantidades por línea.
-- Incorpora selectores para evaluar adición de kits de accesorios (Mochilas Lenovo B210, Candados NanoSaver, Segundas pantallas ThinkVision 27").
-- Opción de exportación e impresión directa para respaldo de actas.
-
-### 2. [Presentación Ejecutiva en Diapositivas (`slides.html`)](https://crdiazu.github.io/positronpharma-leasing/slides.html)
-- Diseñada con el framework **Reveal.js 4.5** bajo tema corporativo oscuro de alta definición.
-- Navegable mediante teclado (`Espacio`, flechas de dirección) o controles táctiles para pantallas interactivas.
-
----
-
-## 🚚 Cumplimiento Normativo: Despacho Digital de Radiofármacos
-
-```mermaid
-sequenceDiagram
-    autonumber
-    actor C as Conductor / Furgón Positron
-    participant Z as Zebra TC27 (5G)
-    participant S as SAP Business One / S4
-    actor T as Tecnólogo Médico (Clínica)
-
-    Note over C,Z: Inicio de Ruta de Despacho
-    C->>Z: Escaneo de Guía y Verificación de Patente
-    Z->>S: Sincronización Inicial de Entrega
-    Note over Z,T: Llegada a Servicio de Medicina Nuclear
-    C->>T: Entrega de Contenedor Radiofármaco
-    T->>Z: Firma Digital en Pantalla con Stylus Cautivo
-    Z->>Z: Captura Estampa de Tiempo y Coordenadas GPS
-    Z->>S: Subida Inmediata de PDF Firmado a Adjuntos SAP (Attachments2)
-    Note over S: Guía Legalmente Conforme & Facturación
-```
-
----
-
-## 📞 Mesa de Ayuda & Contacto Comercial
-
-**TECNOVOA SPA — Soluciones Tecnológicas & Integración**  
-- **Dirección:** Av. Pedro de Valdivia N° 273, Oficina 606, Providencia, Santiago  
-- **Contacto:** Cristian Díaz | Director Comercial  
-- **Correo:** [cristian@tecnovoa.cl](mailto:cristian@tecnovoa.cl)  
-- **Teléfono / WhatsApp:** [+56 9 4943 8288](https://wa.me/56949438288)  
-- **Sitio Web:** [www.tecnovoa.cl](https://www.tecnovoa.cl)  
-
----
-<div align="center">
-  <sub>Propuesta comercial y técnica confidencial preparada exclusivamente para Positronpharma S.A. Prohibida su reproducción total o parcial sin autorización de TECNOVOA SPA.</sub>
-</div>
+- **TECNOVOA SPA** · RUT `77.194.064-1` · Av. Pedro de Valdivia N° 273, Of. 606, Providencia, Santiago
+- **Ejecutivo:** Cristián Díaz Urra · `+56 9 4943 8288` · `cristian@tecnovoa.cl` · [www.tecnovoa.cl](https://www.tecnovoa.cl)
+- **Pagos / OC:** Banco Santander · Cta. Cte. `76189390` · `finanzas@tecnovoa.cl`
