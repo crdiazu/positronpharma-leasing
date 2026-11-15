@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Presentación Ejecutiva Positronpharma S.A. × TECNOVOA | Parque TI 53 Equipos</title>
+  <title>29 lap std + 6 lap corp + 3 aio std + 8 handheld + 5 tablet + 2 multi corp | COT 1370 Positronpharma × TECNOVOA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
@@ -29,7 +29,7 @@
       text-transform: none;
       letter-spacing: -0.02em;
     }
-    .tn-slide-card {
+    .tn-card {
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(0, 173, 215, 0.25);
       border-radius: 16px;
@@ -43,7 +43,7 @@
       border-radius: 999px;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       background: rgba(0, 173, 215, 0.14);
       border: 1px solid rgba(0, 173, 215, 0.45);
@@ -55,19 +55,36 @@
       color: #2cc4ea;
       border-radius: 6px;
       padding: 4px 8px;
-      font-family: 'Figtree', sans-serif;
+    }
+    .pdf-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: #00add7;
+      color: #031a3d;
+      font-size: 11px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .pdf-btn:hover {
+      background: #2cc4ea;
+      color: #021129;
+      transform: translateY(-1px);
     }
   </style>
 </head>
 <body>
-  <!-- Navegación rápida superior -->
-  <div class="fixed top-4 left-4 right-4 z-50 flex items-center justify-between pointer-events-none">
-    <div class="flex items-center gap-3 px-3.5 py-2 rounded-xl bg-[#031a3d]/85 border border-white/15 backdrop-blur-md pointer-events-auto">
-      <img src="assets/logo_tecnovoa.png" alt="TECNOVOA" class="h-5 w-auto brightness-0 invert" onerror="this.style.display='none'" />
-      <span class="h-4 w-px bg-white/20"></span>
-      <span class="text-[11px] font-bold uppercase tracking-wider text-[#2cc4ea]">Unidad 06 · EndUser</span>
+  <!-- Barra fija superior -->
+  <div class="fixed top-3 left-3 right-3 z-50 flex items-center justify-between pointer-events-none">
+    <div class="flex items-center gap-3 px-3 py-1.5 rounded-xl bg-[#031a3d]/90 border border-white/15 backdrop-blur-md pointer-events-auto">
+      <img src="assets/logo_tecnovoa.png" alt="TECNOVOA" class="h-4 w-auto brightness-0 invert" onerror="this.style.display='none'" />
+      <span class="h-3.5 w-px bg-white/20"></span>
+      <span class="text-[10px] font-bold uppercase tracking-wider text-[#2cc4ea]">COT 1370 Global · Positronpharma</span>
     </div>
-    <a href="index.html" class="pointer-events-auto inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#00add7] hover:bg-[#2cc4ea] text-[#031a3d] text-xs font-extrabold shadow-lg transition">
+    <a href="index.html" class="pointer-events-auto inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#00add7] hover:bg-[#2cc4ea] text-[#031a3d] text-xs font-extrabold shadow-lg transition">
       <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
       <span>Portal &amp; Simulador</span>
     </a>
@@ -76,335 +93,633 @@
   <div class="reveal">
     <div class="slides">
 
-      <!-- Slide 1: Portada Corporativa -->
+      <!-- Slide 1: Portada Oficial -->
       <section>
-        <div class="max-w-5xl mx-auto text-center space-y-6">
+        <div class="max-w-5xl mx-auto text-center space-y-5">
           <div class="flex items-center justify-center gap-6">
-            <img src="assets/logo_tecnovoa.png" alt="TECNOVOA" class="h-10 w-auto brightness-0 invert" onerror="this.style.display='none'" />
+            <img src="assets/logo_tecnovoa.png" alt="TECNOVOA" class="h-9 w-auto brightness-0 invert" onerror="this.style.display='none'" />
             <span class="text-white/30 text-2xl font-light">×</span>
-            <img src="assets/logo_positron.png" alt="Positronpharma" class="h-11 w-auto rounded-lg bg-white px-3 py-1.5 object-contain" onerror="this.src='logo_positron.png'" />
+            <img src="assets/logo_positron.png" alt="Positronpharma" class="h-10 w-auto rounded-lg bg-white px-3 py-1 object-contain" onerror="this.src='logo_positron.png'" />
           </div>
 
-          <span class="tn-pill">Propuesta Técnico-Comercial · COT-1370</span>
+          <span class="tn-pill">Propuesta Integral Parque TI · Todo o Nada (53 Equipos)</span>
 
-          <h1 class="text-5xl font-extrabold leading-tight">
-            Renovación Parque TI <span class="text-[#2cc4ea]">53 Equipos</span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight text-white">
+            29 lap std + 6 lap corp + 3 aio std + 8 handheld + 5 tablet + 2 multi corp
           </h1>
-          <p class="text-base text-slate-200 max-w-3xl mx-auto">
-            Estandarización Corporativa Lenovo 3Y On-Site + ADP, Movilidad Operacional con Tablets 5G y Trazabilidad Normativa SAP para Positronpharma S.A.
+          <p class="text-sm sm:text-base text-slate-200 max-w-3xl mx-auto">
+            COT 1370 Global · Evaluación comparativa de cómputo corporativo <strong class="text-white">Lenovo vs ASUS</strong> con componentes compartidos unificados (Honeywell, Tablets 5G y Multifuncional RRHH).
           </p>
 
-          <div class="grid grid-cols-4 gap-4 pt-2 text-left">
-            <div class="tn-slide-card p-4">
-              <div class="text-[11px] uppercase text-slate-300 font-semibold">Parque Total</div>
-              <div class="text-2xl font-extrabold text-white mt-1">53 Equipos</div>
-              <div class="text-xs text-[#2cc4ea]">4 Folios COT-1370</div>
+          <div class="grid grid-cols-2 gap-4 max-w-3xl mx-auto pt-2 text-left">
+            <div class="tn-card p-4 border-[#00add7]">
+              <div class="flex justify-between items-center">
+                <span class="text-xs font-bold uppercase text-[#2cc4ea]">Alternativa 1 · Lenovo</span>
+                <span class="text-[11px] font-bold bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full">Bajo Ppto.</span>
+              </div>
+              <div class="text-2xl font-black text-white mt-1">$ 50.325.923 <span class="text-xs text-slate-300 font-normal">neto</span></div>
+              <div class="text-xs text-emerald-400 mt-0.5">−$ 1.724.077 bajo ppto. cliente ($ 52.050.000)</div>
             </div>
-            <div class="tn-slide-card p-4">
-              <div class="text-[11px] uppercase text-slate-300 font-semibold">Bloque A Firme</div>
-              <div class="text-2xl font-extrabold text-white mt-1">$ 8.692.001</div>
-              <div class="text-xs text-emerald-400">Neto · 15 eq. (C+D+E)</div>
-            </div>
-            <div class="tn-slide-card p-4">
-              <div class="text-[11px] uppercase text-slate-300 font-semibold">Cómputo Lenovo</div>
-              <div class="text-2xl font-extrabold text-white mt-1">$ 41.633.922</div>
-              <div class="text-xs text-[#2cc4ea]">Neto · 38 eq. (3Y+ADP)</div>
-            </div>
-            <div class="tn-slide-card p-4 border-[#00add7]">
-              <div class="text-[11px] uppercase text-slate-300 font-semibold">Total Parque Neto</div>
-              <div class="text-2xl font-extrabold text-[#2cc4ea] mt-1">$ 50.325.923</div>
-              <div class="text-xs text-emerald-400">−$ 1.724.077 bajo ppto.</div>
+
+            <div class="tn-card p-4 border-indigo-400">
+              <div class="flex justify-between items-center">
+                <span class="text-xs font-bold uppercase text-indigo-300">Alternativa 2 · ASUS</span>
+                <span class="text-[11px] font-bold bg-indigo-500/20 text-indigo-200 px-2 py-0.5 rounded-full">Stock Inmediato</span>
+              </div>
+              <div class="text-2xl font-black text-white mt-1">$ 57.660.151 <span class="text-xs text-slate-300 font-normal">neto</span></div>
+              <div class="text-xs text-slate-300 mt-0.5">Grado militar MIL-STD-810H y entrega protegida</div>
             </div>
           </div>
         </div>
-        <aside class="notes">Presentación ejecutiva para Laura Tomassi, Felipe (TI) y Diego (Finanzas) de Positronpharma S.A. Destacar que todo el paquete de 53 equipos queda $1.724.077 bajo el presupuesto referencial de $52.050.000 neto.</aside>
       </section>
 
-      <!-- Slide 2: Arquitectura Modular del Proyecto -->
+      <!-- Slide 2: Comparativa Global Lenovo vs ASUS (53 Equipos) -->
       <section class="text-left">
-        <div class="max-w-5xl mx-auto space-y-6">
-          <div>
-            <span class="tn-pill">Estrategia de Adquisición Modular</span>
-            <h2 class="text-3xl font-extrabold mt-2">Bloque A Firme (C/D/E) + Cómputo Corporativo (A)</h2>
-          </div>
-
-          <div class="grid grid-cols-2 gap-6 text-sm">
-            <div class="tn-slide-card p-6 border-t-4 border-[#00add7] space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-bold uppercase text-[#2cc4ea]">Bloque 1 · Aprobación Inmediata</span>
-                <span class="text-xs font-bold bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded-full">15 Equipos</span>
-              </div>
-              <h3 class="text-xl font-bold">Partidas A Firme (C + D + E)</h3>
-              <ul class="space-y-2 text-xs text-slate-200">
-                <li>• <strong>COT-1370-C:</strong> 8× Handheld Honeywell EDA52 + Gold 3Y ($ 6.176.312)</li>
-                <li>• <strong>COT-1370-D:</strong> 2× Multifunción Epson WF-C5891 ($ 1.006.324)</li>
-                <li>• <strong>COT-1370-E:</strong> 5× Tablets Lenovo IdeaTab 11" 5G Kit ($ 1.509.365)</li>
-              </ul>
-              <div class="pt-3 border-t border-white/15 flex justify-between items-baseline">
-                <span class="text-xs text-slate-300">Subtotal A Firme:</span>
-                <span class="text-xl font-extrabold text-[#2cc4ea]">$ 8.692.001 neto</span>
-              </div>
-            </div>
-
-            <div class="tn-slide-card p-6 border-t-4 border-[#0758a6] space-y-3">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-bold uppercase text-sky-300">Bloque 2 · Renovación Usuarios</span>
-                <span class="text-xs font-bold bg-sky-500/20 text-sky-300 px-2.5 py-0.5 rounded-full">38 Equipos</span>
-              </div>
-              <h3 class="text-xl font-bold">Cómputo Lenovo (COT-1370-A)</h3>
-              <ul class="space-y-2 text-xs text-slate-200">
-                <li>• <strong>29× Notebook Estándar:</strong> Core i5 · 16 GB / 512 GB ($ 28.710.000)</li>
-                <li>• <strong>6× Notebook Jefaturas:</strong> Ultra 7 · 32 GB / 512 GB ($ 9.900.000)</li>
-                <li>• <strong>3× All-in-One Neo 50a 24":</strong> Core i5 · 16 GB / 512 GB ($ 3.023.922)</li>
-              </ul>
-              <div class="pt-3 border-t border-white/15 flex justify-between items-baseline">
-                <span class="text-xs text-slate-300">Todas con 3Y On-Site + ADP:</span>
-                <span class="text-xl font-extrabold text-white">$ 41.633.922 neto</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <aside class="notes">Separar los 15 equipos a firme permite liberar compra inmediata (especialmente Honeywell cuya vigencia especial vence el 20/11/2026) mientras TI consolida el despliegue de los 38 computadores Lenovo.</aside>
-      </section>
-
-      <!-- Slide 3: Cómputo Corporativo Lenovo (COT-1370-A) -->
-      <section class="text-left">
-        <div class="max-w-5xl mx-auto space-y-5">
+        <div class="max-w-5xl mx-auto space-y-4">
           <div class="flex items-center justify-between">
             <div>
-              <span class="tn-pill">COT-1370-A · 38 Equipos · 3Y On-Site + ADP</span>
-              <h2 class="text-3xl font-extrabold mt-2">Estandarización Cómputo Lenovo</h2>
+              <span class="tn-pill">Estructura Global · 53 Equipos Llave en Mano</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">COT 1370 LENOVO vs COT 1370 ASUS</h2>
             </div>
-            <div class="text-right">
-              <div class="text-xs text-slate-300">Subtotal Cómputo</div>
-              <div class="text-2xl font-extrabold text-[#2cc4ea]">$ 41.633.922 neto</div>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-3 gap-5 text-xs">
-            <div class="tn-slide-card p-5 flex flex-col justify-between border-t-4 border-[#0758a6]">
-              <div class="space-y-2">
-                <span class="text-[11px] font-bold uppercase text-[#2cc4ea]">29 Unidades · Operación</span>
-                <h3 class="text-lg font-bold">ThinkBook 14 / E14</h3>
-                <p class="text-slate-300">Intel Core i5 · 16 GB RAM · 512 GB SSD NVMe · 14" FHD/WUXGA · Win 11 Pro.</p>
-                <p class="text-emerald-300 font-semibold">✓ 3 Años On-Site + ADP</p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-white/15">
-                <div class="text-slate-300">Unit: <strong>$ 990.000</strong> neto</div>
-                <div class="text-lg font-extrabold text-white mt-0.5">$ 28.710.000 neto</div>
-              </div>
-            </div>
-
-            <div class="tn-slide-card p-5 flex flex-col justify-between border-t-4 border-[#00add7]">
-              <div class="space-y-2">
-                <span class="text-[11px] font-bold uppercase text-[#2cc4ea]">6 Unidades · Jefaturas</span>
-                <h3 class="text-lg font-bold">ThinkPad T14 Gen 6</h3>
-                <p class="text-slate-300">Intel Core Ultra 7 · 32 GB RAM · 512 GB SSD NVMe · 14" WUXGA · Win 11 Pro.</p>
-                <p class="text-emerald-300 font-semibold">✓ 3 Años On-Site + ADP</p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-white/15">
-                <div class="text-slate-300">Unit: <strong>$ 1.650.000</strong> neto</div>
-                <div class="text-lg font-extrabold text-white mt-0.5">$ 9.900.000 neto</div>
-              </div>
-            </div>
-
-            <div class="tn-slide-card p-5 flex flex-col justify-between border-t-4 border-indigo-400">
-              <div class="space-y-2">
-                <span class="text-[11px] font-bold uppercase text-indigo-300">3 Unidades · Puesto Fijo</span>
-                <h3 class="text-lg font-bold">Neo 50a 24 All-in-One</h3>
-                <p class="text-slate-300">Intel Core i5 · 16 GB RAM · 512 GB SSD · Pantalla 23.8" FHD · Teclado + Mouse.</p>
-                <p class="text-emerald-300 font-semibold">✓ 3 Años On-Site + ADP</p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-white/15">
-                <div class="text-slate-300">Unit: <strong>$ 1.007.974</strong> neto</div>
-                <div class="text-lg font-extrabold text-white mt-0.5">$ 3.023.922 neto</div>
-              </div>
+            <div class="text-right text-xs text-slate-300">
+              <div>Ppto. Cliente: <strong>$ 52.050.000</strong> neto</div>
+              <div>Servicio: <strong>3Y On-Site + ADP</strong> en ambas marcas</div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Slide 4: Partidas A Firme - Tablets 5G & Handhelds SAP -->
-      <section class="text-left">
-        <div class="max-w-5xl mx-auto space-y-5">
-          <div>
-            <span class="tn-pill">COT-1370-E &amp; COT-1370-C · A Firme</span>
-            <h2 class="text-3xl font-extrabold mt-2">Movilidad Terreno, Planta y Despacho SAP</h2>
-          </div>
-
-          <div class="grid grid-cols-2 gap-6 text-xs">
-            <div class="tn-slide-card p-6 border-t-4 border-[#00add7] space-y-3">
-              <div class="flex justify-between items-center">
-                <span class="font-bold text-[#2cc4ea] uppercase">COT-1370-E · 5 Unidades</span>
-                <span class="font-mono text-slate-300">ZAFM0221CL</span>
-              </div>
-              <h3 class="text-xl font-bold">Lenovo IdeaTab 11" 2.5K 5G Kit</h3>
-              <ul class="space-y-1.5 text-slate-200">
-                <li>• Procesador MediaTek D6300 · <strong>8 GB RAM / 256 GB</strong> · 5G</li>
-                <li>• Android 15 · Pantalla 11" 2.5K alta visibilidad</li>
-                <li>• <strong>Incluye Folio Keyboard + Lenovo Tab Pen</strong></li>
-              </ul>
-              <div class="pt-3 border-t border-white/15 flex justify-between items-baseline">
-                <span class="text-slate-300">Unit: $ 301.873 neto</span>
-                <span class="text-lg font-extrabold text-[#2cc4ea]">$ 1.509.365 neto</span>
-              </div>
-            </div>
-
-            <div class="tn-slide-card p-6 border-t-4 border-amber-400 space-y-3">
-              <div class="flex justify-between items-center">
-                <span class="font-bold text-amber-300 uppercase">COT-1370-C · 8 Unidades</span>
-                <span class="font-bold text-amber-300">Vig. 20/11/2026</span>
-              </div>
-              <h3 class="text-xl font-bold">Honeywell ScanPal EDA52 4G LTE</h3>
-              <ul class="space-y-1.5 text-slate-200">
-                <li>• 4G LTE · 4 GB / 64 GB · Imager 2D S0703 · IP67 · GMS</li>
-                <li>• Firma conforme en clínica + registro chofer/patente SAP</li>
-                <li>• <strong>Gold Maintenance 3 años oficial</strong> (sin accesorios)</li>
-              </ul>
-              <div class="pt-3 border-t border-white/15 flex justify-between items-baseline">
-                <span class="text-slate-300">Unit: $ 772.039 neto</span>
-                <span class="text-lg font-extrabold text-amber-300">$ 6.176.312 neto</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 5: Impresoras RRHH (COT-1370-D) -->
-      <section class="text-left">
-        <div class="max-w-5xl mx-auto space-y-5">
-          <div>
-            <span class="tn-pill">COT-1370-D · 2 Unidades RRHH · A Firme</span>
-            <h2 class="text-3xl font-extrabold mt-2">Impresión Segura RRHH · Comparativa 3 Modelos</h2>
-          </div>
-
-          <div class="tn-slide-card p-5 overflow-hidden">
+          <div class="tn-card p-4 overflow-hidden">
             <table class="w-full text-xs text-left">
               <thead>
                 <tr class="border-b border-white/20 text-[#2cc4ea] uppercase">
-                  <th class="py-3 pr-4">Modelo Propuesto (2 uds.)</th>
-                  <th class="py-3 px-3">Tecnología &amp; Seguridad</th>
-                  <th class="py-3 px-3 text-right">Unit. Neto</th>
-                  <th class="py-3 pl-3 text-right">Total 2 uds. Neto</th>
+                  <th class="py-2.5 pr-2">Bloque de Equipamiento</th>
+                  <th class="py-2.5 px-2 text-center">Cant.</th>
+                  <th class="py-2.5 px-3 text-right">COT 1370 LENOVO</th>
+                  <th class="py-2.5 pl-3 text-right">COT 1370 ASUS</th>
+                  <th class="py-2.5 pl-2 text-center">Estado</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-white/10">
-                <tr class="bg-emerald-500/10">
-                  <td class="py-3.5 pr-4 font-bold text-white">★ Opción 1 (A Firme): Epson WF-C5891</td>
-                  <td class="py-3.5 px-3 text-slate-200">Heat-Free 25 ppm · PIN/LDAP/802.1X · Tinta pigmentada</td>
-                  <td class="py-3.5 px-3 text-right font-semibold">$ 503.162</td>
-                  <td class="py-3.5 pl-3 text-right font-extrabold text-emerald-300">$ 1.006.324</td>
+                <tr>
+                  <td class="py-2.5 pr-2 font-bold text-white">1. Laptop Estándar (i5 · 16G · 512G · 3Y+ADP)</td>
+                  <td class="py-2.5 px-2 text-center font-bold">29</td>
+                  <td class="py-2.5 px-3 text-right font-semibold text-white">$ 28.710.000</td>
+                  <td class="py-2.5 pl-3 text-right font-semibold text-slate-200">$ 33.750.200</td>
+                  <td class="py-2.5 pl-2 text-center text-[10px] text-sky-300">ThinkBook vs ExpertBook B3</td>
                 </tr>
                 <tr>
-                  <td class="py-3.5 pr-4 font-bold text-slate-200">Opción 2: Epson WorkForce Pro EM-C800</td>
-                  <td class="py-3.5 px-3 text-slate-300">Heat-Free alta capacidad · Suministro extendido</td>
-                  <td class="py-3.5 px-3 text-right">$ 570.218</td>
-                  <td class="py-3.5 pl-3 text-right font-bold">$ 1.140.436</td>
+                  <td class="py-2.5 pr-2 font-bold text-white">2. Laptop Corporativo (Ultra 7 · 32G · 512G · 3Y+ADP)</td>
+                  <td class="py-2.5 px-2 text-center font-bold">6</td>
+                  <td class="py-2.5 px-3 text-right font-semibold text-white">$ 9.900.000</td>
+                  <td class="py-2.5 pl-3 text-right font-semibold text-slate-200">$ 11.998.800</td>
+                  <td class="py-2.5 pl-2 text-center text-[10px] text-sky-300">ThinkPad T14 vs ExpertBook B5</td>
                 </tr>
                 <tr>
-                  <td class="py-3.5 pr-4 font-bold text-slate-200">Opción 3: Brother MFC-L8970CDW</td>
-                  <td class="py-3.5 px-3 text-slate-300">Láser color corporativo · Pantalla 7" · Secure Print</td>
-                  <td class="py-3.5 px-3 text-right">$ 817.938</td>
-                  <td class="py-3.5 pl-3 text-right font-bold">$ 1.635.876</td>
+                  <td class="py-2.5 pr-2 font-bold text-white">3. All-in-One Estándar (i5 · 16G · 512G · 3Y+ADP)</td>
+                  <td class="py-2.5 px-2 text-center font-bold">3</td>
+                  <td class="py-2.5 px-3 text-right font-semibold text-white">$ 3.023.922</td>
+                  <td class="py-2.5 pl-3 text-right font-semibold text-slate-200">$ 3.219.150</td>
+                  <td class="py-2.5 pl-2 text-center text-[10px] text-sky-300">Neo 50a 24 vs ExpertCenter AiO</td>
+                </tr>
+                <tr class="bg-white/5">
+                  <td class="py-2 pr-2 font-bold text-[#2cc4ea] uppercase text-[11px]">Subtotal Cómputo (38 Equipos)</td>
+                  <td class="py-2 px-2 text-center font-extrabold text-[#2cc4ea]">38</td>
+                  <td class="py-2 px-3 text-right font-extrabold text-[#2cc4ea]">$ 41.633.922</td>
+                  <td class="py-2 pl-3 text-right font-extrabold text-indigo-300">$ 48.968.150</td>
+                  <td class="py-2 pl-2 text-center text-[10px] text-emerald-300">36M On-Site + ADP</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 pr-2 text-slate-200">4. Handheld Honeywell EDA52 4G + Gold 3 Años</td>
+                  <td class="py-2.5 px-2 text-center font-bold">8</td>
+                  <td class="py-2.5 px-3 text-right font-semibold text-amber-300">$ 6.176.312</td>
+                  <td class="py-2.5 pl-3 text-right font-semibold text-amber-300">$ 6.176.312</td>
+                  <td class="py-2.5 pl-2 text-center text-[10px] text-amber-300">Idéntico en ambos</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 pr-2 text-slate-200">5. Tablet Lenovo IdeaTab 11" 5G Kit (KB + Pen)</td>
+                  <td class="py-2.5 px-2 text-center font-bold">5</td>
+                  <td class="py-2.5 px-3 text-right font-semibold text-[#2cc4ea]">$ 1.509.365</td>
+                  <td class="py-2.5 pl-3 text-right font-semibold text-[#2cc4ea]">$ 1.509.365</td>
+                  <td class="py-2.5 pl-2 text-center text-[10px] text-[#2cc4ea]">Idéntico en ambos</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 pr-2 text-slate-200">6. Multifuncional Corporativo Epson WF-C5891</td>
+                  <td class="py-2.5 px-2 text-center font-bold">2</td>
+                  <td class="py-2.5 px-3 text-right font-semibold text-emerald-300">$ 1.006.324</td>
+                  <td class="py-2.5 pl-3 text-right font-semibold text-emerald-300">$ 1.006.324</td>
+                  <td class="py-2.5 pl-2 text-center text-[10px] text-emerald-300">Idéntico en ambos</td>
+                </tr>
+                <tr class="bg-[#031a3d] border-t-2 border-[#00add7]">
+                  <td class="py-3 pr-2 font-black text-white uppercase text-xs">Total Parque 53 Equipos (Neto)</td>
+                  <td class="py-3 px-2 text-center font-black text-[#2cc4ea]">53</td>
+                  <td class="py-3 px-3 text-right font-black text-2xl text-emerald-300">$ 50.325.923</td>
+                  <td class="py-3 pl-3 text-right font-black text-2xl text-indigo-300">$ 57.660.151</td>
+                  <td class="py-3 pl-2 text-center font-bold text-[11px] text-emerald-300">−$ 1.724.077 vs ppto</td>
                 </tr>
               </tbody>
             </table>
           </div>
-
-          <p class="text-xs text-slate-300">
-            * Seleccionando <strong>Epson WF-C5891</strong> como base a firme se logra el menor CAPEX ($ 1.006.324 neto) manteniendo liberación confidencial por PIN para liquidaciones y contratos.
-          </p>
         </div>
       </section>
 
-      <!-- Slide 6: Consolidado Económico & Modalidades -->
+      <!-- Slide 3: Laptop Estándar (29 Unidades) -->
       <section class="text-left">
-        <div class="max-w-5xl mx-auto space-y-5">
-          <div>
-            <span class="tn-pill">Resumen Ejecutivo de Inversión · 53 Equipos</span>
-            <h2 class="text-3xl font-extrabold mt-2">Consolidado Total &amp; Modalidades</h2>
-          </div>
-
-          <div class="grid grid-cols-12 gap-6 items-stretch text-xs">
-            <div class="col-span-7 tn-slide-card p-5 space-y-2.5">
-              <div class="flex justify-between py-2 border-b border-white/10">
-                <span><strong>COT-1370-A:</strong> Cómputo Lenovo (29 i5 + 6 U7 + 3 AIO · 3Y+ADP)</span>
-                <strong class="text-white">$ 41.633.922</strong>
-              </div>
-              <div class="flex justify-between py-2 border-b border-white/10">
-                <span><strong>COT-1370-C:</strong> 8× Honeywell EDA52 + Gold 3Y (A Firme)</span>
-                <strong class="text-amber-300">$ 6.176.312</strong>
-              </div>
-              <div class="flex justify-between py-2 border-b border-white/10">
-                <span><strong>COT-1370-E:</strong> 5× Tablets Lenovo IdeaTab 11" 5G Kit (A Firme)</span>
-                <strong class="text-[#2cc4ea]">$ 1.509.365</strong>
-              </div>
-              <div class="flex justify-between py-2 border-b border-white/10">
-                <span><strong>COT-1370-D:</strong> 2× Impresoras Epson WF-C5891 (A Firme)</span>
-                <strong class="text-emerald-300">$ 1.006.324</strong>
-              </div>
-              <div class="flex justify-between pt-2 text-sm">
-                <span class="text-slate-300">Presupuesto Cliente: $ 52.050.000 neto</span>
-                <strong class="text-emerald-300">Ahorro: −$ 1.724.077</strong>
-              </div>
-            </div>
-
-            <div class="col-span-5 tn-slide-card p-6 border-[#00add7] flex flex-col justify-between text-center">
-              <div>
-                <div class="text-[11px] uppercase tracking-wider text-[#2cc4ea] font-bold">Total Parque Completo</div>
-                <div class="text-4xl font-black text-white mt-2">$ 50.325.923</div>
-                <div class="text-xs text-slate-300 mt-1">Neto · IVA 19%: $ 9.561.925</div>
-                <div class="text-sm font-bold text-[#2cc4ea] mt-1">Total c/IVA: $ 59.887.848</div>
-              </div>
-              <div class="pt-4 border-t border-white/15 text-[11px] text-left space-y-1 text-slate-200">
-                <div>• <strong>Contado / 30 días:</strong> Compra directa por folio</div>
-                <div>• <strong>3 Cuotas (30/60/90d):</strong> $ 16.775.308 neto/mes</div>
-                <div>• <strong>Leasing 36M:</strong> Referencial configurable en Simulador</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Slide 7: Próximos Pasos & Cierre Comercial -->
-      <section class="text-left">
-        <div class="max-w-5xl mx-auto space-y-6">
-          <div>
-            <span class="tn-pill">Ejecución &amp; Cierre · TECNOVOA SPA</span>
-            <h2 class="text-3xl font-extrabold mt-2">Hoja de Ruta para Emisión de OC</h2>
-          </div>
-
-          <div class="grid grid-cols-4 gap-4 text-xs">
-            <div class="tn-slide-card p-5 border-t-4 border-amber-400">
-              <div class="text-lg font-black text-amber-300">01</div>
-              <h4 class="font-bold mt-1">OC Bloque A Firme</h4>
-              <p class="text-slate-300 mt-2">Priorizar COT-1370-C (EDA52 antes 20/11), COT-1370-D (WF-C5891) y COT-1370-E (Tablets).</p>
-            </div>
-            <div class="tn-slide-card p-5 border-t-4 border-[#00add7]">
-              <div class="text-lg font-black text-[#2cc4ea]">02</div>
-              <h4 class="font-bold mt-1">OC Cómputo Lenovo</h4>
-              <p class="text-slate-300 mt-2">Validación final de unidades COT-1370-A y activación de garantía 3Y On-Site + ADP.</p>
-            </div>
-            <div class="tn-slide-card p-5 border-t-4 border-[#0758a6]">
-              <div class="text-lg font-black text-sky-300">03</div>
-              <h4 class="font-bold mt-1">Despacho Providencia</h4>
-              <p class="text-slate-300 mt-2">Entrega coordinada en Rancagua N° 878, Providencia con documentación y series.</p>
-            </div>
-            <div class="tn-slide-card p-5 border-t-4 border-emerald-400">
-              <div class="text-lg font-black text-emerald-300">04</div>
-              <h4 class="font-bold mt-1">Soporte Continuo</h4>
-              <p class="text-slate-300 mt-2">Acompañamiento postventa Unidad 06 EndUser y trazabilidad de garantías.</p>
-            </div>
-          </div>
-
-          <div class="tn-slide-card p-5 flex flex-wrap items-center justify-between gap-4 text-xs">
+        <div class="max-w-5xl mx-auto space-y-4">
+          <div class="flex items-center justify-between">
             <div>
-              <strong class="text-sm text-white block">TECNOVOA SPA · RUT 77.194.064-1</strong>
-              <span class="text-slate-300">Av. Pedro de Valdivia N° 273, Of. 606, Providencia · Banco Santander Cta. Cte. 76189390 · finanzas@tecnovoa.cl</span>
+              <span class="tn-pill">Ítem 1 · Movilidad Administrativa (29 Unidades)</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">29 Laptop Estándar (i5 · 16 GB · 512 GB)</h2>
             </div>
-            <div class="text-right">
-              <strong class="text-sm text-[#2cc4ea] block">Cristián Díaz Urra</strong>
-              <span class="text-slate-200">+56 9 4943 8288 · cristian@tecnovoa.cl · www.tecnovoa.cl</span>
+            <a href="docs/ficha_thinkbook_14_i5.pdf" target="_blank" class="pdf-btn">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Ficha Técnica PDF
+            </a>
+          </div>
+
+          <div class="grid grid-cols-12 gap-5 items-stretch text-xs">
+            <div class="col-span-4 tn-card p-4 flex flex-col justify-between items-center text-center">
+              <img src="assets/products/21SG009HCL_p1_img2.png" alt="Laptop Estándar" class="h-36 w-auto object-contain my-2" onerror="this.src='assets/products/asus_expertbook_b3.png'" />
+              <div class="space-y-1">
+                <span class="text-[10px] font-bold uppercase text-slate-300">Especificación Mandatoria</span>
+                <div class="font-extrabold text-white text-sm">Intel Core i5 / Core 5 · 16 GB · 512 GB SSD</div>
+                <div class="text-emerald-300 font-semibold text-[11px]">✓ 3 Años Garantía On-Site + ADP (36M)</div>
+              </div>
+            </div>
+
+            <div class="col-span-8 grid grid-cols-2 gap-4">
+              <!-- Alternativa Lenovo -->
+              <div class="tn-card p-4 border-t-4 border-[#00add7] flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#2cc4ea] uppercase text-[11px]">Alternativa Lenovo</span>
+                    <span class="font-mono text-slate-300 text-[10px]">Ref. 21SG009HCL</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">ThinkBook 14 G8 / E14</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-200">
+                    <li>• Procesador Intel Core i5 / Core 5 corporativo</li>
+                    <li>• 16 GB RAM DDR5 + 512 GB SSD NVMe PCIe 4.0</li>
+                    <li>• Pantalla 14" WUXGA/FHD antirreflejo 300 nits</li>
+                    <li>• 3 Años Premier On-Site + Daño Accidental (ADP)</li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 990.000</strong> neto</div>
+                  <div class="text-xl font-black text-[#2cc4ea] mt-0.5">$ 28.710.000 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                </div>
+              </div>
+
+              <!-- Alternativa ASUS -->
+              <div class="tn-card p-4 border-t-4 border-indigo-400 flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-indigo-300 uppercase text-[11px]">Alternativa ASUS</span>
+                    <span class="font-mono text-slate-300 text-[10px]">90NX0AP1-M001V0</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">ExpertBook B3406CCA</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-200">
+                    <li>• Procesador Intel Core Ultra 5 225H / Core 5</li>
+                    <li>• 16 GB RAM DDR5 + 512 GB SSD NVMe</li>
+                    <li>• Pantalla 14" WUXGA chasis grado militar MIL-STD-810H</li>
+                    <li>• 36M On-Site NBD + LADP (daño accidental) incluido</li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 1.163.800</strong> neto</div>
+                  <div class="text-xl font-black text-indigo-300 mt-0.5">$ 33.750.200 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: Laptop Corporativo Jefaturas (6 Unidades) -->
+      <section class="text-left">
+        <div class="max-w-5xl mx-auto space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="tn-pill">Ítem 2 · Jefaturas y Dirección Técnica (6 Unidades)</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">6 Laptop Corporativo (Ultra 7 · 32 GB · 512 GB)</h2>
+            </div>
+            <a href="docs/ficha_thinkpad_t14_u7.pdf" target="_blank" class="pdf-btn">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Ficha Técnica PDF
+            </a>
+          </div>
+
+          <div class="grid grid-cols-12 gap-5 items-stretch text-xs">
+            <div class="col-span-4 tn-card p-4 flex flex-col justify-between items-center text-center">
+              <img src="assets/products/21QD001FCL_p1_img2.png" alt="Laptop Corporativo" class="h-36 w-auto object-contain my-2" onerror="this.src='assets/products/asus_expertbook_b5.png'" />
+              <div class="space-y-1">
+                <span class="text-[10px] font-bold uppercase text-slate-300">Alto Rendimiento &amp; NPU IA</span>
+                <div class="font-extrabold text-white text-sm">Intel Core Ultra 7 · 32 GB · 512 GB SSD</div>
+                <div class="text-emerald-300 font-semibold text-[11px]">✓ 3 Años Garantía On-Site + ADP (36M)</div>
+              </div>
+            </div>
+
+            <div class="col-span-8 grid grid-cols-2 gap-4">
+              <!-- Alternativa Lenovo -->
+              <div class="tn-card p-4 border-t-4 border-[#00add7] flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#2cc4ea] uppercase text-[11px]">Alternativa Lenovo</span>
+                    <span class="font-mono text-slate-300 text-[10px]">Ref. 21QD001FCL</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">ThinkPad T14 Gen 6</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-200">
+                    <li>• Procesador Intel Core Ultra 7 con NPU AI Boost</li>
+                    <li>• 32 GB RAM DDR5 para multitarea analítica y reportes</li>
+                    <li>• 512 GB SSD PCIe 4.0 Opal 2.0 cifrado hardware</li>
+                    <li>• 3 Años On-Site Premier + ADP integral de fábrica</li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 1.650.000</strong> neto</div>
+                  <div class="text-xl font-black text-[#2cc4ea] mt-0.5">$ 9.900.000 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                </div>
+              </div>
+
+              <!-- Alternativa ASUS -->
+              <div class="tn-card p-4 border-t-4 border-indigo-400 flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-indigo-300 uppercase text-[11px]">Alternativa ASUS</span>
+                    <span class="font-mono text-slate-300 text-[10px]">90NX0A21-M00H50</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">ExpertBook B5405CAA</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-200">
+                    <li>• Procesador Intel Core Ultra 7 155H / 356H</li>
+                    <li>• 32 GB RAM DDR5 + 512 GB SSD NVMe</li>
+                    <li>• Chasis ultraliviano magnesio-aluminio 14" WUXGA</li>
+                    <li>• Cobertura completa 36M On-Site + LADP incluida</li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 1.999.800</strong> neto</div>
+                  <div class="text-xl font-black text-indigo-300 mt-0.5">$ 11.998.800 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5: All-in-One Estándar (3 Unidades) -->
+      <section class="text-left">
+        <div class="max-w-5xl mx-auto space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="tn-pill">Ítem 3 · Puestos Fijos Planta y Recepción (3 Unidades)</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">3 All-in-One Estándar 23.8" (i5 · 16 GB · 512 GB)</h2>
+            </div>
+            <a href="docs/ficha_thinkcentre_neo50a_aio.pdf" target="_blank" class="pdf-btn">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Ficha Técnica PDF
+            </a>
+          </div>
+
+          <div class="grid grid-cols-12 gap-5 items-stretch text-xs">
+            <div class="col-span-4 tn-card p-4 flex flex-col justify-between items-center text-center">
+              <img src="assets/products/13QH004HCS_p2_img1.jpeg" alt="All-in-One Estándar" class="h-36 w-auto object-contain my-2" onerror="this.src='assets/products/asus_expertcenter_p440.png'" />
+              <div class="space-y-1">
+                <span class="text-[10px] font-bold uppercase text-slate-300">Estación Compacta Corporativa</span>
+                <div class="font-extrabold text-white text-sm">Pantalla 23.8" FHD IPS · i5 · 16 GB · 512 GB</div>
+                <div class="text-emerald-300 font-semibold text-[11px]">✓ 3 Años On-Site + ADP (36M) + Teclado/Mouse</div>
+              </div>
+            </div>
+
+            <div class="col-span-8 grid grid-cols-2 gap-4">
+              <!-- Alternativa Lenovo -->
+              <div class="tn-card p-4 border-t-4 border-[#00add7] flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#2cc4ea] uppercase text-[11px]">Alternativa Lenovo</span>
+                    <span class="font-mono text-slate-300 text-[10px]">13QH004HCS</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">ThinkCentre Neo 50a 24</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-200">
+                    <li>• Procesador Intel Core i5 de alto rendimiento</li>
+                    <li>• 16 GB RAM + 512 GB SSD NVMe</li>
+                    <li>• Pantalla sin bordes 23.8" FHD antirreflejo</li>
+                    <li>• Incluye periféricos USB y garantía 3Y On-Site + ADP</li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 1.007.974</strong> neto</div>
+                  <div class="text-xl font-black text-[#2cc4ea] mt-0.5">$ 3.023.922 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                </div>
+              </div>
+
+              <!-- Alternativa ASUS -->
+              <div class="tn-card p-4 border-t-4 border-indigo-400 flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-indigo-300 uppercase text-[11px]">Alternativa ASUS</span>
+                    <span class="font-mono text-slate-300 text-[10px]">90PT03X6-M0B7L0</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">ExpertCenter P440VA</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-200">
+                    <li>• Procesador Intel Core 5 210H / i5</li>
+                    <li>• 16 GB RAM + 512 GB SSD NVMe</li>
+                    <li>• Pantalla 23.8" FHD con audio bidireccional IA</li>
+                    <li>• 36M On-Site + LADP integral en oferta protegida</li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 1.073.050</strong> neto</div>
+                  <div class="text-xl font-black text-indigo-300 mt-0.5">$ 3.219.150 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: Handheld Industrial Despacho SAP (8 Unidades) con Alternativa de Garantía -->
+      <section class="text-left">
+        <div class="max-w-5xl mx-auto space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="tn-pill">Ítem 4 · Despacho Normativo Radiofármacos SAP (8 Unidades)</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">8 Handheld Honeywell ScanPal EDA52 4G LTE</h2>
+            </div>
+            <a href="docs/ficha_honeywell_eda52_4g.pdf" target="_blank" class="pdf-btn">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Ficha Técnica PDF
+            </a>
+          </div>
+
+          <div class="grid grid-cols-12 gap-5 items-stretch text-xs">
+            <div class="col-span-4 tn-card p-4 flex flex-col justify-between items-center text-center">
+              <img src="assets/products/honeywell_eda52_healthcare.png" alt="Honeywell EDA52" class="h-40 w-auto object-contain my-1" />
+              <div class="space-y-1">
+                <span class="text-[10px] font-bold uppercase text-amber-300">Trazabilidad en Ruta SAP</span>
+                <div class="font-extrabold text-white text-xs">4G LTE · 4GB/64GB · Imager 2D S0703 · IP67</div>
+                <p class="text-slate-300 text-[11px] leading-tight">Captura RUT chofer, patente y firma digital en clínica receptora.</p>
+              </div>
+            </div>
+
+            <div class="col-span-8 grid grid-cols-2 gap-4">
+              <!-- Opción A: Con Gold 3Y -->
+              <div class="tn-card p-4 border-t-4 border-amber-400 flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-amber-300 uppercase text-[11px]">Opción Recomendada</span>
+                    <span class="font-bold bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded text-[10px]">Gold 3 Años</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">EDA52 + Gold Maintenance 3Y</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-200">
+                    <li>• P/N: <code>EDA52-11AE64N21RK</code> + <code>SVCEDA52-SG3N</code></li>
+                    <li>• Reparación de fábrica con repuestos originales y calibración</li>
+                    <li>• SLA prioritario 5 días en taller oficial Honeywell</li>
+                    <li>• Cobertura completa ante fallas operativas en ruta</li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 772.039</strong> neto</div>
+                  <div class="text-xl font-black text-amber-300 mt-0.5">$ 6.176.312 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                  <div class="text-[10px] text-slate-400 mt-0.5">Total c/IVA: $ 7.349.811</div>
+                </div>
+              </div>
+
+              <!-- Opción B: Sin Gold 3Y -->
+              <div class="tn-card p-4 border-t-4 border-slate-500 flex flex-col justify-between bg-white/5">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-slate-300 uppercase text-[11px]">Alternativa de Ahorro</span>
+                    <span class="font-bold bg-white/10 text-slate-300 px-2 py-0.5 rounded text-[10px]">Solo Hardware</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">EDA52 sin Garantía Gold 3Y</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-300">
+                    <li>• Solo terminal hardware base (Garantía estándar 1 año)</li>
+                    <li>• Mismas capacidades técnicas 4G LTE e Imager 2D S0703</li>
+                    <li>• Reduce el CAPEX inicial del parque completo</li>
+                    <li>• <strong class="text-emerald-300">Ahorro de $ 130.727 neto por equipo</strong></li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 641.312</strong> neto</div>
+                  <div class="text-xl font-black text-emerald-300 mt-0.5">$ 5.130.496 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                  <div class="text-[11px] font-bold text-emerald-300 mt-0.5">Ahorro línea: −$ 1.045.816 neto</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 7: Tablets Operacionales (5 Unidades) con Alternativas -->
+      <section class="text-left">
+        <div class="max-w-5xl mx-auto space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="tn-pill">Ítem 5 · Movilidad en Terreno y Planta (5 Unidades)</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">5 Tablet Lenovo IdeaTab 11" 2.5K 5G Kit</h2>
+            </div>
+            <a href="docs/ficha_lenovo_tablet_5g.pdf" target="_blank" class="pdf-btn">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Ficha Técnica PDF
+            </a>
+          </div>
+
+          <div class="grid grid-cols-12 gap-5 items-stretch text-xs">
+            <div class="col-span-4 tn-card p-4 flex flex-col justify-between items-center text-center">
+              <img src="assets/products/ZAF10104CL_p2_img1.jpeg" alt="Tablet 5G Kit" class="h-40 w-auto object-contain my-1" />
+              <div class="space-y-1">
+                <span class="text-[10px] font-bold uppercase text-[#2cc4ea]">Kit de Movilidad Completo</span>
+                <div class="font-extrabold text-white text-xs">Folio Keyboard + Lenovo Tab Pen Incluidos</div>
+                <p class="text-slate-300 text-[11px] leading-tight">MediaTek D6300 · 8 GB RAM / 256 GB · 5G Celular</p>
+              </div>
+            </div>
+
+            <div class="col-span-8 grid grid-cols-2 gap-4">
+              <!-- Selección Oficial -->
+              <div class="tn-card p-4 border-t-4 border-[#00add7] flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-[#2cc4ea] uppercase text-[11px]">Selección Oficial</span>
+                    <span class="font-mono text-slate-300 text-[10px]">ZAFM0221CL</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">Lenovo IdeaTab 11" 5G Kit</h3>
+                  <ul class="space-y-1.5 mt-3 text-slate-200">
+                    <li>• Pantalla 11" 2.5K IPS alta nitidez para planos y datos</li>
+                    <li>• <strong>8 GB RAM / 256 GB</strong> almacenamiento interno</li>
+                    <li>• Conectividad 5G móvil + Wi-Fi AC · Android 15</li>
+                    <li>• Teclado físico magnético y lápiz de precisión incluidos</li>
+                  </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-white/15">
+                  <div class="text-slate-300">Unit: <strong class="text-white">$ 301.873</strong> neto</div>
+                  <div class="text-xl font-black text-[#2cc4ea] mt-0.5">$ 1.509.365 <span class="text-xs font-normal text-slate-300">neto</span></div>
+                  <div class="text-[10px] text-slate-400 mt-0.5">Total c/IVA: $ 1.796.144</div>
+                </div>
+              </div>
+
+              <!-- Alternativas Evaluadas -->
+              <div class="tn-card p-4 border-t-4 border-slate-500 flex flex-col justify-between bg-white/5">
+                <div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-bold text-slate-300 uppercase text-[11px]">Alternativas Evaluadas</span>
+                    <span class="font-bold text-slate-400 text-[10px]">Mercado</span>
+                  </div>
+                  <h3 class="text-base font-bold text-white mt-1">Cruce Multimarca</h3>
+                  <div class="space-y-2 mt-3 text-slate-300">
+                    <div class="p-2 rounded bg-white/5">
+                      <strong class="text-white block">Honor Pad 20 12.1" 3K (8/256)</strong>
+                      <span>Con teclado, sin lápiz. Unit: $ 484.132 ($ 2.420.660 total).</span>
+                    </div>
+                    <div class="p-2 rounded bg-white/5">
+                      <strong class="text-white block">Xiaomi Redmi Pad 2 (4/128)</strong>
+                      <span>Económica sin accesorios. Unit: $ 233.266 ($ 1.166.330 total).</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4 pt-2 border-t border-white/15 text-[10px] text-emerald-300 font-semibold">
+                  ✓ Lenovo ZAFM0221CL es la más costo-efectiva con 8/256 + 5G + Kit.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: Multifuncionales Corporativos RRHH (2 Unidades) Comparativa 3 Modelos -->
+      <section class="text-left">
+        <div class="max-w-5xl mx-auto space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="tn-pill">Ítem 6 · Impresión Confidencial RRHH (2 Unidades)</span>
+              <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">2 Multifuncional Corporativo (Comparativa 3 Modelos)</h2>
+            </div>
+            <div class="flex gap-2">
+              <a href="docs/ficha_epson_workforce_ecotank.pdf" target="_blank" class="pdf-btn">
+                <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Ficha Epson
+              </a>
+              <a href="docs/ficha_brother_mfc_laser.pdf" target="_blank" class="pdf-btn bg-slate-700 hover:bg-slate-600 text-white">
+                <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Ficha Brother
+              </a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 text-xs">
+            <!-- Modelo 1: Epson WF-C5891 -->
+            <div class="tn-card p-4 border-t-4 border-emerald-400 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-emerald-300 uppercase text-[10px]">Opción 1 · Base Recomendada</span>
+                  <span class="font-bold bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded text-[10px]">Stock</span>
+                </div>
+                <h3 class="text-base font-bold text-white mt-1">Epson WF-C5891</h3>
+                <img src="assets/products/epson_ecotank_p4_0.jpeg" alt="Epson WF-C5891" class="h-24 w-auto object-contain mx-auto my-2" />
+                <ul class="space-y-1 text-slate-200">
+                  <li>• PrecisionCore Heat-Free 25 ppm color/negro</li>
+                  <li>• Liberación segura por PIN / LDAP / 802.1X</li>
+                  <li>• Tinta pigmentada DURABrite Ultra indeleble</li>
+                  <li>• Dúplex automático completo en una pasada</li>
+                </ul>
+              </div>
+              <div class="mt-3 pt-3 border-t border-white/15">
+                <div class="text-slate-300">Unit: <strong>$ 503.162</strong> neto</div>
+                <div class="text-lg font-black text-emerald-300">$ 1.006.324 <span class="text-xs font-normal text-slate-300">neto</span></div>
+              </div>
+            </div>
+
+            <!-- Modelo 2: Epson EM-C800 -->
+            <div class="tn-card p-4 border-t-4 border-[#00add7] flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-[#2cc4ea] uppercase text-[10px]">Opción 2 · Gran Capacidad</span>
+                  <span class="font-bold bg-sky-500/20 text-[#2cc4ea] px-1.5 py-0.5 rounded text-[10px]">Heat-Free</span>
+                </div>
+                <h3 class="text-base font-bold text-white mt-1">Epson EM-C800</h3>
+                <img src="assets/products/epson_ecotank_p4_1.jpeg" alt="Epson EM-C800" class="h-24 w-auto object-contain mx-auto my-2" />
+                <ul class="space-y-1 text-slate-200">
+                  <li>• Sistema de bolsas de tinta de altísima capacidad</li>
+                  <li>• Hasta 50.000 pág. negro y 20.000 pág. color</li>
+                  <li>• 25 ppm, dúplex automático y ADF de 50 hojas</li>
+                  <li>• Menor frecuencia de recarga en RRHH</li>
+                </ul>
+              </div>
+              <div class="mt-3 pt-3 border-t border-white/15">
+                <div class="text-slate-300">Unit: <strong>$ 570.218</strong> neto</div>
+                <div class="text-lg font-black text-[#2cc4ea]">$ 1.140.436 <span class="text-xs font-normal text-slate-300">neto</span></div>
+              </div>
+            </div>
+
+            <!-- Modelo 3: Brother MFC-L8970CDW -->
+            <div class="tn-card p-4 border-t-4 border-indigo-400 flex flex-col justify-between">
+              <div>
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-indigo-300 uppercase text-[10px]">Opción 3 · Láser Departamental</span>
+                  <span class="font-bold bg-indigo-500/20 text-indigo-200 px-1.5 py-0.5 rounded text-[10px]">Láser</span>
+                </div>
+                <h3 class="text-base font-bold text-white mt-1">Brother MFC-L8970CDW</h3>
+                <img src="assets/products/brother_mfc_p1_0.jpeg" alt="Brother MFC" class="h-24 w-auto object-contain mx-auto my-2" />
+                <ul class="space-y-1 text-slate-200">
+                  <li>• Tecnología láser color corporativa hasta 33 ppm</li>
+                  <li>• Pantalla táctil 7" y Secure Print avanzado con PIN</li>
+                  <li>• Alimentador automático de documentos (ADF) 70 hojas</li>
+                  <li>• Conectividad Gigabit Ethernet y Wi-Fi doble banda</li>
+                </ul>
+              </div>
+              <div class="mt-3 pt-3 border-t border-white/15">
+                <div class="text-slate-300">Unit: <strong>$ 817.938</strong> neto</div>
+                <div class="text-lg font-black text-indigo-300">$ 1.635.876 <span class="text-xs font-normal text-slate-300">neto</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 9: Resumen de Decisión Comercial & Emisión de OC -->
+      <section class="text-left">
+        <div class="max-w-5xl mx-auto space-y-4">
+          <div>
+            <span class="tn-pill">Consolidado Comercial Final · 53 Equipos</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold mt-1">Cuadro de Decisión Comercial Positronpharma</h2>
+          </div>
+
+          <div class="grid grid-cols-12 gap-5 items-stretch text-xs">
+            <div class="col-span-7 tn-card p-4 space-y-2.5">
+              <div class="text-xs font-bold uppercase text-[#2cc4ea] border-b border-white/15 pb-1">
+                Comparativa de Inversión Total (53 Equipos)
+              </div>
+              <div class="flex justify-between items-center py-1.5 border-b border-white/10">
+                <div>
+                  <strong class="text-white block text-sm">Alternativa LENOVO (Recomendada)</strong>
+                  <span class="text-slate-300">38 eq. Lenovo + 8 EDA52 + 5 Tab + 2 WF-C5891</span>
+                </div>
+                <div class="text-right">
+                  <div class="text-xl font-black text-emerald-300">$ 50.325.923 neto</div>
+                  <div class="text-[11px] text-emerald-400 font-bold">−$ 1.724.077 vs ppto.</div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center py-1.5 border-b border-white/10">
+                <div>
+                  <strong class="text-white block text-sm">Alternativa ASUS (Disponibilidad)</strong>
+                  <span class="text-slate-300">38 eq. ASUS + 8 EDA52 + 5 Tab + 2 WF-C5891</span>
+                </div>
+                <div class="text-right">
+                  <div class="text-xl font-black text-indigo-300">$ 57.660.151 neto</div>
+                  <div class="text-[11px] text-slate-400">Total c/IVA: $ 68.615.580</div>
+                </div>
+              </div>
+
+              <div class="p-2.5 rounded-lg bg-amber-500/10 border border-amber-400/30 flex justify-between items-center text-[11px]">
+                <span class="text-amber-200">Opción Honeywell EDA52 sin Gold Maintenance 3Y:</span>
+                <strong class="text-amber-300">Resta −$ 1.045.816 neto a cualquier opción</strong>
+              </div>
+            </div>
+
+            <div class="col-span-5 tn-card p-4 border-[#00add7] flex flex-col justify-between text-center">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-300">Modalidades de Adquisición</span>
+                <div class="text-sm font-bold text-white mt-2">1. Contado / Crédito 30 Días</div>
+                <div class="text-xs text-slate-300 mt-1">2. Tres Cuotas Comerciales (30 / 60 / 90 días)</div>
+                <div class="text-xs text-slate-300 mt-1">3. Leasing Operativo 36 Meses (OPEX 100% Gasto)</div>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-white/15 text-left text-[11px] space-y-1">
+                <div class="font-bold text-white">Datos Orden de Compra:</div>
+                <div class="text-slate-300">Razón Social: <strong>TECNOVOA SPA</strong> · RUT: <strong>77.194.064-1</strong></div>
+                <div class="text-slate-300">Cta. Cte. Banco Santander N° <strong>76189390</strong></div>
+                <div class="text-slate-300">Contacto: <strong>cristian@tecnovoa.cl</strong> · +56 9 4943 8288</div>
+              </div>
             </div>
           </div>
         </div>
