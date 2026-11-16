@@ -667,9 +667,9 @@
             <p class="text-xs text-tn-muted mt-0.5">Impresión confidencial de nóminas con código PIN.</p>
             <ul class="mt-3 space-y-1 text-xs text-tn-ink">
               <li>• <strong>Epson WF-C5891 (Base):</strong> 25 ppm, PIN, Heat-Free</li>
-              <li>• <strong>Epson EM-C800 (Alt. 2):</strong> Bolsas tinta gran autonomía</li>
-              <li>• <strong>Brother L8970CDW (Alt. 3):</strong> Láser color 33 ppm</li>
+              <li>• <strong>Epson EM-C800 (Alt. 2 XL):</strong> Bolsas T12P gran autonomía</li>
               <li>• Dúplex automático de una pasada + escáner red</li>
+              <li>• LDAP / 802.1X / Tinta pigmentada DURABrite Ultra</li>
             </ul>
           </div>
           <div class="mt-4 pt-3 border-t border-tn-border space-y-1 text-xs">
@@ -869,12 +869,12 @@
               </div>
             </div>
 
-            <!-- 2 Multifuncionales RRHH con Selector de 3 Modelos -->
+            <!-- 2 Multifuncionales RRHH con Selector Epson (2 Modelos) -->
             <div class="p-3.5 rounded-xl bg-emerald-50/50 border border-emerald-200/80 space-y-2.5">
               <div class="flex items-center justify-between gap-4">
                 <div>
                   <div class="text-xs font-bold text-tn-success uppercase">Multifuncional Corporativo RRHH</div>
-                  <div class="text-sm font-bold text-tn-navy">2 Multifuncionales Impresión Segura PIN</div>
+                  <div class="text-sm font-bold text-tn-navy">2 Multifuncionales Epson Impresión Segura PIN</div>
                   <div class="text-xs text-tn-muted" id="lbl-multi-price">Unitario neto: $ 538.141 (WF-C5891)</div>
                 </div>
                 <div class="flex items-center gap-2 shrink-0">
@@ -884,11 +884,10 @@
                 </div>
               </div>
               <div>
-                <label for="printer-model" class="block text-[11px] font-bold text-emerald-900 uppercase mb-1">Modelo de Impresora Seleccionado:</label>
+                <label for="printer-model" class="block text-[11px] font-bold text-emerald-900 uppercase mb-1">Modelo Epson Seleccionado:</label>
                 <select id="printer-model" onchange="calculateTotal()" class="w-full rounded-lg border border-tn-border bg-white px-3 py-1.5 text-xs font-semibold text-tn-navy focus:outline-none focus:ring-2 focus:ring-tn-cyan">
                   <option value="wfc5891" selected>Opción 1 (Base): Epson WorkForce Pro WF-C5891 — $ 538.141 neto/u</option>
-                  <option value="emc800">Opción 2: Epson WorkForce Pro EM-C800 (Bolsas tinta) — $ 609.859 neto/u</option>
-                  <option value="l8970">Opción 3: Brother MFC-L8970CDW Láser Color 33 ppm — $ 874.800 neto/u</option>
+                  <option value="emc800">Opción 2 (XL): Epson WorkForce Pro EM-C800 (Bolsas tinta) — $ 609.859 neto/u</option>
                 </select>
               </div>
             </div>
@@ -1158,7 +1157,6 @@
       printers: {
         wfc5891: { name: 'Epson WorkForce Pro WF-C5891', price: 538141 },
         emc800: { name: 'Epson WorkForce Pro EM-C800', price: 609859 },
-        l8970: { name: 'Brother MFC-L8970CDW Láser Color', price: 874800 },
       },
     };
 
