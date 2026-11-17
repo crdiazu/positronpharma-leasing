@@ -1,13 +1,25 @@
-# 29 lap std + 6 lap corp + 3 aio std + 8 handheld + 5 tablet + 2 multi corp
+# Propuesta Ejecutiva — Renovación Integral de Parque Tecnológico
 
-### Positronpharma S.A. × TECNOVOA — COT 1370 Global (53 Equipos)
+### Positronpharma S.A. × TECNOVOA SpA (Unidad 06 · COT-1370 Global)
 
 [![Portal & Simulador Global](https://img.shields.io/badge/Portal_Interactivo-GitHub_Pages-00add7?style=for-the-badge)](https://crdiazu.github.io/positronpharma-leasing/)
 [![Presentación Ejecutiva Reveal.js](https://img.shields.io/badge/Presentación_TECNOVOA-Reveal.js-031a3d?style=for-the-badge)](https://crdiazu.github.io/positronpharma-leasing/slides.html)
 
-Propuesta técnico-comercial integral bajo modalidad **"Todo o Nada" (53 equipos)** para **Positronpharma S.A.** (RUT `76.089.296-3` · Av. Rancagua N° 878, Providencia).
+Propuesta técnico-comercial integral en 3 opciones ejecutivas para **Positronpharma S.A.** (RUT `76.089.296-3` · Av. Rancagua N° 878, Providencia) integrando **Lenovo, ASUS, Honeywell y Epson**, con garantía homologada **3 años On-Site + ADP**.
 
-Se evalúan **dos marcas globales de parque TI corporativo (Lenovo vs ASUS)** con **dos niveles de rendimiento en jefaturas (Nivel Pro 32 GB vs Nivel Balanceado 16 GB)**, todas con garantía homologada de **3 años On-Site + ADP (daño accidental 36M)** en cómputo y componentes móviles/impresión unificados.
+---
+
+## 0. Resumen de las 3 Opciones Ejecutivas
+
+1. **Opción 1 — Lenovo Full · 53 Equipos** *(con opción de eliminar las 8 Handhelds → 45 Eq.)*:
+   - **53 equipos (Pro 32 GB / Bal. 16 GB):** `$ 53.864.402` / **`$ 51.843.008` neto (`−$ 206.992` ✅)**
+   - **Sin Handhelds (45 eq.):** **`$ 47.218.850`** Pro / **`$ 45.197.456`** Balanceado neto (`✅ Bajo Ppto`).
+2. **Opción 2 — ASUS Full · 53 Equipos** *(con opción de eliminar las 5 Tablets → 48 Eq.)*:
+   - **53 equipos (Pro B5 32 GB / Bal. B3 16 GB):** `$ 61.708.488` / `$ 56.764.956` neto.
+   - **Sin Tablets (48 eq.):** `$ 60.094.193` Pro / `$ 55.150.661` Balanceado neto.
+3. **Opción 3 — Todo ASUS Mixto (3×16 GB + 3×32 GB) · Sin Handhelds (45 Equipos)**:
+   - **45 equipos (29 Lap Std + 3 Core 16G + 3 Core 32G + 3 AIO + 5 Tab + 2 Multi):** **`$ 52.591.170` neto** (`+1,0 %` s/ppto).
+   - **Sin Tablets ni Handhelds (40 eq.):** **`$ 50.976.875` neto (`−$ 1.073.125` ✅ Bajo Ppto)**.
 
 ---
 
