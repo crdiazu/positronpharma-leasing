@@ -11,14 +11,15 @@ Se evalúan **dos marcas globales de parque TI corporativo (Lenovo vs ASUS)** co
 
 ---
 
-## 1. Matriz de Decisión Comercial (4 Escenarios Globales · 53 Equipos)
+## 1. Matriz de Decisión Comercial (5 Escenarios Globales)
 
-| Escenario Propuesto (53 Eq.) | Jefaturas (6 Eq.) | Cómputo (38 Eq.) | Móvil/Multi (15 Eq.) | Total Parque Neto | Total c/IVA 19% | Vs. Presupuesto ($ 52,05M) |
+| Escenario Propuesto | Jefaturas (6 Eq.) | Cómputo (38 Eq.) | Móvil/Multi | Total Parque Neto | Total c/IVA 19% | Vs. Presupuesto ($ 52,05M) |
 | :--- | :---: | ---: | ---: | ---: | ---: | :---: |
-| **COT 1370 LENOVO · Nivel Pro** | Ultra 7 · 32 GB | `$ 44.528.273` | `$ 9.336.129` | **`$ 53.864.402`** | `$ 64.098.638` | `+$ 1.814.402` (+3,5%) |
-| **COT 1370 LENOVO · Balanceado** | Ultra 7 · 16 GB | `$ 42.506.879` | `$ 9.336.129` | **`$ 51.843.008`** | `$ 61.693.180` | **`−$ 206.992` (Bajo Ppto)** ✅🏆 |
-| **COT 1370 ASUS · Oferta Protegida Pro** | Ultra 7 · 32 GB (`B5405`) | `$ 52.372.359` | `$ 9.336.129` | **`$ 61.708.488`** | `$ 73.433.101` | `+$ 9.658.488` (+18,6%) |
-| **COT 1370 ASUS · Balanceado** | Ultra 7 · 16 GB (`B3405`) | `$ 47.428.827` | `$ 9.336.129` | **`$ 56.764.956`** | `$ 67.550.298` | `+$ 4.714.956` (+9,1%) |
+| **COT 1370 LENOVO · Nivel Pro** (53 Eq.) | Ultra 7 · 32 GB | `$ 44.528.273` | `$ 9.336.129` | **`$ 53.864.402`** | `$ 64.098.638` | `+$ 1.814.402` (+3,5%) |
+| **COT 1370 LENOVO · Balanceado** (53 Eq.) | Ultra 7 · 16 GB | `$ 42.506.879` | `$ 9.336.129` | **`$ 51.843.008`** | `$ 61.693.180` | **`−$ 206.992` (Bajo Ppto)** ✅🏆 |
+| **COT 1370 ASUS · Oferta Protegida Pro** (53 Eq.) | Ultra 7 · 32 GB (`B5405`) | `$ 52.372.359` | `$ 9.336.129` | **`$ 61.708.488`** | `$ 73.433.101` | `+$ 9.658.488` (+18,6%) |
+| **COT 1370 ASUS · Balanceado** (53 Eq.) | Ultra 7 · 16 GB (`B3405`) | `$ 47.428.827` | `$ 9.336.129` | **`$ 56.764.956`** | `$ 67.550.298` | `+$ 4.714.956` (+9,1%) |
+| **COT 1370 ASUS · Escenario 5 Mixto Sin Handhelds** (45 Eq.) | **3×16 GB + 3×32 GB** | **`$ 49.900.593`** | `$ 2.690.577` | **`$ 52.591.170`** | `$ 62.583.492` | `+$ 541.170` (+1,0%) |
 
 > **Oferta Protegida ASUS (Vigencia 30-11-2026 o agotar stock):** Equipos ASUS incluyen paquete oficial de servicios **36M On-Site NBD + ADP (daño accidental) + BSP + Retención de Disco (HDD Retention)** y disponibilidad local confirmada (`Garantías Business+ 2026`). En el simulador web también puede evaluarse el ajuste con `ExpertBook P1403` (`$ 51.374.378` neto).
 

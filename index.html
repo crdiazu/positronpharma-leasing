@@ -198,6 +198,10 @@
                 <span class="text-tn-muted">• Balanceado B3 (Ultra 7 · 16 GB):</span>
                 <span class="font-extrabold text-indigo-700 font-mono text-sm">$ 56.764.956 <span class="text-[10px] text-slate-500 font-semibold">(+9,1%)</span></span>
               </div>
+              <div class="flex justify-between items-center pt-1 border-t border-slate-200/80">
+                <span class="text-tn-navy font-semibold">• Esc. 5 Mixto (3×16G+3×32G · Sin HH · 45 eq):</span>
+                <span class="font-extrabold text-tn-cyan font-mono text-sm">$ 52.591.170 <span class="text-[10px] text-emerald-700 font-bold">(+1,0%)</span></span>
+              </div>
             </div>
           </div>
 
@@ -326,6 +330,26 @@
                 <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 67.550.298</td>
                 <td class="py-3 px-4 text-center font-bold text-indigo-700 text-xs bg-indigo-50/60">
                   +$ 4.714.956 (+9,1%)
+                </td>
+              </tr>
+
+              <!-- 5to Escenario: Todo ASUS Mixto Sin Handhelds (45 Eq.) -->
+              <tr class="hover:bg-cyan-50/60 transition bg-cyan-50/40 border-l-4 border-l-tn-cyan">
+                <td class="py-3 px-4">
+                  <div class="font-extrabold text-tn-navy flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-tn-cyan"></span>
+                    <span>COT 1370 ASUS · Escenario 5 (Mixto Sin Handhelds · 45 Eq.)</span>
+                    <span class="px-2 py-0.5 rounded bg-cyan-100 text-cyan-900 text-[10px] font-bold">Nuevo 5to Esc.</span>
+                  </div>
+                  <span class="text-[11px] text-tn-muted pl-4 block">ExpertBook B3406CCAP (29) + 3× B3405 (U7 16G) + 3× B5405CAA (U7 32G) + P440VA AiO (3) · Sin Handhelds</span>
+                </td>
+                <td class="py-3 px-3 text-center font-bold text-tn-navy">3×16 GB + 3×32 GB</td>
+                <td class="py-3 px-4 text-right font-mono font-semibold">$ 49.900.593</td>
+                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 2.690.577 <span class="text-[10px] block">(7 eq · s/HH)</span></td>
+                <td class="py-3 px-4 text-right font-black text-tn-navy font-mono text-sm">$ 52.591.170</td>
+                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 62.583.492</td>
+                <td class="py-3 px-4 text-center font-bold text-cyan-900 text-xs bg-cyan-100/60">
+                  +$ 541.170 (+1,0%)
                 </td>
               </tr>
             </tbody>
@@ -757,9 +781,10 @@
             <div class="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <span class="text-[11px] font-bold uppercase text-tn-muted block">1. Alternativa Global de Cómputo:</span>
-                <div class="flex gap-2 mt-1">
+                <div class="flex flex-wrap gap-2 mt-1">
                   <button onclick="setHardwareBrand('lenovo')" id="brand-lenovo" class="scenario-btn active px-3.5 py-1.5 rounded-lg border border-tn-border text-xs font-extrabold transition">COT 1370 LENOVO</button>
                   <button onclick="setHardwareBrand('asus')" id="brand-asus" class="scenario-btn px-3.5 py-1.5 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-extrabold transition">COT 1370 ASUS</button>
+                  <button onclick="applyScenario5()" id="btn-scenario5" class="px-3.5 py-1.5 rounded-lg border border-tn-cyan bg-cyan-50 hover:bg-tn-cyan hover:text-tn-navy text-cyan-900 text-xs font-extrabold transition">5to Escenario: Todo ASUS Mixto Sin Handhelds (45 eq.)</button>
                 </div>
               </div>
               <button onclick="resetBaseline()" class="px-3 py-1.5 rounded-lg bg-tn-surface hover:bg-blue-50 border border-tn-border text-xs font-bold text-tn-primary transition">
@@ -769,12 +794,15 @@
 
             <div>
               <span class="text-[11px] font-bold uppercase text-tn-muted block">2. Nivel de Rendimiento en Jefaturas (6 Laptop Corporativo):</span>
-              <div class="flex gap-2 mt-1">
+              <div class="flex flex-wrap gap-2 mt-1">
                 <button onclick="setHardwareTier('pro')" id="tier-pro" class="tier-btn px-3 py-1.5 rounded-lg border border-tn-navy bg-tn-navy text-white text-xs font-extrabold transition">
                   Nivel Pro (Ultra 7 · 32 GB RAM)
                 </button>
                 <button onclick="setHardwareTier('balanceado')" id="tier-balanceado" class="tier-btn px-3 py-1.5 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-extrabold transition">
                   Nivel Balanceado (Ultra 7 · 16 GB RAM)
+                </button>
+                <button onclick="setHardwareTier('mixto')" id="tier-mixto" class="tier-btn px-3 py-1.5 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-extrabold transition">
+                  Mixto 3+3 (3×16 GB + 3×32 GB)
                 </button>
               </div>
             </div>
@@ -1127,6 +1155,7 @@
           lapCorp: {
             pro: 'Lenovo ThinkPad T14 Gen 6 (Ultra 7 · 32G · 512G)',
             balanceado: 'Lenovo ThinkPad T14 Gen 6 (Ultra 7 · 16G · 512G)',
+            mixto: '3× T14 Gen 6 (U7 16G) + 3× T14 Gen 6 (U7 32G)',
           },
           aioStd: 'Lenovo ThinkCentre Neo 50a 24 (i5 · 16G · 512G)',
         },
@@ -1145,6 +1174,7 @@
           lapCorp: {
             pro: 'ASUS ExpertBook B5405CAA (Ultra 7 356H · 32G · 512G)',
             balanceado: 'ASUS ExpertBook B3405CCA (Ultra 7 255H · 16G · 512G)',
+            mixto: '3× B3405 (U7 16G) + 3× B5405CAA (U7 32G)',
           },
           aioStd: 'ASUS ExpertCenter P440VA AiO (Core 5 210H · 16G · 512G)',
         },
@@ -1192,7 +1222,7 @@
 
     function setHardwareTier(tier) {
       selectedTier = tier;
-      ['pro', 'balanceado'].forEach((t) => {
+      ['pro', 'balanceado', 'mixto'].forEach((t) => {
         const btn = document.getElementById(`tier-${t}`);
         if (t === tier) {
           btn.className = 'tier-btn px-3 py-1.5 rounded-lg border border-tn-navy bg-tn-navy text-white text-xs font-extrabold transition';
@@ -1203,6 +1233,25 @@
 
       updateBrandUI();
       calculateTotal();
+    }
+
+    function applyScenario5() {
+      quantities = { lapStd: 29, lapCorp: 6, aioStd: 3, handheld: 0, tablet: 5, multi: 2 };
+      Object.keys(quantities).forEach((k) => {
+        document.getElementById(`qty-${k}`).innerText = quantities[k];
+      });
+      document.getElementById('printer-model').value = 'wfc5891';
+      if (document.getElementById('asus-lap-select')) {
+        document.getElementById('asus-lap-select').value = 'b3406';
+      }
+      selectedTier = 'mixto';
+      ['pro', 'balanceado', 'mixto'].forEach((t) => {
+        const btn = document.getElementById(`tier-${t}`);
+        btn.className = t === 'mixto'
+          ? 'tier-btn px-3 py-1.5 rounded-lg border border-tn-navy bg-tn-navy text-white text-xs font-extrabold transition'
+          : 'tier-btn px-3 py-1.5 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-extrabold transition';
+      });
+      setHardwareBrand('asus');
     }
 
     function updateBrandUI() {
@@ -1220,7 +1269,6 @@
       }
 
       const lapCorpName = brandData.names.lapCorp[selectedTier];
-      const lapCorpPrice = brandData.lapCorp[selectedTier];
       const aioName = brandData.names.aioStd;
       const aioPrice = brandData.aioStd;
 
@@ -1229,11 +1277,21 @@
       document.getElementById('lbl-aio-std-brand').innerText = aioName;
 
       document.getElementById('lbl-lap-std-price').innerText = `Unitario neto: ${fmtCLP(lapStdPrice)} (3Y On-Site + ADP)`;
-      document.getElementById('lbl-lap-corp-price').innerText = `Unitario neto: ${fmtCLP(lapCorpPrice)} (3Y On-Site + ADP)`;
+      if (selectedTier === 'mixto') {
+        const avgPrice = Math.round((brandData.lapCorp.balanceado + brandData.lapCorp.pro) / 2);
+        document.getElementById('lbl-lap-corp-price').innerText = `Unitario: ${fmtCLP(brandData.lapCorp.balanceado)} (16G) / ${fmtCLP(brandData.lapCorp.pro)} (32G) · Prom. ${fmtCLP(avgPrice)}`;
+      } else {
+        const lapCorpPrice = brandData.lapCorp[selectedTier];
+        document.getElementById('lbl-lap-corp-price').innerText = `Unitario neto: ${fmtCLP(lapCorpPrice)} (3Y On-Site + ADP)`;
+      }
       document.getElementById('lbl-aio-std-price').innerText = `Unitario neto: ${fmtCLP(aioPrice)} (3Y On-Site + ADP)`;
 
       const brandLabel = selectedBrand === 'lenovo' ? 'COT 1370 LENOVO' : 'COT 1370 ASUS';
-      const tierLabel = selectedTier === 'pro' ? 'NIVEL PRO (32 GB)' : 'NIVEL BALANCEADO (16 GB)';
+      const tierLabel = selectedTier === 'pro'
+        ? 'NIVEL PRO (32 GB)'
+        : selectedTier === 'balanceado'
+          ? 'NIVEL BALANCEADO (16 GB)'
+          : 'MIXTO 3+3 (3×16 GB + 3×32 GB)';
       document.getElementById('res-scenario-title').innerText = `${brandLabel} · ${tierLabel}`;
     }
 
@@ -1284,7 +1342,6 @@
         const asusOptionKey = document.getElementById('asus-lap-select') ? document.getElementById('asus-lap-select').value : 'b3406';
         lapStdPrice = brandData.lapStdOptions[asusOptionKey].price;
       }
-      const lapCorpPrice = brandData.lapCorp[selectedTier];
       const aioPrice = brandData.aioStd;
 
       const hType = document.getElementById('handheld-warranty').value;
@@ -1296,7 +1353,9 @@
       document.getElementById('lbl-multi-price').innerText = `Unitario neto: ${fmtCLP(printer.price)} (${printer.name})`;
 
       const sLapStd = quantities.lapStd * lapStdPrice;
-      const sLapCorp = quantities.lapCorp * lapCorpPrice;
+      const sLapCorp = selectedTier === 'mixto'
+        ? Math.floor(quantities.lapCorp / 2) * brandData.lapCorp.pro + Math.ceil(quantities.lapCorp / 2) * brandData.lapCorp.balanceado
+        : quantities.lapCorp * brandData.lapCorp[selectedTier];
       const sAIO = quantities.aioStd * aioPrice;
       const sComputo = sLapStd + sLapCorp + sAIO;
 
