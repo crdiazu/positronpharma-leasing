@@ -31,7 +31,7 @@ fill_title = PatternFill(start_color=C_NAVY_DARK, fill_type="solid")
 fill_head = PatternFill(start_color=C_NAVY_MED, fill_type="solid")
 fill_param_box = PatternFill(start_color=C_AMBER_LIGHT, fill_type="solid")
 fill_sale = PatternFill(start_color=C_EMERALD_LIGHT, fill_type="solid")
-fill_zebra = PatternFill(start_color=C_GRAY_LIGHT, fill_type="solid")
+fill_alt = PatternFill(start_color=C_GRAY_LIGHT, fill_type="solid")
 fill_white = PatternFill(start_color=C_WHITE, fill_type="solid")
 fill_tot = PatternFill(start_color=C_NAVY_DARK, fill_type="solid")
 
@@ -63,7 +63,7 @@ ws.row_dimensions[2].height = 18
 # Bloque de Parámetros Globales (Filas 4 y 5)
 ws["B4"] = "Tasa de Cambio (CLP/USD):"
 ws["B4"].font = f_param_lbl
-ws["C4"] = 980
+ws["C4"] = 1000
 ws["C4"].font = f_param_val
 ws["C4"].fill = fill_param_box
 ws["C4"].border = border_cell
@@ -124,8 +124,8 @@ items_data = [
     ("Caso 1: Movilidad Administrativa", "Lenovo", "21SY002QCL", "Lenovo ThinkPad E14 Gen 7 (Core Ultra 7 155H, 16GB RAM, 512GB SSD Opal, 14 pulg IPS, Win11 Pro, MIL-STD)", 29, 1256.00, "3Y On-Site Premier + ADP (Líquidos/Caídas)"),
     ("Caso 2: Jefaturas y Movilidad Crítica", "Lenovo", "21QD001GCL", "Lenovo ThinkPad T14 Gen 6 (Core Ultra 7 255H, 32GB RAM, 1TB SSD, 14 pulg WUXGA, Chasis Magnesio)", 6, 1611.00, "3Y Premier Support 24/7 + ADP + Keep Your Drive"),
     ("Caso 3: Puestos Fijos y Laboratorio", "Lenovo", "13QH004HCS", "Lenovo ThinkCentre Neo 50a 24 G6 AIO (Core i5 13th, 16GB, 512GB SSD, 23.8 pulg Borderless + Kit Wireless)", 3, 970.25, "3Y On-Site NBD + Kit Inalámbrico"),
-    ("Caso 4: Despacho Trazable Radiofármacos", "Zebra", "WCMTB-T27B6ABC2-A6", "Zebra TC27 Industrial Handheld 5G/Wi-Fi 6E (Qualcomm Octa-Core, SE4710 1D/2D, IP68/IP65, Gorilla Glass)", 8, 646.27, "Zebra OneCare Essential 3 Años Integral"),
-    ("Caso 4: Accesorios Operativos Despacho", "Zebra", "SG-TC2L-STYLUS-03", "Kit Operativo Limpio (Stylus cautivo punta fina con tether retráctil + Correa de mano ergonómica)", 8, 75.00, "Garantía oficial Zebra"),
+    ("Caso 4: Despacho Trazable Radiofármacos", "Honeywell", "EDA52-11AE64N21RK", "Honeywell ScanPal EDA52 4G LTE (Qualcomm Octa-Core, S0703 1D/2D, IP67, 4/64GB, Android 11)", 8, 706.09, "Gold Maintenance 3 Años Integral"),
+    ("Caso 4: Accesorios Operativos Despacho", "Honeywell", "—", "Accesorios por cotizar (cunas, baterías, boots, handstrap, film y stylus) — supuesto interno USD 75/equipo", 8, 75.00, "Reemplazar por cotización Ingram"),
     ("Caso 5: Supervisión y Movilidad Planta", "Lenovo", "ZAFM0762CL", "Lenovo IdeaTab 11 pulg 2.5K 5G (Dimensity 7050, 8GB RAM, 256GB, Sim 5G + Folio Teclado + Lenovo Pen)", 5, 285.00, "2Y Oficial Lenovo + Teclado y Lápiz"),
     ("Caso 6A: Impresión Confidencial RRHH", "Brother", "MFC-L3760CDW", "Brother Multifuncional Láser Color LED (27 ppm, Dúplex, Red/Wi-Fi, Secure Print con liberación por PIN)", 1, 493.15, "2 Años Garantía Oficial On-Site"),
     ("Caso 6B: Impresión Volumen Heat-Free", "Epson", "C11CJ88303", "Epson EcoTank L6490 Tinta Pigmentada DURABrite (PrecisionCore Sin Calor, Dúplex, ADF 35h, 7500 págs negro)", 1, 356.03, "2 Años o 50.000 págs Garantía Oficial")
@@ -195,7 +195,7 @@ for idx, itm in enumerate(items_data):
     
     ws.cell(row=r, column=15, value=sla).alignment = Alignment(horizontal="left", vertical="center")
     
-    rf = fill_zebra if idx % 2 == 1 else fill_white
+    rf = fill_alt if idx % 2 == 1 else fill_white
     for col in range(1, 16):
         cell_item = ws.cell(row=r, column=col)
         cell_item.border = border_cell
@@ -391,7 +391,7 @@ for idx, itm in enumerate(items_data):
     c_del.number_format = "$#,##0"
     c_del.font = Font(name="Segoe UI", size=9, bold=True, color="047857")
     
-    rf2 = fill_zebra if idx % 2 == 1 else fill_white
+    rf2 = fill_alt if idx % 2 == 1 else fill_white
     for col in range(1, 13):
         c_i = ws2.cell(row=r2, column=col)
         c_i.border = border_cell
