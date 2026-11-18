@@ -2,67 +2,57 @@
 
 ### Positronpharma S.A. × TECNOVOA SpA (Unidad 06 · COT-1370 Global)
 
-[![Portal & Simulador Global](https://img.shields.io/badge/Portal_Interactivo-GitHub_Pages-00add7?style=for-the-badge)](https://crdiazu.github.io/positronpharma-leasing/)
-[![Presentación Ejecutiva Reveal.js](https://img.shields.io/badge/Presentación_TECNOVOA-Reveal.js-031a3d?style=for-the-badge)](https://crdiazu.github.io/positronpharma-leasing/slides.html)
+[![Portal & Planilla Interactiva](https://img.shields.io/badge/Portal_Interactivo-GitHub_Pages-00add7?style=for-the-badge)](https://crdiazu.github.io/positronpharma-leasing/)
+[![Portal Producción Vercel](https://img.shields.io/badge/Vercel_Producción-Online-031a3d?style=for-the-badge)](https://positronpharma-leasing.vercel.app)
 
-Propuesta técnico-comercial integral en 3 opciones ejecutivas para **Positronpharma S.A.** (RUT `76.089.296-3` · Av. Rancagua N° 878, Providencia) integrando **Lenovo, ASUS, Honeywell y Epson**, con garantía homologada **3 años On-Site + ADP**.
-
----
-
-## 0. Resumen de las 3 Opciones Ejecutivas
-
-1. **Opción 1 — Lenovo Full · 53 Equipos** *(con opción de eliminar las 8 Handhelds → 45 Eq.)*:
-   - **53 equipos (Pro 32 GB / Bal. 16 GB):** `$ 53.864.402` / **`$ 51.843.008` neto (`−$ 206.992` ✅)**
-   - **Sin Handhelds (45 eq.):** **`$ 47.218.850`** Pro / **`$ 45.197.456`** Balanceado neto (`✅ Bajo Ppto`).
-2. **Opción 2 — ASUS Full · 53 Equipos** *(con opción de eliminar las 5 Tablets → 48 Eq.)*:
-   - **53 equipos (Pro B5 32 GB / Bal. B3 16 GB):** `$ 61.708.488` / `$ 56.764.956` neto.
-   - **Sin Tablets (48 eq.):** `$ 60.094.193` Pro / `$ 55.150.661` Balanceado neto.
-3. **Opción 3 — Todo ASUS Mixto (3×16 GB + 3×32 GB) · Sin Handhelds (45 Equipos)**:
-   - **45 equipos (29 Lap Std + 3 Core 16G + 3 Core 32G + 3 AIO + 5 Tab + 2 Multi):** **`$ 52.591.170` neto** (`+1,0 %` s/ppto).
-   - **Sin Tablets ni Handhelds (40 eq.):** **`$ 50.976.875` neto (`−$ 1.073.125` ✅ Bajo Ppto)**.
+Propuesta técnico-comercial homologada en generación **2025/2026 (Intel Core Ultra 5 & Core Ultra 7 Serie 2)** para **Positronpharma S.A.** (RUT `76.089.296-3` · Av. Rancagua N° 878, Providencia), comparando **LENOVO vs ASUS** + **5 Tablets 5G Kit** + **2 Multifuncionales Epson WF-C5891** (Parque consolidado de **45 equipos**, sin Handhelds) y alternativas de financiamiento vía **Leasing Crece Capital**.
 
 ---
 
-## 1. Matriz de Decisión Comercial (5 Escenarios Globales)
+## 1. Resumen Comparativo Consolidado (LENOVO vs ASUS + 5 Tablets + 2 Impresoras = 45 Equipos)
 
-| Escenario Propuesto | Jefaturas (6 Eq.) | Cómputo (38 Eq.) | Móvil/Multi | Total Parque Neto | Total c/IVA 19% | Vs. Presupuesto ($ 52,05M) |
+| Escenario Oficial (45 Equipos) | Jefaturas (6 Eq.) | Subtotal Cómputo (38 Eq.) | 5 Tablets + 2 Impresoras | Total Parque Neto (45 Eq.) | Total a Pagar c/IVA (19%) | Vs. Presupuesto ($ 52.050.000) |
 | :--- | :---: | ---: | ---: | ---: | ---: | :---: |
-| **COT 1370 LENOVO · Nivel Pro** (53 Eq.) | Ultra 7 · 32 GB | `$ 44.528.273` | `$ 9.336.129` | **`$ 53.864.402`** | `$ 64.098.638` | `+$ 1.814.402` (+3,5%) |
-| **COT 1370 LENOVO · Balanceado** (53 Eq.) | Ultra 7 · 16 GB | `$ 42.506.879` | `$ 9.336.129` | **`$ 51.843.008`** | `$ 61.693.180` | **`−$ 206.992` (Bajo Ppto)** ✅🏆 |
-| **COT 1370 ASUS · Oferta Protegida Pro** (53 Eq.) | Ultra 7 · 32 GB (`B5405`) | `$ 52.372.359` | `$ 9.336.129` | **`$ 61.708.488`** | `$ 73.433.101` | `+$ 9.658.488` (+18,6%) |
-| **COT 1370 ASUS · Balanceado** (53 Eq.) | Ultra 7 · 16 GB (`B3405`) | `$ 47.428.827` | `$ 9.336.129` | **`$ 56.764.956`** | `$ 67.550.298` | `+$ 4.714.956` (+9,1%) |
-| **COT 1370 ASUS · Escenario 5 Mixto Sin Handhelds** (45 Eq.) | **3×16 GB + 3×32 GB** | **`$ 49.900.593`** | `$ 2.690.577` | **`$ 52.591.170`** | `$ 62.583.492` | `+$ 541.170` (+1,0%) |
-
-> **Oferta Protegida ASUS (Vigencia 30-11-2026 o agotar stock):** Equipos ASUS incluyen paquete oficial de servicios **36M On-Site NBD + ADP (daño accidental) + BSP + Retención de Disco (HDD Retention)** y disponibilidad local confirmada (`Garantías Business+ 2026`). En el simulador web también puede evaluarse el ajuste con `ExpertBook P1403` (`$ 51.374.378` neto).
+| **COT 1370 LENOVO · Oficial Mixto** | 3× 32 GB (1TB) + 3× 16 GB | **`$ 48.904.000`** | `$ 2.690.577` | **`$ 51.594.577`** | **`$ 61.397.547`** | **`−$ 455.423` (Bajo Ppto)** ✅ |
+| **COT 1370 ASUS · Oficial Mixto** | 3× 32 GB (`B5`) + 3× 16 GB (`B3`) | **`$ 47.770.000`** | `$ 2.690.577` | **`$ 50.460.577`** | **`$ 60.048.087`** | **`−$ 1.589.423` (Bajo Ppto)** ✅🏆 |
+| **Variante LENOVO · 6× Jefaturas 16G** | 6× Ultra 7 · 16 GB (`T14 G6`) | `$ 46.234.000` | `$ 2.690.577` | **`$ 48.924.577`** | `$ 58.220.247` | **`−$ 3.125.423` (Bajo Ppto)** ✅ |
+| **Variante ASUS · 6× Jefaturas 16G** | 6× Ultra 7 255H · 16 GB | `$ 45.430.000` | `$ 2.690.577` | **`$ 48.120.577`** | `$ 57.263.487` | **`−$ 3.929.423` (Bajo Ppto)** ✅ |
 
 ---
 
-## 2. Desglose Técnico por Línea de Equipamiento
+## 2. Planilla Oficial LENOVO (Cómputo 38 Eq. = `$ 48.904.000` Neto)
 
-| # | Línea de Equipamiento | Cant. | Lenovo / ASUS Especificación Homologada | Cobertura | Fichas PDF |
-| :-: | :--- | :-: | :--- | :---: | :---: |
-| 1 | **Laptop Estándar** | 29 | **ThinkBook 14** (i5 16/512) vs **ExpertBook B3406CCAP** (U5 225H · 16/512 · 14" WQXGA 400n) | 36M On-Site NBD + ADP + Ret. SSD | [Lenovo](docs/ficha_thinkbook_14_i5.pdf) · [ASUS B3](docs/ficha_asus_b3406.pdf) |
-| 2 | **Laptop Corporativo Jefaturas** | 6 | **ThinkPad T14 G6** (U7 32/16) vs **ExpertBook B5405CAA** (U7 356H · 32G · Wi-Fi 7) | 36M On-Site NBD + ADP + Ret. SSD | [Lenovo](docs/ficha_thinkpad_t14_u7.pdf) · [ASUS B5](docs/ficha_asus_b5405.pdf) |
-| 3 | **All-in-One Estándar 23.8"** | 3 | **ThinkCentre Neo 50a** (i5 16/512) vs **ExpertCenter P440VA AiO** (Core 5 210H · 100Hz HAS) | 36M On-Site NBD + ADP + Ret. SSD | [Lenovo](docs/ficha_thinkcentre_neo50a_aio.pdf) · [ASUS P400](docs/ficha_asus_p440va_aio.pdf) |
-| 4 | **Handheld Industrial Despacho SAP** | 8 | **Honeywell ScanPal EDA52** · 4G LTE · 2D S0703 · IP67 · Android 11/GMS | Con Gold 3Y o Estándar 1Y | [Honeywell](docs/ficha_honeywell_eda52_4g.pdf) |
-| 5 | **Tablet Operacional 5G Kit** | 5 | **Lenovo IdeaTab 11" 2.5K 5G** (8/256) + Folio Keyboard + Tab Pen | Garantía oficial Lenovo | [Tablet 5G](docs/ficha_lenovo_tablet_5g.pdf) |
-| 6 | **Multifuncional Corporativo RRHH** | 2 | **Epson WorkForce Pro WF-C5891** (Heat-Free 25 ppm · PIN seguro RRHH) | Garantía oficial Epson | [Epson](docs/ficha_epson_workforce_ecotank.pdf) |
-
-> **Garantías ASUS Business+ 2026:** Ver detalle de cobertura corporativa On-Site NBD + ADP en [garantias_asus_2026.pdf](docs/garantias_asus_2026.pdf).  
-> **Alternativa en Handhelds:** Si el cliente opta por adquirir los 8 terminales Honeywell EDA52 con garantía estándar de 1 año (sin servicio Gold 3Y), el valor unitario baja de `$ 830.694` a `$ 690.035` neto, generando un **ahorro adicional de `$ 1.125.272` neto** en cualquier escenario.
+| Ítem | SKU | Vendor | Categoría | Descripción / Modelo | Cant. | Precio Unit. Neto | Total Neto |
+| :-: | :---: | :---: | :--- | :--- | :-: | ---: | ---: |
+| **1.0** | `21SS000LCL` | LENOVO | LAPTOP Estándar | **ThinkPad E16 Gen 3**, Intel® Core™ Ultra 5 225U (up to 3.80GHz, 12MB), 16" WUXGA, W11P64, 16GB, 512GB SSD PCIe Gen4 Opal, Wi-Fi 6, FPR, 5MP RGB, 64Wh, Teclado Numérico Español, **3Y On Site** | 29 | `$ 1.256.000` | `$ 36.424.000` |
+| **2.0** | `21R20014CL` | Lenovo | Notebook Pro ultra 7 - 32G | **Intel Core Ultra 7 255U**, 12C/14T Gen 6 (Max Turbo 5.2GHz), **32GB LPDDR5X-7467**, **1TB SSD PCIe 4.0x4 NVMe Opal 2.0**, Windows 11 Pro, Black, **3Y Onsite upgrade** | 3 | `$ 1.990.000` | `$ 5.970.000` |
+| **3.0** | `21QD001GCL` | Lenovo | Laptop Pro U7 - 16 - ABS | **ThinkPad T14 Gen 6**, Intel Core Ultra 7 255U, 12C/14T, 16GB DDR5 (2 slots Max 64GB), 512GB SSD PCIe 4.0x4 Opal 2.0, **14" WUXGA 400nits**, Windows 11 Pro, **3 años onsite** (1.38 kg) | 3 | `$ 1.100.000` | `$ 3.300.000` |
+| **4.0** | `13FA0032CS` | Lenovo | All-in-One | **ThinkCentre Neo 55a 24 Gen 6**, AMD Ryzen 5 220 (6C/12T up to 4.9GHz), 16GB DDR5-5600, 512GB SSD PCIe 4.0x4, AMD Radeon 740M, Windows 11 Pro, Luna Grey, **1-year Onsite** | 3 | `$ 1.070.000` | `$ 3.210.000` |
 
 ---
 
-## 3. Acceso a Aplicación Web y Presentación
+## 3. Planilla Oficial ASUS (Cómputo 38 Eq. = `$ 47.770.000` Neto / `$ 56.846.300` c/IVA)
 
-- **Portal Web y Simulador Dinámico:** [index.html](https://crdiazu.github.io/positronpharma-leasing/) (Permite cambiar en tiempo real entre Lenovo y ASUS, evaluar el nivel de memoria en jefaturas, la garantía de Honeywell y calcular cuotas Contado / 3 Cuotas / Leasing 36M).
-- **Presentación de Diapositivas Reveal.js:** [slides.html](https://crdiazu.github.io/positronpharma-leasing/slides.html) (9 diapositivas ejecutivas con fotos de producto reales, botones de acceso directo a todas las fichas PDF y matriz comparativa 2x2).
+| Ítem | SKU | Vendor | Categoría | Descripción / Modelo | Cant. | Precio Unit. Neto | Total Neto |
+| :-: | :---: | :---: | :--- | :--- | :-: | ---: | ---: |
+| **1.0** | `90NX0AP1-M001V0` | ASUS | Notebook estándar | **ExpertBook B3406CCA** U5 16GB 512GB W11P **36M NBD+ADP+HDD Ret.** | 29 | `$ 1.190.000` | `$ 34.510.000` |
+| **2.0** | `90NX0A21-M00H50` | ASUS | Notebook Pro u7 32 | **ExpertBook B5405CAA** U7 32GB 512GB W11P **36M NBD+ADP+HDD Ret.** (Chasis Aluminio) | 3 | `$ 2.040.000` | `$ 6.120.000` |
+| **3.0** | `90NX0AP1-M000T0` | ASUS | Notebook Pro u7 16 | **U7 255H**, 512G, 16G, 14"WUXGA, W11P **36M NBD+ADP+HDD Ret.** (Chasis ABS) | 3 | `$ 1.260.000` | `$ 3.780.000` |
+| **4.0** | `90PT03X6-M0B7L0` | ASUS | All-in-One | **ExpertCenter P440VA AiO** 23.8 i5 16GB 512GB **36M On-Site+ADP** | 3 | `$ 1.120.000` | `$ 3.360.000` |
 
 ---
 
-## 4. Contacto Comercial & Emisión de Orden de Compra
+## 4. Equipos Transversales (+5 Tablets + 2 Impresoras = `$ 2.690.577` Neto)
 
-- **Razón Social:** TECNOVOA SPA · RUT: `77.194.064-1`
-- **Dirección:** Av. Pedro de Valdivia N° 273, Of. 606, Providencia, Santiago
-- **Ejecutivo:** Cristián Díaz Urra · `+56 9 4943 8288` · `cristian@tecnovoa.cl` · [www.tecnovoa.cl](https://www.tecnovoa.cl)
-- **Facturación / Pago:** Banco Santander · Cuenta Corriente N° `76189390` · `finanzas@tecnovoa.cl`
+| Ítem | SKU | Vendor | Categoría | Descripción / Modelo | Cant. | Precio Unit. Neto | Total Neto |
+| :-: | :---: | :---: | :--- | :--- | :-: | ---: | ---: |
+| **5.0** | `ZAFM0221CL` | Lenovo | Tablet 5G Kit | **Lenovo IdeaTab 11" 2.5K 5G Kit** (MediaTek Dimensity 6300 · 8GB / 256GB · Android 15 + Folio Keyboard + Lenovo Tab Pen) | 5 | `$ 322.859` | `$ 1.614.295` |
+| **6.0** | `C11CJ08301` | Epson | Multifuncional RRHH | **Epson WorkForce Pro WF-C5891** (Heat-Free 25 ppm, Impresión Segura PIN RRHH, Dúplex Automático, Red) | 2 | `$ 538.141` | `$ 1.076.282` |
+
+---
+
+## 5. Alternativa Financiera — Crece Capital Leasing
+
+- **Ejecutiva:** Carolina Guevara (`aguevara@crececapital.cl` · `+56 9 4111 1665`)
+- **Leasing Operativo 36 Meses:** Cuota referencial **`$ 1.694.713` neto/mes** (`$ 2.016.708` c/IVA/mes) · 100% Gasto Operacional (OPEX) · [Ver PDF](docs/LEASING%20OPERATIVO%2036%20MESES%20(1).pdf)
+- **Leasing Financiero 12 Meses:** Cuota referencial **`$ 4.354.209` c/IVA/mes** (12 cuotas + opción de compra) · [Ver PDF](docs/LEASING%20FINANCIERO%2012%20MESES%20(1).pdf)

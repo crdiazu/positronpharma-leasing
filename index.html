@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     tailwind.config = {
@@ -53,16 +52,6 @@
       border-radius: 1rem;
       box-shadow: 0 6px 24px -10px rgba(3, 26, 61, 0.08);
     }
-    .scenario-btn.active {
-      background-color: #031a3d;
-      color: #ffffff;
-      border-color: #031a3d;
-    }
-    .mode-btn.active {
-      background-color: #0758a6;
-      color: #ffffff;
-      border-color: #0758a6;
-    }
     @media print {
       .no-print { display: none !important; }
       body { background: #ffffff !important; }
@@ -90,9 +79,9 @@
 
       <div class="hidden lg:flex items-center gap-6 text-xs font-semibold tracking-wide text-slate-200">
         <a href="#comparativa" class="hover:text-tn-cyanLight transition">Lenovo vs ASUS</a>
-        <a href="#catalogo" class="hover:text-tn-cyanLight transition">Catálogo 53 Eq.</a>
-        <a href="#handhelds" class="hover:text-tn-cyanLight transition">Handheld SAP</a>
-        <a href="#simulador" class="hover:text-tn-cyanLight transition">Simulador Global</a>
+        <a href="#catalogo" class="hover:text-tn-cyanLight transition">Catálogo 45 Eq.</a>
+        <a href="#planilla" class="hover:text-tn-cyanLight transition">Planilla de Cotización</a>
+        <a href="#leasing-crece" class="hover:text-tn-cyanLight transition">Leasing Crece Capital</a>
         <a href="#fichas" class="hover:text-tn-cyanLight transition">Fichas PDF</a>
       </div>
 
@@ -109,7 +98,7 @@
     </div>
   </nav>
 
-  <!-- Hero Corporativo TECNOVOA × Positronpharma (Formato Ejecutivo + 3 Opciones Abajo) -->
+  <!-- Hero Corporativo TECNOVOA × Positronpharma -->
   <header id="resumen" class="tn-hero-bg text-white relative overflow-hidden">
     <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-tn-cyan/15 blur-3xl pointer-events-none"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-9 lg:py-12 relative z-10 space-y-7">
@@ -138,13 +127,13 @@
             Propuesta Ejecutiva &mdash; Renovación Integral de Parque Tecnológico
           </h1>
           <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
-            <strong class="text-white">Positronpharma S.A.</strong> (RUT 76.089.296-3 &middot; Av. Rancagua N° 878, Providencia) &middot; Arquitectura corporativa homologada con <strong class="text-tn-cyanLight">Garantía 3 Años On-Site + ADP</strong> en cómputo, despacho SAP y multifuncionales RRHH.
+            <strong class="text-white">Positronpharma S.A.</strong> (RUT 76.089.296-3 &middot; Av. Rancagua N° 878, Providencia) &middot; Comparativa homologada <strong class="text-tn-cyanLight">LENOVO vs ASUS</strong> en procesadores <strong class="text-white">Intel Core Ultra 5 &amp; Core Ultra 7</strong> + <strong>5 Tablets 5G Kit</strong> + <strong>2 Multifuncionales Epson</strong> (Parque oficial de 45 equipos).
           </p>
           <div class="flex flex-wrap gap-2 pt-1 text-[11px] font-semibold">
-            <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">29 Laptops Estándar (16/512)</span>
-            <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">6 Laptops Jefaturas (Ultra 7)</span>
+            <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">29 Laptops Estándar (Core Ultra 5 · 16/512)</span>
+            <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">3 Laptops Jefatura 1 (Ultra 7 · 32 GB)</span>
+            <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">3 Laptops Jefatura 2 (Ultra 7 · 16 GB)</span>
             <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">3 All-in-One 23.8&quot;</span>
-            <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">8 Handhelds SAP (EDA52)</span>
             <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">5 Tablets 5G Kit</span>
             <span class="px-2.5 py-1 rounded-lg bg-white/10 border border-white/15">2 Multifuncionales Epson</span>
           </div>
@@ -170,182 +159,178 @@
             <div class="bg-white rounded-lg px-2 py-1.5 flex items-center justify-center shadow-sm" title="ASUS">
               <img src="assets/brands/logo_asus.png" alt="ASUS" class="h-3.5 w-auto object-contain" />
             </div>
-            <div class="bg-white rounded-lg px-2 py-1.5 flex items-center justify-center shadow-sm" title="Honeywell">
-              <img src="assets/brands/logo_honeywell.png" alt="Honeywell" class="h-3.5 w-auto object-contain" />
+            <div class="bg-white rounded-lg px-2 py-1.5 flex items-center justify-center shadow-sm" title="Crece Capital">
+              <span class="text-[10px] font-black text-[#031a3d] tracking-tight">CRECE</span>
             </div>
             <div class="bg-white rounded-lg px-2 py-1.5 flex items-center justify-center shadow-sm" title="Epson">
               <img src="assets/brands/logo_epson.png" alt="Epson" class="h-4 w-auto object-contain" />
             </div>
           </div>
           <div class="flex gap-2 pt-1 no-print">
-            <a href="#simulador" class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-tn-cyan hover:bg-tn-cyanLight text-tn-navy font-bold text-xs transition shadow">
-              <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
-              Simulador
+            <a href="#planilla" class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-tn-cyan hover:bg-tn-cyanLight text-tn-navy font-bold text-xs transition shadow">
+              <i data-lucide="table" class="w-3.5 h-3.5"></i>
+              Planilla Maestra
             </a>
-            <a href="slides.html" class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-white/15 hover:bg-white/25 border border-white/25 text-white font-semibold text-xs transition">
-              <i data-lucide="presentation" class="w-3.5 h-3.5 text-tn-cyanLight"></i>
-              Diapositivas
+            <a href="#leasing-crece" class="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-white/15 hover:bg-white/25 border border-white/25 text-white font-semibold text-xs transition">
+              <i data-lucide="badge-dollar-sign" class="w-3.5 h-3.5 text-tn-cyanLight"></i>
+              Leasing Crece
             </a>
           </div>
         </div>
       </div>
 
-      <!-- 3 Opciones Ejecutivas Abajo -->
+      <!-- 3 Opciones Ejecutivas Abajo: LENOVO vs ASUS + Financiamiento Leasing -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 pt-2">
 
-        <!-- OPCIÓN 1: LENOVO 53 EQUIPOS (Con opción de eliminar las Handhelds) -->
+        <!-- OPCIÓN 1: LENOVO + 5 TABLETS + 2 IMPRESORAS (45 EQUIPOS) -->
         <div class="bg-white text-tn-ink rounded-2xl p-5 shadow-2xl border-t-4 border-t-tn-primary flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between gap-2 border-b border-tn-border pb-3">
               <div>
-                <span class="px-2 py-0.5 rounded bg-blue-100 text-tn-primary text-[10px] font-extrabold uppercase tracking-wider">Opción 1 &middot; Base Recomendada</span>
-                <h2 class="text-base font-extrabold text-tn-navy mt-1">Lenovo Full &middot; 53 Equipos</h2>
+                <span class="px-2 py-0.5 rounded bg-blue-100 text-tn-primary text-[10px] font-extrabold uppercase tracking-wider">Alternativa A &middot; Tecnología Ultra 5 / Ultra 7</span>
+                <h2 class="text-base font-extrabold text-tn-navy mt-1">COT 1370 LENOVO &middot; 45 Equipos</h2>
               </div>
               <img src="assets/brands/logo_lenovo.png" alt="Lenovo" class="h-6 w-auto object-contain rounded" />
             </div>
 
             <p class="text-[11px] text-tn-muted leading-relaxed">
-              29 ThinkBook 14 (i5 16/512) + 6 ThinkPad T14 G6 (U7) + 3 Neo 50a AiO + <strong>8 EDA52 SAP</strong> + 5 Tablet 5G + 2 Epson WF-C5891.
+              29 <strong>ThinkPad E16 G3</strong> (U5 225U · 16" WUXGA) + 3 <strong>Notebook Pro</strong> (U7 255U · 32G/1TB) + 3 <strong>ThinkPad T14 G6</strong> (U7 255U · 16G/512) + 3 <strong>Neo 55a G6</strong> AiO + <strong>5 Tablets 5G</strong> + <strong>2 Epson WF-C5891</strong>.
             </p>
 
             <div class="space-y-1.5 text-xs">
               <div class="flex justify-between items-center py-1 border-b border-tn-border/60">
-                <span class="text-tn-muted">• Pro 53 eq. (6× U7 32 GB):</span>
-                <strong class="font-mono text-tn-primary">$ 53.864.402 <span class="text-[10px] font-semibold text-slate-500">(+3,5%)</span></strong>
+                <span class="text-tn-muted">• Subtotal Cómputo Lenovo (38 eq.):</span>
+                <strong class="font-mono text-tn-navy">$ 48.904.000 <span class="text-[10px] text-slate-500">neto</span></strong>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-tn-border/60">
+                <span class="text-tn-muted">• + 5 Tablets 5G + 2 Impresoras (7 eq.):</span>
+                <strong class="font-mono text-slate-700">$ 2.690.577 <span class="text-[10px] text-slate-500">neto</span></strong>
               </div>
               <div class="flex justify-between items-center py-1">
-                <span class="text-tn-muted">• Balanceado 53 eq. (6× U7 16 GB):</span>
-                <strong class="font-mono text-emerald-700">$ 51.843.008 <span class="text-[10px] font-bold">(−$ 207K ✅)</span></strong>
+                <span class="font-bold text-tn-navy">• Total Parque 45 Eq. (Neto):</span>
+                <strong class="font-mono text-emerald-700 text-sm">$ 51.594.577 <span class="text-[10px] font-bold">(−$ 455K ✅)</span></strong>
               </div>
             </div>
 
             <div class="p-3 rounded-xl bg-blue-50/80 border border-blue-200 text-xs space-y-1">
-              <div class="text-[10px] font-extrabold uppercase text-tn-primary flex justify-between">
-                <span>Opcional: Eliminar 8 Handhelds</span>
-                <span>−$ 6.645.552 &rarr; 45 Eq.</span>
+              <div class="flex justify-between text-[11px]">
+                <span class="text-slate-600">Total General c/IVA (45 eq.):</span>
+                <strong class="font-mono text-tn-navy">$ 61.397.547</strong>
               </div>
-              <div class="flex justify-between">
-                <span class="text-tn-muted">Pro sin Handhelds:</span>
-                <strong class="font-mono text-tn-navy">$ 47.218.850 <span class="text-emerald-700 text-[10px]">✅</span></strong>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-tn-muted">Balanceado sin Handhelds:</span>
-                <strong class="font-mono text-emerald-700">$ 45.197.456 <span class="text-[10px]">(−$ 6,85M ✅)</span></strong>
+              <div class="flex justify-between text-[11px]">
+                <span class="text-slate-600">Opción 6× Jefaturas 16G (45 eq.):</span>
+                <strong class="font-mono text-emerald-700">$ 48.924.577 neto (−$ 3,12M ✅)</strong>
               </div>
             </div>
           </div>
 
           <div class="flex gap-2 pt-1 no-print">
-            <button onclick="loadPreset('lenovo', 'balanceado', 8, 5)" class="flex-1 py-2 px-3 rounded-xl bg-tn-navy hover:bg-tn-primary text-white text-[11px] font-bold transition">
-              Simular 53 Eq.
+            <button onclick="selectPresetInPlanilla('lenovo', true)" class="flex-1 py-2 px-3 rounded-xl bg-tn-navy hover:bg-tn-primary text-white text-[11px] font-bold transition">
+              Ver 45 Eq. ($ 51,59M)
             </button>
-            <button onclick="loadPreset('lenovo', 'balanceado', 0, 5)" class="flex-1 py-2 px-3 rounded-xl bg-blue-100 hover:bg-blue-200 text-tn-navy text-[11px] font-bold transition">
-              Sin Handhelds (45)
+            <button onclick="selectPresetInPlanilla('lenovo', false)" class="flex-1 py-2 px-3 rounded-xl bg-blue-100 hover:bg-blue-200 text-tn-navy text-[11px] font-bold transition">
+              Solo Cómputo ($ 48,90M)
             </button>
           </div>
         </div>
 
-        <!-- OPCIÓN 2: ASUS 53 EQUIPOS (Con opción de eliminar las Tablets) -->
+        <!-- OPCIÓN 2: ASUS + 5 TABLETS + 2 IMPRESORAS (45 EQUIPOS) -->
         <div class="bg-white text-tn-ink rounded-2xl p-5 shadow-2xl border-t-4 border-t-indigo-600 flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between gap-2 border-b border-tn-border pb-3">
               <div>
-                <span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 text-[10px] font-extrabold uppercase tracking-wider">Opción 2 &middot; Stock Protegido 30-Nov</span>
-                <h2 class="text-base font-extrabold text-tn-navy mt-1">ASUS Full &middot; 53 Equipos</h2>
+                <span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 text-[10px] font-extrabold uppercase tracking-wider">Alternativa B &middot; 36M NBD + ADP + HDD Ret.</span>
+                <h2 class="text-base font-extrabold text-tn-navy mt-1">COT 1370 ASUS &middot; 45 Equipos</h2>
               </div>
               <img src="assets/brands/logo_asus.png" alt="ASUS" class="h-5 w-auto object-contain" />
             </div>
 
             <p class="text-[11px] text-tn-muted leading-relaxed">
-              29 ExpertBook B3406 (U5 16/512) + 6 ExpertBook B5/B3 (U7) + 3 P440VA AiO + 8 EDA52 + <strong>5 Tablet 5G</strong> + 2 Epson WF-C5891.
+              29 <strong>ExpertBook B3406CCA</strong> (U5 16/512) + 3 <strong>ExpertBook B5405CAA</strong> (U7 32G/512) + 3 <strong>ExpertBook B3405</strong> (U7 255H 16G/512) + 3 <strong>P440VA AiO</strong> + <strong>5 Tablets 5G</strong> + <strong>2 Epson WF-C5891</strong>.
             </p>
 
             <div class="space-y-1.5 text-xs">
               <div class="flex justify-between items-center py-1 border-b border-tn-border/60">
-                <span class="text-tn-muted">• Pro B5 53 eq. (6× U7 32 GB):</span>
-                <strong class="font-mono text-slate-900">$ 61.708.488 <span class="text-[10px] text-slate-500">(36M NBD+ADP)</span></strong>
+                <span class="text-tn-muted">• Subtotal Cómputo ASUS (38 eq.):</span>
+                <strong class="font-mono text-indigo-950">$ 47.770.000 <span class="text-[10px] text-slate-500">neto</span></strong>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-tn-border/60">
+                <span class="text-tn-muted">• + 5 Tablets 5G + 2 Impresoras (7 eq.):</span>
+                <strong class="font-mono text-slate-700">$ 2.690.577 <span class="text-[10px] text-slate-500">neto</span></strong>
               </div>
               <div class="flex justify-between items-center py-1">
-                <span class="text-tn-muted">• Balanceado B3 53 eq. (6× U7 16 GB):</span>
-                <strong class="font-mono text-indigo-700">$ 56.764.956 <span class="text-[10px]">(+9,1%)</span></strong>
+                <span class="font-bold text-tn-navy">• Total Parque 45 Eq. (Neto):</span>
+                <strong class="font-mono text-emerald-700 text-sm">$ 50.460.577 <span class="text-[10px] font-bold">(−$ 1,59M ✅🏆)</span></strong>
               </div>
             </div>
 
             <div class="p-3 rounded-xl bg-indigo-50/80 border border-indigo-200 text-xs space-y-1">
-              <div class="text-[10px] font-extrabold uppercase text-indigo-800 flex justify-between">
-                <span>Opcional: Eliminar 5 Tablets</span>
-                <span>−$ 1.614.295 &rarr; 48 Eq.</span>
+              <div class="flex justify-between text-[11px]">
+                <span class="text-slate-600">Total General c/IVA (45 eq.):</span>
+                <strong class="font-mono text-indigo-950">$ 60.048.087</strong>
               </div>
-              <div class="flex justify-between">
-                <span class="text-tn-muted">Pro sin Tablets:</span>
-                <strong class="font-mono text-slate-900">$ 60.094.193</strong>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-tn-muted">Balanceado sin Tablets:</span>
-                <strong class="font-mono text-indigo-700">$ 55.150.661 <span class="text-[10px]">(+6,0%)</span></strong>
+              <div class="flex justify-between text-[11px]">
+                <span class="text-slate-600">Solo Cómputo ASUS c/IVA (38 eq.):</span>
+                <strong class="font-mono text-indigo-800">$ 56.846.300 c/IVA</strong>
               </div>
             </div>
           </div>
 
           <div class="flex gap-2 pt-1 no-print">
-            <button onclick="loadPreset('asus', 'balanceado', 8, 5)" class="flex-1 py-2 px-3 rounded-xl bg-indigo-700 hover:bg-indigo-800 text-white text-[11px] font-bold transition">
-              Simular 53 Eq.
+            <button onclick="selectPresetInPlanilla('asus', true)" class="flex-1 py-2 px-3 rounded-xl bg-indigo-700 hover:bg-indigo-800 text-white text-[11px] font-bold transition">
+              Ver 45 Eq. ($ 50,46M)
             </button>
-            <button onclick="loadPreset('asus', 'balanceado', 8, 0)" class="flex-1 py-2 px-3 rounded-xl bg-indigo-100 hover:bg-indigo-200 text-indigo-900 text-[11px] font-bold transition">
-              Sin Tablets (48)
+            <button onclick="selectPresetInPlanilla('asus', false)" class="flex-1 py-2 px-3 rounded-xl bg-indigo-100 hover:bg-indigo-200 text-indigo-900 text-[11px] font-bold transition">
+              Solo Cómputo ($ 47,77M)
             </button>
           </div>
         </div>
 
-        <!-- OPCIÓN 3: TODO ASUS MIXTO 3+3 SIN HANDHELDS (45 EQUIPOS) -->
+        <!-- OPCIÓN 3: FINANCIAMIENTO LEASING CRECE CAPITAL -->
         <div class="bg-white text-tn-ink rounded-2xl p-5 shadow-2xl border-t-4 border-t-tn-cyan flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between gap-2 border-b border-tn-border pb-3">
               <div>
-                <span class="px-2 py-0.5 rounded bg-cyan-100 text-cyan-900 text-[10px] font-extrabold uppercase tracking-wider">Opción 3 &middot; Mixto 3+3 Sin Handhelds</span>
-                <h2 class="text-base font-extrabold text-tn-navy mt-1">Todo ASUS Mixto &middot; 45 Eq.</h2>
+                <span class="px-2 py-0.5 rounded bg-cyan-100 text-cyan-900 text-[10px] font-extrabold uppercase tracking-wider">Alternativa Financiera &middot; OPEX</span>
+                <h2 class="text-base font-extrabold text-tn-navy mt-1">Leasing Crece Capital</h2>
               </div>
-              <img src="assets/brands/logo_asus.png" alt="ASUS" class="h-5 w-auto object-contain" />
+              <div class="px-2.5 py-1 rounded bg-[#031a3d] text-white font-black text-xs tracking-wider">CRECE</div>
             </div>
 
             <p class="text-[11px] text-tn-muted leading-relaxed">
-              29 B3406 (16G) + <strong>3 Core U7 16 GB</strong> (B3405) + <strong>3 Core U7 32 GB</strong> (B5405) + 3 P440VA AiO + 5 Tablet + 2 Multi (<strong>0 Handhelds</strong>).
+              Financia tanto la alternativa <strong>Lenovo ($ 51,59M)</strong> como <strong>ASUS ($ 50,46M)</strong> cuidando la liquidez de Positronpharma y distribuyendo la inversión en cuotas.
             </p>
 
             <div class="space-y-1.5 text-xs">
               <div class="flex justify-between items-center py-1 border-b border-tn-border/60">
-                <span class="text-tn-muted">• Parque 45 eq. (c/Tablets + Multi):</span>
-                <strong class="font-mono text-tn-navy text-sm">$ 52.591.170 <span class="text-[10px] text-cyan-800 font-bold">(+1,0%)</span></strong>
+                <span class="text-tn-muted">• Leasing Operativo (36M):</span>
+                <strong class="font-mono text-tn-navy text-sm">~ $ 1.694.713 <span class="text-[10px] text-slate-500">neto/mes</span></strong>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-tn-border/60">
+                <span class="text-tn-muted">• Cuota 36M con IVA (19%):</span>
+                <strong class="font-mono text-cyan-900 font-bold">$ 2.016.708 <span class="text-[10px]">c/IVA/mes</span></strong>
               </div>
               <div class="flex justify-between items-center py-1">
-                <span class="text-tn-muted">• Solo Cómputo Mixto ASUS (38 eq.):</span>
-                <strong class="font-mono text-slate-700">$ 49.900.593</strong>
+                <span class="text-tn-muted">• Leasing Financiero (12M):</span>
+                <strong class="font-mono text-slate-700">$ 4.354.209 <span class="text-[10px]">c/IVA/mes</span></strong>
               </div>
             </div>
 
             <div class="p-3 rounded-xl bg-cyan-50/90 border border-cyan-200 text-xs space-y-1">
               <div class="text-[10px] font-extrabold uppercase text-cyan-900 flex justify-between">
-                <span>Opcional: Eliminar Tablets también</span>
-                <span>−$ 1.614.295 &rarr; 40 Eq.</span>
+                <span>Beneficio Tributario &amp; Operativo</span>
+                <span>Canon ~3,38%</span>
               </div>
-              <div class="flex justify-between">
-                <span class="text-tn-muted">ASUS Mixto + 2 Multi (s/HH s/Tab):</span>
-                <strong class="font-mono text-emerald-700">$ 50.976.875 <span class="text-[10px]">(−$ 1,07M ✅)</span></strong>
-              </div>
-              <div class="flex justify-between text-[10px] text-tn-muted">
-                <span>Total c/IVA (45 eq.):</span>
-                <span class="font-mono">$ 62.583.492</span>
-              </div>
+              <p class="text-[11px] text-slate-600 leading-snug">
+                Desembolsos programados según entregas, 100% gasto deducible y renovación planificada sin obsolescencia.
+              </p>
             </div>
           </div>
 
           <div class="flex gap-2 pt-1 no-print">
-            <button onclick="loadPreset('asus', 'mixto', 0, 5)" class="flex-1 py-2 px-3 rounded-xl bg-tn-cyan hover:bg-tn-cyanLight text-tn-navy text-[11px] font-extrabold transition">
-              Simular 45 Eq.
-            </button>
-            <button onclick="loadPreset('asus', 'mixto', 0, 0)" class="flex-1 py-2 px-3 rounded-xl bg-cyan-100 hover:bg-cyan-200 text-cyan-950 text-[11px] font-bold transition">
-              Sin Tablets (40)
-            </button>
+            <a href="#leasing-crece" class="flex-1 py-2 px-3 rounded-xl bg-tn-cyan hover:bg-tn-cyanLight text-tn-navy text-[11px] font-extrabold text-center transition">
+              Ver Pseudo Cálculo &amp; Cartas PDF
+            </a>
           </div>
         </div>
 
@@ -355,172 +340,145 @@
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
 
-    <!-- Sección 1: Cuadro Comparativo Global -->
+    <!-- Sección 1: Cuadro Comparativo Global LENOVO vs ASUS -->
     <section id="comparativa" class="space-y-6">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-tn-border pb-4">
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Estructura Global de Cotización</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Comparativa Oficial Homologada en Tecnología Ultra 5 / Ultra 7</span>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy mt-1">
-            Matriz de Decisión Comercial: 2 Marcas × 2 Niveles Jefaturas
+            LENOVO vs ASUS + 5 Tablets 5G + 2 Impresoras (45 Equipos)
           </h2>
         </div>
         <div class="text-xs text-tn-muted">
-          Presupuesto de Referencia: <strong>$ 52.050.000</strong> neto · Todas las opciones con <strong>3Y On-Site + ADP</strong>
+          Presupuesto de Referencia Cliente: <strong>$ 52.050.000</strong> neto · Ambas marcas <strong>Bajo Presupuesto ✅</strong>
         </div>
       </div>
 
-      <!-- Tabla 1: Matriz de 4 Combinaciones Globales -->
+      <!-- Tabla 1: Matriz Ejecutiva de Escenarios Consolidados -->
       <div class="tn-card overflow-hidden">
         <div class="p-4 bg-gradient-to-r from-tn-navy to-tn-primary text-white flex items-center justify-between">
           <div class="flex items-center gap-2">
             <i data-lucide="layout-grid" class="w-4 h-4 text-tn-cyanLight"></i>
-            <span class="text-xs font-bold uppercase tracking-wider">Matriz Ejecutiva de Escenarios (53 Equipos)</span>
+            <span class="text-xs font-bold uppercase tracking-wider">Resumen Comparativo de Inversión (Cómputo 38 Eq. + 5 Tablets + 2 Impresoras = 45 Equipos)</span>
           </div>
-          <span class="text-[11px] text-slate-200">Modalidad "Todo o Nada"</span>
+          <span class="text-[11px] text-slate-200">Valores Netos y con IVA (19%)</span>
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-xs text-left">
             <thead>
               <tr class="bg-tn-surface text-tn-navy uppercase text-[10px] tracking-wider border-b border-tn-border font-extrabold">
-                <th class="py-3 px-4">Escenario Propuesto (53 Eq.)</th>
+                <th class="py-3 px-4">Alternativa de Marca &amp; Configuración</th>
                 <th class="py-3 px-3 text-center">Jefaturas (6 Eq.)</th>
-                <th class="py-3 px-4 text-right">Subtotal Cómputo (38)</th>
-                <th class="py-3 px-4 text-right">Móvil &amp; Multi (15)</th>
-                <th class="py-3 px-4 text-right">Total Parque Neto</th>
-                <th class="py-3 px-4 text-right">Total c/IVA (19%)</th>
-                <th class="py-3 px-4 text-center">Vs. Presupuesto</th>
+                <th class="py-3 px-4 text-right">Subtotal Cómputo (38 Eq.)</th>
+                <th class="py-3 px-4 text-right">5 Tablets + 2 Impresoras</th>
+                <th class="py-3 px-4 text-right">Total Parque Neto (45 Eq.)</th>
+                <th class="py-3 px-4 text-right">Total a Pagar c/IVA</th>
+                <th class="py-3 px-4 text-center">Vs. Ppto. ($ 52.050.000)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-tn-border/70 text-tn-ink">
-              <!-- Lenovo Pro -->
-              <tr class="hover:bg-blue-50/50 transition">
-                <td class="py-3 px-4">
+              <!-- LENOVO MIXTO BASE -->
+              <tr class="hover:bg-blue-50/50 transition bg-blue-50/20">
+                <td class="py-3.5 px-4">
                   <div class="font-extrabold text-tn-navy flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-tn-primary"></span>
-                    <span>COT 1370 LENOVO · Nivel Pro</span>
-                    <span class="px-2 py-0.5 rounded bg-blue-100 text-tn-primary text-[10px] font-bold">Recomendada</span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-tn-primary"></span>
+                    <span>COT 1370 LENOVO · Propuesta Oficial (3×32G + 3×16G)</span>
+                    <span class="px-2 py-0.5 rounded bg-blue-100 text-tn-primary text-[10px] font-bold">Homologada U5/U7</span>
                   </div>
-                  <span class="text-[11px] text-tn-muted pl-4 block">ThinkBook 14 (i5) + ThinkPad T14 (U7 32G) + Neo 50a (i5)</span>
+                  <span class="text-[11px] text-tn-muted pl-4 block">29× ThinkPad E16 G3 (U5 225U) + 3× Pro U7 32G/1TB + 3× T14 G6 U7 16G/512G + 3× Neo 55a G6 AiO</span>
                 </td>
-                <td class="py-3 px-3 text-center font-bold text-tn-navy">Ultra 7 · 32 GB</td>
-                <td class="py-3 px-4 text-right font-mono font-semibold">$ 44.528.273</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 9.336.129</td>
-                <td class="py-3 px-4 text-right font-black text-tn-primary font-mono text-sm">$ 53.864.402</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 64.098.638</td>
-                <td class="py-3 px-4 text-center font-bold text-slate-700 text-xs bg-blue-50/60">
-                  +$ 1.814.402 (3,5%)
+                <td class="py-3.5 px-3 text-center font-bold text-tn-navy">3× 32 GB + 3× 16 GB</td>
+                <td class="py-3.5 px-4 text-right font-mono font-bold text-tn-navy">$ 48.904.000</td>
+                <td class="py-3.5 px-4 text-right font-mono text-tn-muted">$ 2.690.577</td>
+                <td class="py-3.5 px-4 text-right font-black text-tn-primary font-mono text-sm">$ 51.594.577</td>
+                <td class="py-3.5 px-4 text-right font-mono font-semibold text-slate-800">$ 61.397.547</td>
+                <td class="py-3.5 px-4 text-center font-bold text-emerald-700 text-xs bg-emerald-50/70">
+                  −$ 455.423 ✅
                 </td>
               </tr>
 
-              <!-- Lenovo Balanceado -->
-              <tr class="hover:bg-blue-50/50 transition bg-emerald-50/20">
-                <td class="py-3 px-4">
-                  <div class="font-extrabold text-tn-navy flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-                    <span>COT 1370 LENOVO · Nivel Balanceado</span>
-                    <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">Mayor Ahorro Lenovo</span>
+              <!-- ASUS MIXTO BASE -->
+              <tr class="hover:bg-indigo-50/50 transition bg-emerald-50/25">
+                <td class="py-3.5 px-4">
+                  <div class="font-extrabold text-indigo-950 flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+                    <span>COT 1370 ASUS · Propuesta Oficial (3×32G + 3×16G)</span>
+                    <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold">36M NBD+ADP+HDD Ret.</span>
                   </div>
-                  <span class="text-[11px] text-tn-muted pl-4 block">ThinkBook 14 (i5) + ThinkPad T14 (U7 16G) + Neo 50a (i5)</span>
+                  <span class="text-[11px] text-tn-muted pl-4 block">29× ExpertBook B3406CCA (U5) + 3× B5405CAA (U7 32G) + 3× B3405 (U7 255H 16G) + 3× P440VA AiO</span>
                 </td>
-                <td class="py-3 px-3 text-center text-tn-muted font-medium">Ultra 7 · 16 GB</td>
-                <td class="py-3 px-4 text-right font-mono font-semibold">$ 42.506.879</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 9.336.129</td>
-                <td class="py-3 px-4 text-right font-black text-emerald-700 font-mono text-sm">$ 51.843.008</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 61.693.180</td>
-                <td class="py-3 px-4 text-center font-bold text-emerald-700 text-xs bg-emerald-50/60">
-                  −$ 206.992 ✅🏆
+                <td class="py-3.5 px-3 text-center font-bold text-indigo-950">3× 32 GB + 3× 16 GB</td>
+                <td class="py-3.5 px-4 text-right font-mono font-bold text-indigo-950">$ 47.770.000</td>
+                <td class="py-3.5 px-4 text-right font-mono text-tn-muted">$ 2.690.577</td>
+                <td class="py-3.5 px-4 text-right font-black text-emerald-700 font-mono text-sm">$ 50.460.577</td>
+                <td class="py-3.5 px-4 text-right font-mono font-semibold text-slate-800">$ 60.048.087</td>
+                <td class="py-3.5 px-4 text-center font-bold text-emerald-700 text-xs bg-emerald-100/70">
+                  −$ 1.589.423 ✅🏆
                 </td>
               </tr>
 
-              <!-- ASUS Pro -->
-              <tr class="hover:bg-blue-50/50 transition">
+              <!-- LENOVO 100% 16GB -->
+              <tr class="hover:bg-blue-50/40 transition">
                 <td class="py-3 px-4">
-                  <div class="font-extrabold text-slate-800 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
-                    <span>COT 1370 ASUS · Oferta Protegida Pro</span>
-                    <span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 text-[10px] font-bold">Vig. 30-Nov</span>
+                  <div class="font-bold text-slate-800 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                    <span>Variante LENOVO · 6 Jefaturas con 16 GB (ThinkPad T14 G6 U7)</span>
                   </div>
-                  <span class="text-[11px] text-tn-muted pl-4 block">ExpertBook B3406CCAP (U5) + ExpertBook B5405CAA (U7 32G) + ExpertCenter P440VA AiO</span>
                 </td>
-                <td class="py-3 px-3 text-center font-bold text-slate-800">Ultra 7 · 32 GB</td>
-                <td class="py-3 px-4 text-right font-mono font-semibold">$ 52.372.359</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 9.336.129</td>
-                <td class="py-3 px-4 text-right font-black text-slate-900 font-mono text-sm">$ 61.708.488</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 73.433.101</td>
-                <td class="py-3 px-4 text-center font-semibold text-slate-600 text-xs">
-                  +$ 9.658.488
+                <td class="py-3 px-3 text-center text-tn-muted font-semibold">6× Ultra 7 · 16 GB</td>
+                <td class="py-3 px-4 text-right font-mono">$ 46.234.000</td>
+                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 2.690.577</td>
+                <td class="py-3 px-4 text-right font-bold text-slate-800 font-mono">$ 48.924.577</td>
+                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 58.220.247</td>
+                <td class="py-3 px-4 text-center font-bold text-emerald-700 text-xs">
+                  −$ 3.125.423 ✅
                 </td>
               </tr>
 
-              <!-- ASUS Balanceado -->
-              <tr class="hover:bg-blue-50/50 transition bg-indigo-50/20">
+              <!-- ASUS 100% 16GB -->
+              <tr class="hover:bg-indigo-50/40 transition">
                 <td class="py-3 px-4">
-                  <div class="font-extrabold text-slate-800 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-                    <span>COT 1370 ASUS · Nivel Balanceado</span>
-                    <span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 text-[10px] font-bold">Ajuste 16 GB Jef.</span>
+                  <div class="font-bold text-slate-800 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                    <span>Variante ASUS · 6 Jefaturas con 16 GB (ExpertBook U7 255H)</span>
                   </div>
-                  <span class="text-[11px] text-tn-muted pl-4 block">ExpertBook B3406CCAP (U5) + ExpertBook B3405 (U7 16G) + ExpertCenter P440VA AiO</span>
                 </td>
-                <td class="py-3 px-3 text-center text-tn-muted font-medium">Ultra 7 · 16 GB</td>
-                <td class="py-3 px-4 text-right font-mono font-semibold">$ 47.428.827</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 9.336.129</td>
-                <td class="py-3 px-4 text-right font-black text-indigo-700 font-mono text-sm">$ 56.764.956</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 67.550.298</td>
-                <td class="py-3 px-4 text-center font-bold text-indigo-700 text-xs bg-indigo-50/60">
-                  +$ 4.714.956 (+9,1%)
-                </td>
-              </tr>
-
-              <!-- 5to Escenario: Todo ASUS Mixto Sin Handhelds (45 Eq.) -->
-              <tr class="hover:bg-cyan-50/60 transition bg-cyan-50/40 border-l-4 border-l-tn-cyan">
-                <td class="py-3 px-4">
-                  <div class="font-extrabold text-tn-navy flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-tn-cyan"></span>
-                    <span>COT 1370 ASUS · Escenario 5 (Mixto Sin Handhelds · 45 Eq.)</span>
-                    <span class="px-2 py-0.5 rounded bg-cyan-100 text-cyan-900 text-[10px] font-bold">Nuevo 5to Esc.</span>
-                  </div>
-                  <span class="text-[11px] text-tn-muted pl-4 block">ExpertBook B3406CCAP (29) + 3× B3405 (U7 16G) + 3× B5405CAA (U7 32G) + P440VA AiO (3) · Sin Handhelds</span>
-                </td>
-                <td class="py-3 px-3 text-center font-bold text-tn-navy">3×16 GB + 3×32 GB</td>
-                <td class="py-3 px-4 text-right font-mono font-semibold">$ 49.900.593</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 2.690.577 <span class="text-[10px] block">(7 eq · s/HH)</span></td>
-                <td class="py-3 px-4 text-right font-black text-tn-navy font-mono text-sm">$ 52.591.170</td>
-                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 62.583.492</td>
-                <td class="py-3 px-4 text-center font-bold text-cyan-900 text-xs bg-cyan-100/60">
-                  +$ 541.170 (+1,0%)
+                <td class="py-3 px-3 text-center text-tn-muted font-semibold">6× Ultra 7 · 16 GB</td>
+                <td class="py-3 px-4 text-right font-mono">$ 45.430.000</td>
+                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 2.690.577</td>
+                <td class="py-3 px-4 text-right font-bold text-slate-800 font-mono">$ 48.120.577</td>
+                <td class="py-3 px-4 text-right font-mono text-tn-muted">$ 57.263.487</td>
+                <td class="py-3 px-4 text-center font-bold text-emerald-700 text-xs">
+                  −$ 3.929.423 ✅
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="p-3 bg-tn-surface/80 border-t border-tn-border flex flex-wrap items-center justify-between gap-3 text-[11px] text-tn-muted">
-          <span>* En ASUS se incluye paquete oficial <strong>36M On-Site NBD + BSP + LADP + HDD Retention</strong> (vigencia protegida al 30-11-2026). Opción económica B3406→P1403 disponible en el Simulador ($ 51.374.378 Balanceado).</span>
-          <span>Alternativa Handheld sin Gold 3Y: <strong>ahorra $ 1.125.272 adicional</strong>.</span>
-        </div>
       </div>
 
+      <!-- Tabla 2: Desglose Línea por Línea (LENOVO vs ASUS + Tablets + Impresoras) -->
       <div class="tn-card overflow-hidden">
         <div class="overflow-x-auto">
           <table class="w-full text-xs text-left">
             <thead>
               <tr class="bg-tn-navy text-white uppercase text-[11px] tracking-wider">
-                <th class="py-3 px-4">Línea de Equipamiento</th>
+                <th class="py-3 px-4">Línea de Equipamiento (45 Equipos)</th>
                 <th class="py-3 px-2 text-center">Cant.</th>
                 <th class="py-3 px-4 text-right">COT 1370 LENOVO</th>
                 <th class="py-3 px-4 text-right">COT 1370 ASUS</th>
-                <th class="py-3 px-4 text-center">Ficha Técnica</th>
+                <th class="py-3 px-4 text-center">Respaldo PDF</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-tn-border/70 text-tn-ink">
               <tr class="hover:bg-blue-50/40 transition">
                 <td class="py-3 px-4">
-                  <strong class="text-tn-navy block">1. Laptop Estándar (i5 / Ultra 5 · 16 GB · 512 GB SSD · 3Y+ADP)</strong>
-                  <span class="text-tn-muted">ThinkBook 14 G8 / E14 vs ExpertBook B3406CCAP (U5 225H · 14" WQXGA 400 nits)</span>
+                  <strong class="text-tn-navy block">1.0 Laptop Estándar (Intel Core Ultra 5 · 16 GB · 512 GB SSD · Win 11 Pro)</strong>
+                  <span class="text-tn-muted">Lenovo <strong>ThinkPad E16 Gen 3</strong> (`21SS000LCL` · 16" WUXGA · 3Y On-Site) vs ASUS <strong>ExpertBook B3406CCA</strong> (`90NX0AP1-M001V0` · 36M NBD+ADP+HDD Ret.)</span>
                 </td>
                 <td class="py-3 px-2 text-center font-bold text-tn-navy">29</td>
-                <td class="py-3 px-4 text-right font-bold text-tn-primary">$ 30.705.896 <span class="text-[10px] text-tn-muted block">($ 1.058.824/u)</span></td>
-                <td class="py-3 px-4 text-right font-bold text-slate-800">$ 36.096.474 <span class="text-[10px] text-tn-muted block">($ 1.244.706/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-tn-primary font-mono">$ 36.424.000 <span class="text-[10px] text-tn-muted block">($ 1.256.000/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-indigo-900 font-mono">$ 34.510.000 <span class="text-[10px] text-tn-muted block">($ 1.190.000/u)</span></td>
                 <td class="py-3 px-4 text-center space-y-0.5">
                   <a href="docs/ficha_thinkbook_14_i5.pdf" target="_blank" class="text-tn-primary hover:underline font-bold block">PDF Lenovo</a>
                   <a href="docs/ficha_asus_b3406.pdf" target="_blank" class="text-indigo-700 hover:underline font-bold block">PDF ASUS B3</a>
@@ -529,12 +487,12 @@
 
               <tr class="hover:bg-blue-50/40 transition">
                 <td class="py-3 px-4">
-                  <strong class="text-tn-navy block">2. Laptop Corporativo Jefaturas (Ultra 7 · 32 GB · 512 GB SSD · 3Y+ADP)</strong>
-                  <span class="text-tn-muted">ThinkPad T14 Gen 6 vs ExpertBook B5405CAA (U7 356H · 16GB×2 · Wi-Fi 7 · 50 TOPS)</span>
+                  <strong class="text-tn-navy block">2.0 Laptop Jefatura 1 (Intel Core Ultra 7 · 32 GB RAM · Aluminio / Pro)</strong>
+                  <span class="text-tn-muted">Lenovo <strong>Notebook Pro Ultra 7 255U</strong> (`21R20014CL` · 32GB LPDDR5X · <strong>1TB SSD</strong> · 3Y Onsite) vs ASUS <strong>ExpertBook B5405CAA</strong> (`90NX0A21-M00H50` · U7 32GB · 512GB · 36M NBD+ADP+HDD Ret.)</span>
                 </td>
-                <td class="py-3 px-2 text-center font-bold text-tn-navy">6</td>
-                <td class="py-3 px-4 text-right font-bold text-tn-primary">$ 10.588.236 <span class="text-[10px] text-tn-muted block">($ 1.764.706/u)</span></td>
-                <td class="py-3 px-4 text-right font-bold text-slate-800">$ 12.832.944 <span class="text-[10px] text-tn-muted block">($ 2.138.824/u)</span></td>
+                <td class="py-3 px-2 text-center font-bold text-tn-navy">3</td>
+                <td class="py-3 px-4 text-right font-bold text-tn-primary font-mono">$ 5.970.000 <span class="text-[10px] text-tn-muted block">($ 1.990.000/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-indigo-900 font-mono">$ 6.120.000 <span class="text-[10px] text-tn-muted block">($ 2.040.000/u)</span></td>
                 <td class="py-3 px-4 text-center space-y-0.5">
                   <a href="docs/ficha_thinkpad_t14_u7.pdf" target="_blank" class="text-tn-primary hover:underline font-bold block">PDF Lenovo</a>
                   <a href="docs/ficha_asus_b5405.pdf" target="_blank" class="text-indigo-700 hover:underline font-bold block">PDF ASUS B5</a>
@@ -543,47 +501,54 @@
 
               <tr class="hover:bg-blue-50/40 transition">
                 <td class="py-3 px-4">
-                  <strong class="text-tn-navy block">3. All-in-One Estándar 23.8" (i5 / Core 5 · 16 GB · 512 GB SSD · 3Y+ADP)</strong>
-                  <span class="text-tn-muted">ThinkCentre Neo 50a 24 vs ExpertCenter P400 AiO P440VA (Core 5 210H · 100Hz · HAS VESA)</span>
+                  <strong class="text-tn-navy block">3.0 Laptop Jefatura 2 (Intel Core Ultra 7 · 16 GB RAM · 512 GB SSD · ABS)</strong>
+                  <span class="text-tn-muted">Lenovo <strong>ThinkPad T14 Gen 6</strong> (`21QD001GCL` · U7 255U · 16GB DDR5 · 512GB · 14" 400nits · 3Y Onsite) vs ASUS <strong>Notebook Pro U7 16</strong> (`90NX0AP1-M000T0` · U7 255H · 16GB · 512GB · 36M NBD+ADP+HDD Ret.)</span>
                 </td>
                 <td class="py-3 px-2 text-center font-bold text-tn-navy">3</td>
-                <td class="py-3 px-4 text-right font-bold text-tn-primary">$ 3.234.141 <span class="text-[10px] text-tn-muted block">($ 1.078.047/u)</span></td>
-                <td class="py-3 px-4 text-right font-bold text-slate-800">$ 3.442.941 <span class="text-[10px] text-tn-muted block">($ 1.147.647/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-tn-primary font-mono">$ 3.300.000 <span class="text-[10px] text-tn-muted block">($ 1.100.000/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-indigo-900 font-mono">$ 3.780.000 <span class="text-[10px] text-tn-muted block">($ 1.260.000/u)</span></td>
+                <td class="py-3 px-4 text-center space-y-0.5">
+                  <a href="docs/ficha_thinkpad_t14_u7.pdf" target="_blank" class="text-tn-primary hover:underline font-bold block">PDF Lenovo</a>
+                  <a href="docs/ficha_asus_b3406.pdf" target="_blank" class="text-indigo-700 hover:underline font-bold block">PDF ASUS</a>
+                </td>
+              </tr>
+
+              <tr class="hover:bg-blue-50/40 transition">
+                <td class="py-3 px-4">
+                  <strong class="text-tn-navy block">4.0 All-in-One 23.8" Corporativo (16 GB DDR5 · 512 GB SSD · Win 11 Pro)</strong>
+                  <span class="text-tn-muted">Lenovo <strong>ThinkCentre Neo 55a 24 Gen 6</strong> (`13FA0032CS` · Ryzen 5 220 · Radeon 740M · Onsite) vs ASUS <strong>ExpertCenter P440VA AiO</strong> (`90PT03X6-M0B7L0` · 23.8" i5 · 36M On-Site+ADP)</span>
+                </td>
+                <td class="py-3 px-2 text-center font-bold text-tn-navy">3</td>
+                <td class="py-3 px-4 text-right font-bold text-tn-primary font-mono">$ 3.210.000 <span class="text-[10px] text-tn-muted block">($ 1.070.000/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-indigo-900 font-mono">$ 3.360.000 <span class="text-[10px] text-tn-muted block">($ 1.120.000/u)</span></td>
                 <td class="py-3 px-4 text-center space-y-0.5">
                   <a href="docs/ficha_thinkcentre_neo50a_aio.pdf" target="_blank" class="text-tn-primary hover:underline font-bold block">PDF Lenovo</a>
-                  <a href="docs/ficha_asus_p440va_aio.pdf" target="_blank" class="text-indigo-700 hover:underline font-bold block">PDF ASUS P400</a>
+                  <a href="docs/ficha_asus_p440va_aio.pdf" target="_blank" class="text-indigo-700 hover:underline font-bold block">PDF ASUS P440</a>
                 </td>
               </tr>
 
-              <tr class="bg-blue-50/80 font-bold">
-                <td class="py-2.5 px-4 uppercase text-tn-navy">Subtotal Cómputo (38 Equipos)</td>
-                <td class="py-2.5 px-2 text-center text-tn-navy">38</td>
-                <td class="py-2.5 px-4 text-right text-tn-primary text-sm">$ 44.528.273</td>
-                <td class="py-2.5 px-4 text-right text-slate-900 text-sm">$ 52.372.359</td>
-                <td class="py-2.5 px-4 text-center text-[10px] text-tn-muted">3Y On-Site + ADP</td>
-              </tr>
-
-              <tr class="hover:bg-blue-50/40 transition">
-                <td class="py-3 px-4">
-                  <strong class="text-tn-navy block">4. Handheld Industrial Honeywell ScanPal EDA52 (4G LTE · 2D)</strong>
-                  <span class="text-tn-muted">Con Gold Maintenance 3 años oficial (Despacho SAP)</span>
+              <tr class="bg-blue-50/90 font-extrabold border-y-2 border-tn-border">
+                <td class="py-3 px-4 uppercase text-tn-navy">Subtotal Cómputo (38 Equipos)</td>
+                <td class="py-3 px-2 text-center text-tn-navy">38</td>
+                <td class="py-3 px-4 text-right text-tn-primary font-mono text-sm">
+                  $ 48.904.000
+                  <span class="text-[10px] font-normal text-slate-600 block">c/IVA: $ 58.195.760</span>
                 </td>
-                <td class="py-3 px-2 text-center font-bold text-tn-navy">8</td>
-                <td class="py-3 px-4 text-right font-bold text-amber-700">$ 6.645.552 <span class="text-[10px] text-tn-muted block">($ 830.694/u)</span></td>
-                <td class="py-3 px-4 text-right font-bold text-amber-700">$ 6.645.552 <span class="text-[10px] text-tn-muted block">($ 830.694/u)</span></td>
-                <td class="py-3 px-4 text-center">
-                  <a href="docs/ficha_honeywell_eda52_4g.pdf" target="_blank" class="text-tn-primary hover:underline font-bold">Ver PDF</a>
+                <td class="py-3 px-4 text-right text-indigo-950 font-mono text-sm">
+                  $ 47.770.000
+                  <span class="text-[10px] font-normal text-slate-600 block">c/IVA: $ 56.846.300</span>
                 </td>
+                <td class="py-3 px-4 text-center text-[10px] text-tn-muted">Garantía On-Site</td>
               </tr>
 
               <tr class="hover:bg-blue-50/40 transition">
                 <td class="py-3 px-4">
-                  <strong class="text-tn-navy block">5. Tablet Lenovo IdeaTab 11" 2.5K 5G Kit (8/256)</strong>
-                  <span class="text-tn-muted">Incluye Folio Keyboard + Lenovo Tab Pen de precisión</span>
+                  <strong class="text-tn-navy block">5.0 Tablet Lenovo IdeaTab 11" 2.5K 5G Kit (`ZAFM0221CL` · 8 GB / 256 GB)</strong>
+                  <span class="text-tn-muted">Incluye Folio Keyboard + Lenovo Tab Pen de precisión (Transversal en ambas opciones)</span>
                 </td>
                 <td class="py-3 px-2 text-center font-bold text-tn-navy">5</td>
-                <td class="py-3 px-4 text-right font-bold text-tn-primary">$ 1.614.295 <span class="text-[10px] text-tn-muted block">($ 322.859/u)</span></td>
-                <td class="py-3 px-4 text-right font-bold text-tn-primary">$ 1.614.295 <span class="text-[10px] text-tn-muted block">($ 322.859/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-tn-primary font-mono">$ 1.614.295 <span class="text-[10px] text-tn-muted block">($ 322.859/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-tn-primary font-mono">$ 1.614.295 <span class="text-[10px] text-tn-muted block">($ 322.859/u)</span></td>
                 <td class="py-3 px-4 text-center">
                   <a href="docs/ficha_lenovo_tablet_5g.pdf" target="_blank" class="text-tn-primary hover:underline font-bold">Ver PDF</a>
                 </td>
@@ -591,30 +556,32 @@
 
               <tr class="hover:bg-blue-50/40 transition">
                 <td class="py-3 px-4">
-                  <strong class="text-tn-navy block">6. Multifuncional Corporativo Epson WF-C5891 (Base)</strong>
-                  <span class="text-tn-muted">Heat-Free 25 ppm · PIN seguro RRHH · Tinta pigmentada</span>
+                  <strong class="text-tn-navy block">6.0 Multifuncional Corporativo Epson WorkForce Pro WF-C5891 (`C11CJ08301`)</strong>
+                  <span class="text-tn-muted">Heat-Free 25 ppm · Impresión confidencial PIN seguro RRHH · Dúplex automático (Transversal)</span>
                 </td>
                 <td class="py-3 px-2 text-center font-bold text-tn-navy">2</td>
-                <td class="py-3 px-4 text-right font-bold text-tn-success">$ 1.076.282 <span class="text-[10px] text-tn-muted block">($ 538.141/u)</span></td>
-                <td class="py-3 px-4 text-right font-bold text-tn-success">$ 1.076.282 <span class="text-[10px] text-tn-muted block">($ 538.141/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-tn-success font-mono">$ 1.076.282 <span class="text-[10px] text-tn-muted block">($ 538.141/u)</span></td>
+                <td class="py-3 px-4 text-right font-bold text-tn-success font-mono">$ 1.076.282 <span class="text-[10px] text-tn-muted block">($ 538.141/u)</span></td>
                 <td class="py-3 px-4 text-center">
                   <a href="docs/ficha_epson_workforce_ecotank.pdf" target="_blank" class="text-tn-primary hover:underline font-bold">Ver PDF</a>
                 </td>
               </tr>
 
               <tr class="bg-tn-navy text-white">
-                <td class="py-3.5 px-4 font-black text-sm uppercase">Total Parque Completo (53 Equipos)</td>
-                <td class="py-3.5 px-2 text-center font-black text-base text-tn-cyanLight">53</td>
-                <td class="py-3.5 px-4 text-right font-black text-xl text-emerald-300">
-                  $ 53.864.402
-                  <span class="text-[10px] font-normal text-slate-300 block">IVA: $ 10.234.236 · c/IVA: $ 64.098.638</span>
+                <td class="py-4 px-4 font-black text-sm uppercase">
+                  Total Parque Oficial Consolidado (45 Equipos: Cómputo + Tablets + Impresoras)
                 </td>
-                <td class="py-3.5 px-4 text-right font-black text-xl text-indigo-300">
-                  $ 61.708.488
-                  <span class="text-[10px] font-normal text-slate-300 block">IVA: $ 11.724.613 · c/IVA: $ 73.433.101</span>
+                <td class="py-4 px-2 text-center font-black text-base text-tn-cyanLight">45</td>
+                <td class="py-4 px-4 text-right font-black text-lg sm:text-xl text-emerald-300 font-mono">
+                  $ 51.594.577
+                  <span class="text-[10px] font-normal text-slate-300 block">IVA: $ 9.802.970 · Total c/IVA: $ 61.397.547</span>
                 </td>
-                <td class="py-3.5 px-4 text-center font-bold text-xs text-emerald-400">
-                  Bal. Lenovo: −$ 206.992 ✅
+                <td class="py-4 px-4 text-right font-black text-lg sm:text-xl text-tn-cyanLight font-mono">
+                  $ 50.460.577
+                  <span class="text-[10px] font-normal text-slate-300 block">IVA: $ 9.587.510 · Total c/IVA: $ 60.048.087</span>
+                </td>
+                <td class="py-4 px-4 text-center font-bold text-xs text-emerald-300">
+                  Ambas Bajo Ppto. ✅
                 </td>
               </tr>
             </tbody>
@@ -623,22 +590,22 @@
       </div>
     </section>
 
-    <!-- Sección 2: Catálogo Detallado por Componente -->
+    <!-- Sección 2: Catálogo Detallado por Componente (2 Filas Exactas de 3 Tarjetas) -->
     <section id="catalogo" class="space-y-8">
       <div class="border-b border-tn-border pb-4">
-        <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Especificaciones &amp; Alternativas</span>
+        <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Especificaciones &amp; Alternativas Homologadas</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy mt-1">
-          Detalle Técnico por Componente del Parque
+          Detalle Técnico por Componente del Parque (45 Equipos)
         </h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- 1. Laptop Estándar -->
+        <!-- FILA 1 - TARJETA 1: Laptop Estándar (29 Unidades) -->
         <article class="tn-card p-5 flex flex-col justify-between border-t-4 border-t-tn-primary">
           <div>
             <div class="flex items-center justify-between gap-2">
-              <span class="px-2 py-0.5 rounded bg-blue-100 text-tn-primary font-bold text-xs">29 Unidades</span>
+              <span class="px-2.5 py-0.5 rounded bg-blue-100 text-tn-primary font-extrabold text-xs">29 Unidades</span>
               <div class="flex items-center gap-2 text-[11px] font-bold">
                 <a href="docs/ficha_thinkbook_14_i5.pdf" target="_blank" class="text-tn-primary hover:underline flex items-center gap-0.5">
                   <i data-lucide="file-text" class="w-3 h-3"></i> Lenovo
@@ -650,35 +617,34 @@
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 my-3 items-center">
-              <img src="assets/products/21SG009HCL_p1_img2.png" alt="Lenovo ThinkBook 14" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
-              <img src="assets/products/asus_expertbook_b3.png" alt="ASUS ExpertBook B3406" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
+              <img src="assets/products/21SG009HCL_p1_img2.png" alt="Lenovo ThinkPad E16 Gen 3" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
+              <img src="assets/products/asus_expertbook_b3.png" alt="ASUS ExpertBook B3406CCA" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
             </div>
-            <h3 class="font-bold text-tn-navy text-base">Laptop Estándar (i5 / U5 · 16 GB · 512 GB)</h3>
+            <h3 class="font-bold text-tn-navy text-base">1. Laptop Estándar (Core Ultra 5 · 16 GB · 512 GB)</h3>
             <p class="text-xs text-tn-muted mt-0.5">Operaciones administrativas, finanzas y control de calidad.</p>
             <ul class="mt-3 space-y-1 text-xs text-tn-ink">
-              <li>• ThinkBook 14 (i5) vs <strong>ExpertBook B3406CCAP (U5 225H)</strong></li>
-              <li>• 16 GB RAM DDR5 + 512 GB SSD NVMe PCIe 4.0</li>
-              <li>• Pantalla 14" WUXGA/WQXGA 16:10 · Win 11 Pro · MIL-STD 810H</li>
-              <li>• <strong>36M On-Site NBD + ADP + Retención SSD</strong> en ASUS</li>
+              <li>• <strong>Lenovo (`21SS000LCL`):</strong> ThinkPad E16 Gen 3 · Intel Core Ultra 5 225U · 16" WUXGA + Teclado Numérico · 3Y On-Site.</li>
+              <li>• <strong>ASUS (`90NX0AP1-M001V0`):</strong> ExpertBook B3406CCA · Intel Core Ultra 5 · 16GB / 512GB · 36M NBD+ADP+HDD Ret.</li>
+              <li>• 16 GB RAM DDR5 + 512 GB SSD PCIe Gen4 · Windows 11 Pro</li>
             </ul>
           </div>
           <div class="mt-4 pt-3 border-t border-tn-border space-y-1 text-xs">
             <div class="flex justify-between">
-              <span class="text-tn-muted">Lenovo ThinkBook 14:</span>
-              <strong class="text-tn-primary">$ 1.058.824 neto/u</strong>
+              <span class="text-tn-muted">Lenovo ThinkPad E16 G3 (U5):</span>
+              <strong class="text-tn-primary font-mono">$ 1.256.000 neto/u</strong>
             </div>
             <div class="flex justify-between">
-              <span class="text-tn-muted">ASUS ExpertBook B3406CCAP:</span>
-              <strong class="text-indigo-800">$ 1.244.706 neto/u</strong>
+              <span class="text-tn-muted">ASUS ExpertBook B3406CCA (U5):</span>
+              <strong class="text-indigo-800 font-mono">$ 1.190.000 neto/u</strong>
             </div>
           </div>
         </article>
 
-        <!-- 2. Laptop Jefatura 1 (Ultra 7 · 32 GB RAM) -->
+        <!-- FILA 1 - TARJETA 2: Laptop Jefatura 1 (3 Unidades · Ultra 7 · 32 GB RAM) -->
         <article class="tn-card p-5 flex flex-col justify-between border-t-4 border-t-tn-navy">
           <div>
             <div class="flex items-center justify-between gap-2">
-              <span class="px-2 py-0.5 rounded bg-slate-200 text-tn-navy font-bold text-xs">Jefatura 1 · U7 32G</span>
+              <span class="px-2.5 py-0.5 rounded bg-slate-200 text-tn-navy font-extrabold text-xs">3 Unidades · Jefatura 1 (32 GB)</span>
               <div class="flex items-center gap-2 text-[11px] font-bold">
                 <a href="docs/ficha_thinkpad_t14_u7.pdf" target="_blank" class="text-tn-primary hover:underline flex items-center gap-0.5">
                   <i data-lucide="file-text" class="w-3 h-3"></i> Lenovo
@@ -690,124 +656,118 @@
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 my-3 items-center">
-              <img src="assets/products/21QD001FCL_p1_img2.png" alt="Lenovo ThinkPad T14" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
-              <img src="assets/products/asus_expertbook_b5.png" alt="ASUS ExpertBook B5405" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
+              <img src="assets/products/21QD001FCL_p1_img2.png" alt="Lenovo Notebook Pro Ultra 7 32G" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
+              <img src="assets/products/asus_expertbook_b5.png" alt="ASUS ExpertBook B5405CAA" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
             </div>
-            <h3 class="font-bold text-tn-navy text-base">Laptop Jefatura 1 (Ultra 7 · 32 GB RAM)</h3>
-            <p class="text-xs text-tn-muted mt-0.5">Gerencia, jefaturas técnicas y analítica de alto desempeño.</p>
+            <h3 class="font-bold text-tn-navy text-base">2. Laptop Jefatura 1 (Core Ultra 7 · 32 GB RAM)</h3>
+            <p class="text-xs text-tn-muted mt-0.5">Gerencia, dirección técnica y procesamiento intensivo.</p>
             <ul class="mt-3 space-y-1 text-xs text-tn-ink">
-              <li>• ThinkPad T14 G6 vs <strong>ExpertBook B5405CAA (U7 356H)</strong></li>
-              <li>• <strong>32 GB RAM DDR5</strong> + 512 GB SSD NVMe PCIe 4.0</li>
-              <li>• Chasis aleación militar aluminio (ASUS) · NPU 50 TOPS</li>
-              <li>• <strong>36M On-Site NBD + ADP + Retención SSD</strong> en ASUS</li>
+              <li>• <strong>Lenovo (`21R20014CL`):</strong> Notebook Pro Ultra 7 255U (hasta 5.2GHz) · <strong>32 GB LPDDR5X-7467 + 1 TB SSD PCIe 4.0</strong> · 3Y Onsite.</li>
+              <li>• <strong>ASUS (`90NX0A21-M00H50`):</strong> ExpertBook B5405CAA Ultra 7 · <strong>32 GB RAM + 512 GB SSD</strong> · Chasis Aluminio · 36M NBD+ADP+HDD Ret.</li>
             </ul>
           </div>
           <div class="mt-4 pt-3 border-t border-tn-border space-y-1 text-xs">
             <div class="flex justify-between">
-              <span class="text-tn-muted">Lenovo T14 Pro (32G):</span>
-              <strong class="text-tn-primary">$ 1.764.706 neto/u</strong>
+              <span class="text-tn-muted">Lenovo Pro U7 (32GB / 1TB):</span>
+              <strong class="text-tn-primary font-mono">$ 1.990.000 neto/u</strong>
             </div>
             <div class="flex justify-between">
-              <span class="text-tn-muted">ASUS B5405CAA (32G):</span>
-              <strong class="text-indigo-800">$ 2.138.824 neto/u</strong>
+              <span class="text-tn-muted">ASUS B5405CAA U7 (32GB / 512GB):</span>
+              <strong class="text-indigo-800 font-mono">$ 2.040.000 neto/u</strong>
             </div>
           </div>
         </article>
 
-        <!-- 3. Laptop Jefatura 2 (Ultra 7 · 16 GB RAM) -->
+        <!-- FILA 1 - TARJETA 3: Laptop Jefatura 2 (3 Unidades · Ultra 7 · 16 GB RAM) -->
         <article class="tn-card p-5 flex flex-col justify-between border-t-4 border-t-tn-cyan">
           <div>
             <div class="flex items-center justify-between gap-2">
-              <span class="px-2 py-0.5 rounded bg-cyan-100 text-tn-navy font-bold text-xs">Jefatura 2 · U7 16G</span>
+              <span class="px-2.5 py-0.5 rounded bg-cyan-100 text-tn-navy font-extrabold text-xs">3 Unidades · Jefatura 2 (16 GB)</span>
               <div class="flex items-center gap-2 text-[11px] font-bold">
                 <a href="docs/ficha_thinkpad_t14_u7.pdf" target="_blank" class="text-tn-primary hover:underline flex items-center gap-0.5">
                   <i data-lucide="file-text" class="w-3 h-3"></i> Lenovo
                 </a>
                 <span class="text-slate-300">|</span>
                 <a href="docs/ficha_asus_b3406.pdf" target="_blank" class="text-indigo-700 hover:underline flex items-center gap-0.5">
-                  <i data-lucide="file-text" class="w-3 h-3"></i> ASUS B3/B5
+                  <i data-lucide="file-text" class="w-3 h-3"></i> ASUS B3
                 </a>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 my-3 items-center">
-              <img src="assets/products/21QD001FCL_p1_img3.png" alt="Lenovo ThinkPad T14" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
-              <img src="assets/products/asus_expertbook_b3.png" alt="ASUS ExpertBook B3405" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
+              <img src="assets/products/21QD001FCL_p1_img3.png" alt="Lenovo ThinkPad T14 Gen 6" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
+              <img src="assets/products/asus_expertbook_b3.png" alt="ASUS Notebook Pro U7 16G" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
             </div>
-            <h3 class="font-bold text-tn-navy text-base">Laptop Jefatura 2 (Ultra 7 · 16 GB RAM)</h3>
-            <p class="text-xs text-tn-muted mt-0.5">Jefaturas operativas, supervisión y administración.</p>
+            <h3 class="font-bold text-tn-navy text-base">3. Laptop Jefatura 2 (Core Ultra 7 · 16 GB RAM)</h3>
+            <p class="text-xs text-tn-muted mt-0.5">Jefaturas operativas, supervisión y movilidad ejecutiva (ABS).</p>
             <ul class="mt-3 space-y-1 text-xs text-tn-ink">
-              <li>• ThinkPad T14 G6 vs <strong>ExpertBook B3405/B5405 (U7 16G)</strong></li>
-              <li>• <strong>16 GB RAM DDR5</strong> + 512 GB SSD NVMe PCIe 4.0</li>
-              <li>• Chasis reforzado ABS · Wi-Fi 7 · NPU dedicada IA</li>
-              <li>• <strong>36M On-Site NBD + ADP + Retención SSD</strong></li>
+              <li>• <strong>Lenovo (`21QD001GCL`):</strong> ThinkPad T14 Gen 6 · Core Ultra 7 255U · 16 GB DDR5 (exp. 64GB) · 512 GB SSD · 14" WUXGA 400nits · 1.38kg · 3Y Onsite.</li>
+              <li>• <strong>ASUS (`90NX0AP1-M000T0`):</strong> Notebook Pro Ultra 7 255H · 16 GB RAM · 512 GB SSD · 14" WUXGA · 36M NBD+ADP+HDD Ret.</li>
             </ul>
           </div>
           <div class="mt-4 pt-3 border-t border-tn-border space-y-1 text-xs">
             <div class="flex justify-between">
-              <span class="text-tn-muted">Lenovo T14 Bal (16G):</span>
-              <strong class="text-tn-primary">$ 1.427.807 neto/u</strong>
+              <span class="text-tn-muted">Lenovo ThinkPad T14 G6 (U7 16G):</span>
+              <strong class="text-tn-primary font-mono">$ 1.100.000 neto/u</strong>
             </div>
             <div class="flex justify-between">
-              <span class="text-tn-muted">ASUS B3405 (16G):</span>
-              <strong class="text-indigo-800">$ 1.638.824 neto/u</strong>
+              <span class="text-tn-muted">ASUS Pro U7 255H (16G):</span>
+              <strong class="text-indigo-800 font-mono">$ 1.260.000 neto/u</strong>
             </div>
           </div>
         </article>
 
-        <!-- 4. All-in-One Estándar 23.8" -->
+        <!-- FILA 2 - TARJETA 4: All-in-One 23.8" (3 Unidades) -->
         <article class="tn-card p-5 flex flex-col justify-between border-t-4 border-t-indigo-600">
           <div>
             <div class="flex items-center justify-between gap-2">
-              <span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-900 font-bold text-xs">3 Unidades</span>
+              <span class="px-2.5 py-0.5 rounded bg-indigo-100 text-indigo-900 font-extrabold text-xs">3 Unidades</span>
               <div class="flex items-center gap-2 text-[11px] font-bold">
                 <a href="docs/ficha_thinkcentre_neo50a_aio.pdf" target="_blank" class="text-tn-primary hover:underline flex items-center gap-0.5">
                   <i data-lucide="file-text" class="w-3 h-3"></i> Lenovo
                 </a>
                 <span class="text-slate-300">|</span>
                 <a href="docs/ficha_asus_p440va_aio.pdf" target="_blank" class="text-indigo-700 hover:underline flex items-center gap-0.5">
-                  <i data-lucide="file-text" class="w-3 h-3"></i> ASUS P400
+                  <i data-lucide="file-text" class="w-3 h-3"></i> ASUS P440
                 </a>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 my-3 items-center">
-              <img src="assets/products/13QH004HCS_p2_img1.jpeg" alt="Lenovo ThinkCentre Neo 50a" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
+              <img src="assets/products/13QH004HCS_p2_img1.jpeg" alt="Lenovo ThinkCentre Neo 55a" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
               <img src="assets/products/asus_expertcenter_p440.png" alt="ASUS ExpertCenter P440VA" class="h-24 w-full object-contain rounded-lg bg-slate-50 p-1" />
             </div>
-            <h3 class="font-bold text-tn-navy text-base">All-in-One 23.8" (i5 / Core 5 · 16 GB · 512 GB)</h3>
+            <h3 class="font-bold text-tn-navy text-base">4. All-in-One 23.8" (16 GB DDR5 · 512 GB SSD)</h3>
             <p class="text-xs text-tn-muted mt-0.5">Estaciones fijas de recepción, mesón y digitación.</p>
             <ul class="mt-3 space-y-1 text-xs text-tn-ink">
-              <li>• ThinkCentre Neo 50a vs <strong>ExpertCenter P400 (P440VA Core 5)</strong></li>
-              <li>• 16 GB RAM DDR5 + 512 GB SSD NVMe · Win 11 Pro</li>
-              <li>• Pantalla 23.8" FHD 100 Hz · Base HAS VESA + USB KB/Mouse</li>
-              <li>• <strong>36M On-Site NBD + ADP + Retención SSD</strong> en ASUS</li>
+              <li>• <strong>Lenovo (`13FA0032CS`):</strong> ThinkCentre Neo 55a 24 Gen 6 · AMD Ryzen 5 220 (6C/12T hasta 4.9GHz) · 16 GB DDR5-5600 · 512 GB SSD · Radeon 740M · Onsite.</li>
+              <li>• <strong>ASUS (`90PT03X6-M0B7L0`):</strong> ExpertCenter P440VA AiO 23.8" · Core i5 · 16 GB DDR5 · 512 GB SSD · 36M On-Site+ADP.</li>
             </ul>
           </div>
           <div class="mt-4 pt-3 border-t border-tn-border space-y-1 text-xs">
             <div class="flex justify-between">
-              <span class="text-tn-muted">Lenovo Neo 50a 24:</span>
-              <strong class="text-tn-primary">$ 1.078.047 neto/u</strong>
+              <span class="text-tn-muted">Lenovo ThinkCentre Neo 55a G6:</span>
+              <strong class="text-tn-primary font-mono">$ 1.070.000 neto/u</strong>
             </div>
             <div class="flex justify-between">
-              <span class="text-tn-muted">ASUS ExpertCenter P440VA:</span>
-              <strong class="text-indigo-800">$ 1.147.647 neto/u</strong>
+              <span class="text-tn-muted">ASUS ExpertCenter P440VA AiO:</span>
+              <strong class="text-indigo-800 font-mono">$ 1.120.000 neto/u</strong>
             </div>
           </div>
         </article>
 
-        <!-- 5. Tablets Operacionales -->
+        <!-- FILA 2 - TARJETA 5: Tablets Operacionales (5 Unidades) -->
         <article class="tn-card p-5 flex flex-col justify-between border-t-4 border-t-tn-cyan">
           <div>
             <div class="flex items-center justify-between">
-              <span class="px-2 py-0.5 rounded bg-cyan-100 text-tn-primary font-bold text-xs">5 Unidades</span>
+              <span class="px-2.5 py-0.5 rounded bg-cyan-100 text-tn-primary font-extrabold text-xs">5 Unidades</span>
               <a href="docs/ficha_lenovo_tablet_5g.pdf" target="_blank" class="text-xs font-bold text-tn-primary hover:underline flex items-center gap-1">
                 <i data-lucide="file-text" class="w-3 h-3"></i> Ficha PDF
               </a>
             </div>
             <img src="assets/products/ZAF10104CL_p2_img1.jpeg" alt="Tablet Lenovo 5G" class="h-28 w-auto object-contain mx-auto my-3" />
-            <h3 class="font-bold text-tn-navy text-base">Lenovo IdeaTab 11" 2.5K 5G Kit</h3>
+            <h3 class="font-bold text-tn-navy text-base">5. Lenovo IdeaTab 11" 2.5K 5G Kit</h3>
             <p class="text-xs text-tn-muted mt-0.5">Movilidad en planta, terreno y salas de preparación.</p>
             <ul class="mt-3 space-y-1 text-xs text-tn-ink">
-              <li>• MediaTek Dimensity 6300 · 8 GB RAM / 256 GB</li>
+              <li>• SKU `ZAFM0221CL` · MediaTek Dimensity 6300 · 8 GB RAM / 256 GB</li>
               <li>• Pantalla 11" 2.5K IPS de alta nitidez · Android 15</li>
               <li>• Conectividad 5G móvil para operación continua</li>
               <li>• <strong>Incluye Folio Keyboard + Lenovo Tab Pen</strong></li>
@@ -816,92 +776,229 @@
           <div class="mt-4 pt-3 border-t border-tn-border space-y-1 text-xs">
             <div class="flex justify-between">
               <span class="text-tn-muted">Lenovo ZAFM0221CL Kit:</span>
-              <strong class="text-tn-primary">$ 322.859 neto/u</strong>
+              <strong class="text-tn-primary font-mono">$ 322.859 neto/u</strong>
             </div>
             <div class="flex justify-between">
               <span class="text-tn-muted">Total 5 uds (Neto):</span>
-              <strong class="text-tn-navy">$ 1.614.295</strong>
+              <strong class="text-tn-navy font-mono">$ 1.614.295</strong>
             </div>
           </div>
         </article>
 
-        <!-- 6. Multifuncionales RRHH -->
+        <!-- FILA 2 - TARJETA 6: Multifuncionales RRHH (2 Unidades) -->
         <article class="tn-card p-5 flex flex-col justify-between border-t-4 border-t-tn-success">
           <div>
             <div class="flex items-center justify-between">
-              <span class="px-2 py-0.5 rounded bg-emerald-100 text-tn-success font-bold text-xs">2 Unidades</span>
+              <span class="px-2.5 py-0.5 rounded bg-emerald-100 text-tn-success font-extrabold text-xs">2 Unidades</span>
               <a href="docs/ficha_epson_workforce_ecotank.pdf" target="_blank" class="text-xs font-bold text-tn-success hover:underline flex items-center gap-1">
                 <i data-lucide="file-text" class="w-3 h-3"></i> Ficha PDF
               </a>
             </div>
             <img src="assets/products/epson_ecotank_p4_0.jpeg" alt="Multifuncional Epson" class="h-28 w-auto object-contain mx-auto my-3" />
-            <h3 class="font-bold text-tn-navy text-base">Multifuncional Corporativo RRHH</h3>
+            <h3 class="font-bold text-tn-navy text-base">6. Multifuncional Corporativo RRHH</h3>
             <p class="text-xs text-tn-muted mt-0.5">Impresión confidencial de nóminas con código PIN.</p>
             <ul class="mt-3 space-y-1 text-xs text-tn-ink">
-              <li>• <strong>Epson WF-C5891 (Base):</strong> 25 ppm, PIN, Heat-Free</li>
-              <li>• <strong>Epson EM-C800 (Alt. 2 XL):</strong> Bolsas T12P gran autonomía</li>
-              <li>• Dúplex automático de una pasada + escáner red</li>
-              <li>• LDAP / 802.1X / Tinta pigmentada DURABrite Ultra</li>
+              <li>• <strong>Epson WorkForce Pro WF-C5891 (`C11CJ08301`):</strong> 25 ppm, PIN, Heat-Free</li>
+              <li>• Dúplex automático de una pasada + escáner en red</li>
+              <li>• Seguridad corporativa LDAP / 802.1X / Impresión con clave</li>
+              <li>• Tinta pigmentada DURABrite Ultra resistente al agua</li>
             </ul>
           </div>
           <div class="mt-4 pt-3 border-t border-tn-border space-y-1 text-xs">
             <div class="flex justify-between">
-              <span class="text-tn-muted">Epson WF-C5891 (Base):</span>
-              <strong class="text-tn-success">$ 538.141 neto/u</strong>
+              <span class="text-tn-muted">Epson WF-C5891 (Unitario):</span>
+              <strong class="text-tn-success font-mono">$ 538.141 neto/u</strong>
             </div>
             <div class="flex justify-between">
               <span class="text-tn-muted">Total 2 uds (Neto):</span>
-              <strong class="text-tn-navy">$ 1.076.282</strong>
+              <strong class="text-tn-navy font-mono">$ 1.076.282</strong>
             </div>
           </div>
         </article>
 
       </div>
+
+      <!-- COMENTARIO EJECUTIVO: ANÁLISIS COMPARATIVO MODELO POR MODELO (EDAD, PROCESADOR, COMPONENTES Y OTROS) -->
+      <div class="tn-card overflow-hidden border-2 border-tn-primary/30 bg-white shadow-lg mt-8">
+        <div class="p-5 sm:p-6 bg-gradient-to-r from-tn-navy via-[#0a2e63] to-tn-primary text-white space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="px-3 py-1 rounded-full bg-tn-cyan text-tn-navy font-black text-[11px] uppercase tracking-wider">
+              Nota Técnica de Homologación &middot; Modelo por Modelo
+            </span>
+            <span class="text-xs text-tn-cyanLight font-bold">
+              Generación 2025/2026 (Core Ultra Serie 2) vs Equipos Legados 2023/2024
+            </span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-white">
+            Análisis Comparativo: Edad Tecnológica, Procesadores, Materiales y Componentes
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+            <strong>Criterio Rector: Empatar Tecnología Real y no Portafolio Antiguo.</strong> En el mercado es posible reducir precios ofertando equipos con procesadores <em>Intel Core i5 de generaciones 2023 o 2024</em> (equipos nuevos pero de arquitectura anterior). Como ASUS ya migró toda su línea corporativa a <strong>Intel Core Ultra (con NPU de IA)</strong>, en esta propuesta <strong>elevamos también toda la oferta de notebooks Lenovo a generación 2025/2026 (Intel Core Ultra 5 y Core Ultra 7 Serie 2 · Arrow Lake)</strong> para que Positronpharma compare ambas marcas en <strong>exacta igualdad de vigencia tecnológica</strong>.
+          </p>
+        </div>
+
+        <div class="p-5 sm:p-6 space-y-5">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 text-xs">
+
+            <!-- Comparativa Ítem 1.0: Laptop Estándar (29 uds) -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+              <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                <span class="font-extrabold text-tn-navy text-sm">1. Laptop Estándar (29 uds.) · Ultra 5 vs Ultra 5</span>
+                <span class="px-2 py-0.5 rounded bg-blue-100 text-tn-primary font-bold text-[10px]">Silicio 2025/2026</span>
+              </div>
+              <div class="space-y-1.5 text-slate-700 leading-relaxed">
+                <p>
+                  • <strong>Edad &amp; Procesador:</strong> Ambos dejaron atrás el Core i5 de 2023/2024 y montan <strong>Intel Core Ultra 5 (Serie 2 · 2025/2026)</strong> con motor de Inteligencia Artificial (NPU). Lenovo equipa el <strong>Core Ultra 5 225U</strong> (12 núcleos, hasta 3.80 GHz, 12 MB caché) y ASUS el <strong>Core Ultra 5 Serie 2</strong>.
+                </p>
+                <p>
+                  • <strong>Pantalla, Teclado &amp; Batería:</strong> <strong>Lenovo ThinkPad E16 Gen 3 (`21SS000LCL`)</strong> entrega formato amplio de <strong>16&quot; WUXGA (16:10) con teclado numérico completo</strong> (ideal para SAP, finanzas y planillas), cámara 5MP RGB, lector de huella y batería superior de <strong>64 Wh</strong>. <strong>ASUS ExpertBook B3406CCA (`90NX0AP1-M001V0`)</strong> apuesta por chasis compacto de <strong>14&quot;</strong> para máxima movilidad.
+                </p>
+                <p>
+                  • <strong>Garantía &amp; Diferencial:</strong> Ambos incluyen <strong>16 GB DDR5 + 512 GB SSD PCIe 4.0 + Win 11 Pro</strong>. Lenovo incluye <strong>3 Años On-Site</strong> ($ 1.256.000/u); ASUS es <strong>$ 66.000 más económico por equipo</strong> ($ 1.190.000/u) e incluye <strong>36M On-Site NBD + Seguro Daño Accidental (ADP) + Retención de SSD</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Comparativa Ítem 2.0: Laptop Jefatura 1 (3 uds · 32 GB) -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+              <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                <span class="font-extrabold text-tn-navy text-sm">2. Laptop Jefatura 1 · Gama Alta 32 GB (3 uds.)</span>
+                <span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-900 font-bold text-[10px]">1 TB SSD vs Chasis Aluminio</span>
+              </div>
+              <div class="space-y-1.5 text-slate-700 leading-relaxed">
+                <p>
+                  • <strong>Edad &amp; Procesador:</strong> Ambos pertenecen a la generación <strong>2025/2026 (Gen 6 / Serie 2)</strong> con <strong>Intel Core Ultra 7</strong> (Lenovo Ultra 7 255U de 12C/14T con Max Turbo hasta <strong>5.2 GHz</strong> vs ASUS Ultra 7 Serie 2).
+                </p>
+                <p>
+                  • <strong>Memoria &amp; Almacenamiento (Ventaja Lenovo):</strong> El <strong>Lenovo Pro (`21R20014CL`)</strong> equipa <strong>32 GB LPDDR5X-7467</strong> de altísima velocidad y <strong>1 TB SSD PCIe 4.0×4 Opal 2.0 (el doble de almacenamiento)</strong> por <strong>$ 1.990.000/u</strong>. El <strong>ASUS ExpertBook B5405CAA (`90NX0A21-M00H50`)</strong> entrega <strong>32 GB DDR5 y 512 GB SSD</strong> por <strong>$ 2.040.000/u</strong>.
+                </p>
+                <p>
+                  • <strong>Materiales &amp; Cobertura (Ventaja ASUS):</strong> El <strong>ASUS B5</strong> es el tope de línea con <strong>chasis 100% aleación metálica de aluminio/magnesio militar</strong> y paquete <strong>36M NBD + ADP + Retención de disco</strong>; Lenovo ofrece el doble de disco (1 TB) y 3Y Onsite por $ 50.000 menos por unidad.
+                </p>
+              </div>
+            </div>
+
+            <!-- Comparativa Ítem 3.0: Laptop Jefatura 2 (3 uds · 16 GB ABS) -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+              <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                <span class="font-extrabold text-tn-navy text-sm">3. Laptop Jefatura 2 · Gama Media-Alta 16 GB (3 uds.)</span>
+                <span class="px-2 py-0.5 rounded bg-cyan-100 text-tn-navy font-bold text-[10px]">Chasis ABS Corporativo</span>
+              </div>
+              <div class="space-y-1.5 text-slate-700 leading-relaxed">
+                <p>
+                  • <strong>Edad &amp; Procesador (Serie U vs Serie H):</strong> Ambos son <strong>generación 2025/2026 Arrow Lake</strong>. <strong>Lenovo ThinkPad T14 Gen 6 (`21QD001GCL`)</strong> monta el <strong>Core Ultra 7 255U</strong> (12C/14T, ultra eficiente); <strong>ASUS (`90NX0AP1-M000T0`)</strong> monta el <strong>Core Ultra 7 255H</strong> (arquitectura Serie H de mayor potencia sostenida multicore).
+                </p>
+                <p>
+                  • <strong>Chasis &amp; Componentes:</strong> Ambos utilizan <strong>polímero/ABS reforzado</strong> (livianos y resistentes, 1.38 kg en T14). El <strong>ThinkPad T14 Gen 6</strong> destaca por su pantalla <strong>14&quot; WUXGA de 400 nits</strong> de alto brillo y <strong>2 ranuras SODIMM DDR5 libres hasta 64 GB</strong> + 512 GB SSD Opal 2.0.
+                </p>
+                <p>
+                  • <strong>Precio &amp; Garantía:</strong> <strong>Lenovo T14 Gen 6</strong> tiene un precio altamente competitivo de <strong>$ 1.100.000 neto/u</strong> (3 años Onsite), ahorrando <strong>$ 160.000 por equipo</strong> frente a ASUS ($ 1.260.000/u con 36M NBD+ADP+HDD Ret.).
+                </p>
+              </div>
+            </div>
+
+            <!-- Comparativa Ítem 4.0: All-in-One 23.8" (3 uds) -->
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+              <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+                <span class="font-extrabold text-tn-navy text-sm">4. All-in-One 23.8&quot; Estación Fija (3 uds.)</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold text-[10px]">Empate Operativo</span>
+              </div>
+              <div class="space-y-1.5 text-slate-700 leading-relaxed">
+                <p>
+                  • <strong>Edad &amp; Procesador:</strong> Tal como se revisó en reunión, para estaciones de ingreso de datos y recepción <strong>no se requiere pagar sobrecosto de NPU Ultra 5</strong>. <strong>Lenovo ThinkCentre Neo 55a 24 Gen 6 (`13FA0032CS`)</strong> es generación 2025/2026 con <strong>AMD Ryzen 5 220</strong> (6C/12T hasta 4.9 GHz, 16MB L3 y gráficos <strong>Radeon 740M</strong>); <strong>ASUS ExpertCenter P440VA (`90PT03X6-M0B7L0`)</strong> equipa <strong>Intel Core i5</strong>. En desempeño práctico empatan 100%.
+                </p>
+                <p>
+                  • <strong>Componentes &amp; Garantía (Diferencial Clave):</strong> Ambos integran pantalla <strong>23.8&quot; FHD, 16 GB DDR5, 512 GB SSD PCIe 4.0 y Windows 11 Pro</strong>. Lenovo cuesta <strong>$ 1.070.000/u</strong> con <strong>1 año On-Site</strong>; ASUS cuesta <strong>$ 1.120.000/u</strong> ($ 50.000 más) pero entrega <strong>36 Meses (3 Años) On-Site + ADP incluidos</strong>.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Resumen Transversal Tablets + Impresoras y Conclusión -->
+          <div class="p-4 rounded-xl bg-blue-50/70 border border-blue-200 flex flex-col md:flex-row md:items-center justify-between gap-4 text-xs">
+            <div class="space-y-1">
+              <strong class="text-tn-navy uppercase tracking-wider text-[11px] block">
+                5. &amp; 6. Componentes Transversales Idénticos en Ambas Propuestas ($ 2.690.577 Neto):
+              </strong>
+              <p class="text-slate-700">
+                • <strong>5× Tablets Lenovo IdeaTab 11&quot; 2.5K 5G Kit (`ZAFM0221CL` · $ 322.859/u):</strong> Generación 2025 con <strong>Android 15</strong>, chip Dimensity 6300 5G, 8GB/256GB + <strong>Folio Keyboard + Tab Pen</strong>.<br />
+                • <strong>2× Multifuncionales Epson WorkForce Pro WF-C5891 (`C11CJ08301` · $ 538.141/u):</strong> Tecnología <strong>Heat-Free</strong> (sin calor), 25 ppm, dúplex y <strong>liberación confidencial por PIN</strong> para RRHH.
+              </p>
+            </div>
+            <div class="shrink-0 bg-white p-3 rounded-xl border border-blue-200 text-right">
+              <span class="text-[10px] font-bold uppercase text-slate-500 block">Veredicto Global (45 Equipos)</span>
+              <div class="font-extrabold text-tn-primary text-xs">LENOVO: $ 51.594.577 neto (−$ 455K ✅)</div>
+              <div class="font-extrabold text-indigo-800 text-xs">ASUS: $ 50.460.577 neto (−$ 1,59M ✅)</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Sección 4: Planilla Ejecutiva de Cotización (45 Equipos - Sin Handhelds) -->
+    <!-- Sección 3: Planilla Ejecutiva Interactiva de Cotización (Formato Imagen Exacto) -->
     <section id="planilla" class="space-y-6">
       <div class="text-center max-w-3xl mx-auto">
-        <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Planilla Maestra de Equipamiento &amp; Valores</span>
+        <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Planilla Maestra Interactiva · LENOVO vs ASUS</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy mt-1">
-          Planilla Ejecutiva de Cotización (45 Equipos)
+          Planilla Ejecutiva de Cotización
         </h2>
         <p class="text-sm text-tn-muted mt-2">
-          Estructura oficial sin Handhelds. Configura marcas (<strong class="text-tn-ink">Lenovo</strong> / <strong class="text-tn-ink">ASUS</strong>), distribuye los <strong>2 modelos de Jefatura (Ultra 7 16G / 32G)</strong> y modifica cantidades con recálculo dinámico en tiempo real.
+          Compara en tiempo real <strong class="text-tn-ink">COT 1370 LENOVO</strong> vs <strong class="text-tn-ink">COT 1370 ASUS</strong>, modifica la distribución de los <strong>2 modelos de Jefatura (Ultra 7 32 GB / 16 GB)</strong> o ajusta las cantidades de cada línea.
         </p>
       </div>
 
-      <!-- Barra Superior de Control: Marca, Presets de Jefatura y Modalidad de Pago -->
+      <!-- Barra Superior de Control: Marca, Alcance, Presets de Jefatura y Modalidad -->
       <div class="tn-card p-4 sm:p-5 bg-white border border-tn-border shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-        <!-- Selector de Marca y Presets Jefatura -->
         <div class="flex flex-wrap items-center gap-3">
+          <!-- Selector Marca -->
           <div>
-            <span class="text-[10px] font-bold uppercase text-tn-muted block mb-1">Alternativa de Marca:</span>
+            <span class="text-[10px] font-bold uppercase text-tn-muted block mb-1">1. Seleccionar Marca:</span>
             <div class="inline-flex rounded-xl p-1 bg-slate-100 border border-slate-200">
-              <button onclick="setHardwareBrand('lenovo')" id="brand-lenovo" class="px-4 py-2 rounded-lg text-xs font-extrabold transition shadow-sm bg-tn-navy text-white">COT 1370 LENOVO</button>
-              <button onclick="setHardwareBrand('asus')" id="brand-asus" class="px-4 py-2 rounded-lg text-xs font-extrabold transition text-slate-700 hover:text-tn-navy">COT 1370 ASUS</button>
+              <button onclick="setHardwareBrand('lenovo')" id="brand-lenovo" class="px-4 py-2 rounded-lg text-xs font-extrabold transition shadow-sm bg-tn-navy text-white">
+                LENOVO ($ 51,59M)
+              </button>
+              <button onclick="setHardwareBrand('asus')" id="brand-asus" class="px-4 py-2 rounded-lg text-xs font-extrabold transition text-slate-700 hover:text-tn-navy">
+                ASUS ($ 50,46M)
+              </button>
             </div>
           </div>
 
           <div class="h-8 w-px bg-slate-200 hidden sm:block"></div>
 
+          <!-- Selector Distribución Jefaturas -->
           <div>
-            <span class="text-[10px] font-bold uppercase text-tn-muted block mb-1">Distribución Jefaturas (6 Equipos U7):</span>
+            <span class="text-[10px] font-bold uppercase text-tn-muted block mb-1">2. Jefaturas (Ultra 7 32G / 16G):</span>
             <div class="flex flex-wrap gap-1.5">
               <button onclick="setJefaturaPreset(3, 3)" id="preset-jef-mixto" class="px-3 py-1.5 rounded-lg border border-tn-primary bg-blue-50 text-tn-primary text-xs font-bold transition">
-                Mixto 3× 32G + 3× 16G
+                Base: 3× 32G + 3× 16G
               </button>
               <button onclick="setJefaturaPreset(6, 0)" id="preset-jef-pro" class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-xs font-semibold transition">
-                100% Pro (6× 32G)
+                6× 32G Pro
               </button>
               <button onclick="setJefaturaPreset(0, 6)" id="preset-jef-bal" class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-xs font-semibold transition">
-                100% Bal (6× 16G)
+                6× 16G Bal
+              </button>
+            </div>
+          </div>
+
+          <div class="h-8 w-px bg-slate-200 hidden sm:block"></div>
+
+          <!-- Selector Alcance (45 Eq. vs Solo Cómputo 38 Eq.) -->
+          <div>
+            <span class="text-[10px] font-bold uppercase text-tn-muted block mb-1">3. Alcance Planilla:</span>
+            <div class="flex flex-wrap gap-1.5">
+              <button onclick="toggleExtras(true)" id="scope-full" class="px-3 py-1.5 rounded-lg border border-emerald-600 bg-emerald-50 text-emerald-800 text-xs font-bold transition">
+                +5 Tablets +2 Impresoras (45 Eq.)
+              </button>
+              <button onclick="toggleExtras(false)" id="scope-computo" class="px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-xs font-semibold transition">
+                Solo Cómputo (38 Eq.)
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Botones de Acción y Modalidad -->
+        <!-- Modalidad Pago y Restaurar -->
         <div class="flex flex-wrap items-center gap-2">
           <div class="inline-flex rounded-xl p-1 bg-slate-100 border border-slate-200 text-xs">
             <button onclick="setPaymentMode('directa')" id="mode-directa" class="px-3 py-1.5 rounded-lg font-bold transition bg-white text-tn-navy shadow-sm">Contado / 30d</button>
@@ -914,97 +1011,106 @@
         </div>
       </div>
 
-      <!-- Selector condicional ASUS Laptop Estándar (si ASUS activo) -->
-      <div id="asus-lap-std-selector" class="hidden tn-card p-3.5 bg-indigo-50/60 border border-indigo-200 flex items-center justify-between gap-4 text-xs">
-        <div class="flex items-center gap-2">
-          <span class="px-2 py-0.5 rounded bg-indigo-200 text-indigo-900 font-extrabold uppercase text-[10px]">ASUS Línea 1</span>
-          <span class="font-bold text-indigo-950">Seleccionar variante para los 29 Laptops Estándar:</span>
-        </div>
-        <select id="asus-lap-select" onchange="renderPlanilla(); calculateTotal();" class="rounded-lg border border-indigo-300 bg-white px-3 py-1.5 text-xs font-bold text-indigo-900 focus:outline-none focus:ring-2 focus:ring-tn-cyan">
-          <option value="b3406" selected>Oferta Protegida (30-Nov): ExpertBook B3406CCAP (Ultra 5 225H · WQXGA · 36M NBD+ADP) — $ 1.244.706 neto/u</option>
-          <option value="p1403">Variante Económica: ExpertBook P1403 (i5 · 16G · 512G · 36M) — $ 1.058.824 neto/u</option>
-        </select>
-      </div>
-
       <!-- Control Slider Canon Leasing (condicional) -->
       <div id="leasing-controls" class="hidden tn-card p-4 bg-tn-navy text-white rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs">
         <div>
           <span class="font-bold text-tn-cyanLight uppercase text-[11px] block">Simulador de Canon Mensual Leasing (36 Meses):</span>
-          <span class="text-slate-300 text-[11px]">Canon mensual sobre capital neto financiado (OPEX 100% deducible de impuestos).</span>
+          <span class="text-slate-300 text-[11px]">Canon referencial Crece Capital (~3,38% mensual sobre monto neto · 100% gasto operacional OPEX).</span>
         </div>
         <div class="flex items-center gap-3">
-          <input type="range" id="leasing-factor" min="2.80" max="3.40" step="0.05" value="3.00" oninput="calculateTotal()" class="w-36 accent-tn-cyan" />
-          <span id="leasing-factor-label" class="font-extrabold text-tn-cyanLight text-sm w-20 text-right">3,00% / mes</span>
+          <input type="range" id="leasing-factor" min="2.80" max="3.50" step="0.02" value="3.38" oninput="calculateTotal()" class="w-36 accent-tn-cyan" />
+          <span id="leasing-factor-label" class="font-extrabold text-tn-cyanLight text-sm w-24 text-right">3,38% / mes</span>
         </div>
       </div>
 
-      <!-- TABLA ESTILO PLANILLA EXACTA (2DA IMAGEN) -->
+      <!-- TABLA ESTILO PLANILLA EXACTA -->
       <div class="tn-card overflow-hidden border border-slate-300 shadow-md rounded-2xl bg-white">
         <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse min-w-[950px]">
+          <table class="w-full text-left border-collapse min-w-[980px]">
             <thead>
-              <tr class="bg-[#10377e] text-white uppercase text-[11px] font-extrabold tracking-wider">
-                <th class="py-3 px-3 text-center border-r border-white/20 w-12">Ítem</th>
-                <th class="py-3 px-3 border-r border-white/20 w-32 text-center">SKU</th>
-                <th class="py-3 px-3 border-r border-white/20 w-24 text-center">Vendor</th>
-                <th class="py-3 px-3 border-r border-white/20 w-44">Categoría</th>
-                <th class="py-3 px-4 border-r border-white/20">Descripción / Modelo</th>
-                <th class="py-3 px-3 border-r border-white/20 text-center w-28">Cant.</th>
-                <th class="py-3 px-3 border-r border-white/20 text-right w-36">Precio Unit. Neto (CLP)</th>
-                <th class="py-3 px-4 text-right w-40">Total Neto (CLP)</th>
+              <tr class="bg-[#10377e] text-white text-xs font-extrabold tracking-wide">
+                <th class="py-3.5 px-3 text-center border-r border-white/25 w-14">Ítem</th>
+                <th class="py-3.5 px-3 border-r border-white/25 w-40 text-center">SKU</th>
+                <th class="py-3.5 px-3 border-r border-white/25 w-24 text-center">Vendor</th>
+                <th class="py-3.5 px-3 border-r border-white/25 w-44 text-center">Categoría</th>
+                <th class="py-3.5 px-4 border-r border-white/25 text-center">Descripción / Modelo</th>
+                <th class="py-3.5 px-3 border-r border-white/25 text-center w-28">Cant.</th>
+                <th class="py-3.5 px-3 border-r border-white/25 text-center w-40">Precio Unit. Neto (CLP)</th>
+                <th class="py-3.5 px-4 text-center w-44">Total Neto (CLP)</th>
               </tr>
             </thead>
-            <tbody id="planilla-tbody" class="text-xs divide-y divide-slate-200 font-sans">
-              <!-- Se puebla dinámicamente vía renderPlanilla() -->
+            <tbody id="planilla-tbody" class="text-xs divide-y divide-slate-300 font-sans">
+              <!-- Poblado dinámicamente por renderPlanilla() -->
             </tbody>
-            <tfoot class="border-t-2 border-[#10377e]">
-              <tr class="bg-[#f0f4fa] font-extrabold text-tn-navy text-xs">
-                <td colspan="5" class="py-3.5 px-4 text-right uppercase tracking-wider text-slate-700">
-                  Total Equipos Parque TI (Sin Handhelds):
+            <tfoot>
+              <!-- Fila Subtotal Neto -->
+              <tr class="border-t-2 border-slate-300 bg-white">
+                <td colspan="5" class="py-2.5 px-4 text-right text-xs font-semibold text-slate-500">
+                  Total Equipos Seleccionados: <strong id="tbl-total-qty" class="text-tn-navy font-black">45</strong> uds.
                 </td>
-                <td class="py-3.5 px-3 text-center text-sm font-black text-tn-primary border-r border-slate-300">
-                  <span id="tbl-total-qty">45</span>
-                </td>
-                <td class="py-3.5 px-3 text-right uppercase tracking-wider text-slate-700 border-r border-slate-300">
+                <td class="border-r border-slate-200"></td>
+                <td class="py-2.5 px-3 text-right font-extrabold text-slate-800 text-xs bg-[#f0f4fa] border-r border-b border-slate-300">
                   Subtotal Neto:
                 </td>
-                <td class="py-3.5 px-4 text-right text-sm font-black text-tn-navy">
-                  <span id="tbl-subtotal-neto">$ 46.208.153</span>
+                <td class="py-2.5 px-4 text-right font-black text-slate-900 text-sm bg-[#f0f4fa] border-b border-slate-300 font-mono">
+                  <span id="tbl-subtotal-neto">$51,594,577</span>
+                </td>
+              </tr>
+              <!-- Fila IVA 19% -->
+              <tr class="bg-white">
+                <td colspan="6" class="border-r border-slate-200"></td>
+                <td class="py-2.5 px-3 text-right font-extrabold text-slate-800 text-xs bg-[#f0f4fa] border-r border-b border-slate-300">
+                  IVA (19%):
+                </td>
+                <td class="py-2.5 px-4 text-right font-black text-slate-900 text-sm bg-[#f0f4fa] border-b border-slate-300 font-mono">
+                  <span id="tbl-foot-iva">$9,802,970</span>
+                </td>
+              </tr>
+              <!-- Fila TOTAL A PAGAR (CLP) en Azul #10377e exacto a la captura -->
+              <tr class="bg-white">
+                <td colspan="6" class="border-r border-slate-200"></td>
+                <td class="py-3 px-3 text-center font-extrabold text-white text-xs bg-[#10377e] border-r border-white/20 uppercase leading-tight">
+                  TOTAL A<br />PAGAR (CLP):
+                </td>
+                <td class="py-3 px-4 text-right font-black text-white text-base bg-[#10377e] font-mono">
+                  <span id="tbl-foot-totalciva">$61,397,547</span>
                 </td>
               </tr>
             </tfoot>
           </table>
         </div>
 
-        <!-- Resumen Financiero y Comparativa vs Presupuesto en el Pie de la Planilla -->
+        <!-- Barra Inferior de Evaluación vs Presupuesto y Cuota -->
         <div class="p-5 sm:p-6 bg-slate-50 border-t border-slate-200 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
           <!-- Comparativa Presupuesto -->
           <div class="space-y-1">
-            <span class="text-[11px] font-bold uppercase text-slate-500 block">Evaluación vs Presupuesto Cliente:</span>
+            <span class="text-[11px] font-bold uppercase text-slate-500 block">Evaluación vs Presupuesto Cliente ($ 52.050.000 Neto):</span>
             <div class="flex items-baseline gap-2">
               <span id="tbl-diff-badge" class="px-2.5 py-1 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300">
                 Bajo Presupuesto
               </span>
-              <span id="tbl-diff-val" class="font-extrabold text-sm text-emerald-700 font-mono">−$ 5.841.847</span>
+              <span id="tbl-diff-val" class="font-extrabold text-sm text-emerald-700 font-mono">−$ 455.423</span>
             </div>
             <p class="text-[11px] text-slate-500">
-              Presupuesto oficial: <strong class="text-slate-700">$ 52.050.000 neto</strong>. Al descartar las 8 Handhelds, el proyecto genera holgura presupuestaria directa.
+              Subtotal Cómputo (38 eq.): <strong id="tbl-sub-computo" class="text-slate-800 font-mono">$ 48.904.000</strong> &middot;
+              Tablets + Impresoras (7 eq.): <strong id="tbl-sub-extras" class="text-slate-800 font-mono">$ 2.690.577</strong>
             </p>
           </div>
 
-          <!-- Desglose Tributario -->
+          <!-- Comparativa Directa Lenovo vs ASUS en vivo -->
           <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm space-y-1.5 text-xs">
+            <div class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Comparativa Rápida (Misma Configuración):</div>
             <div class="flex justify-between">
-              <span class="text-slate-600">Subtotal Neto:</span>
-              <strong id="tbl-foot-subtotal" class="font-mono text-slate-900">$ 46.208.153</strong>
+              <span class="text-slate-600 font-semibold">• Total Neto LENOVO:</span>
+              <strong id="cmp-lenovo-neto" class="font-mono text-tn-primary">$ 51.594.577</strong>
             </div>
             <div class="flex justify-between">
-              <span class="text-slate-600">I.V.A. (19%):</span>
-              <span id="tbl-foot-iva" class="font-mono text-slate-700">$ 8.779.549</span>
+              <span class="text-slate-600 font-semibold">• Total Neto ASUS:</span>
+              <strong id="cmp-asus-neto" class="font-mono text-indigo-800">$ 50.460.577</strong>
             </div>
-            <div class="flex justify-between pt-1 border-t border-slate-200 text-sm">
-              <strong class="text-tn-navy">Total General c/IVA:</strong>
-              <strong id="tbl-foot-totalciva" class="font-mono text-tn-primary font-black">$ 54.987.702</strong>
+            <div class="flex justify-between pt-1 border-t border-slate-100 text-[11px]">
+              <span class="text-slate-500">Diferencia entre marcas:</span>
+              <strong id="cmp-brand-diff" class="font-mono text-emerald-700">ASUS −$ 1.134.000 más económico</strong>
             </div>
           </div>
 
@@ -1014,11 +1120,204 @@
               Inversión Total Neta (Contado / 30d)
             </span>
             <div id="tbl-metric-value" class="text-2xl sm:text-3xl font-black text-white font-mono">
-              $ 46.208.153
+              $ 51.594.577
             </div>
             <div id="tbl-metric-secondary" class="text-[11px] text-slate-300">
-              IVA 19%: $ 8.779.549 · Total c/IVA: $ 54.987.702
+              IVA 19%: $ 9.802.970 · Total a Pagar: $ 61.397.547
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 4: Apartado Final para el Cliente — Financiamiento Leasing Crece Capital -->
+    <section id="leasing-crece" class="space-y-6">
+      <div class="border-b border-tn-border pb-4">
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full bg-blue-100 text-tn-primary text-[11px] font-extrabold uppercase tracking-wider">
+            Apartado Financiero para el Cliente
+          </span>
+          <span class="text-xs text-slate-400">•</span>
+          <span class="text-xs font-bold text-slate-600">CRECE CAPITAL &amp; TECNOVOA SpA</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-tn-navy mt-1">
+          Alternativa de Financiamiento vía Leasing — Crece Capital
+        </h2>
+        <p class="text-sm text-tn-muted mt-1">
+          Evaluación financiera y beneficios de arrendamiento para el proyecto de renovación tecnológica de Positronpharma S.A.
+        </p>
+      </div>
+
+      <div class="tn-card p-6 sm:p-8 bg-gradient-to-br from-white via-slate-50 to-blue-50/40 border border-slate-200 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200/80 pb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-xl bg-tn-navy text-white flex items-center justify-center font-black text-xs tracking-wider shadow">
+              CRECE
+            </div>
+            <div>
+              <h3 class="font-extrabold text-tn-navy text-base">Beneficios del Leasing para Financiar su Proyecto</h3>
+              <p class="text-xs text-slate-500">Ejecutiva Comercial: <strong>Carolina Guevara</strong> &middot; Crece Capital (<a href="mailto:aguevara@crececapital.cl" class="text-tn-primary hover:underline">aguevara@crececapital.cl</a> &middot; +56 9 4111 1665)</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-bold border border-emerald-300">
+              Cotizaciones Oficiales Adjuntas
+            </span>
+          </div>
+        </div>
+
+        <!-- Texto exacto enviado por Carolina Guevara (Crece Capital) -->
+        <div class="p-5 sm:p-6 rounded-2xl bg-white border border-blue-100 shadow-sm space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
+          <p class="font-medium text-slate-800">
+            De acuerdo con lo conversado, te comparto algunos beneficios que el leasing podría ofrecerle a tu cliente para financiar su proyecto:
+          </p>
+
+          <ul class="space-y-2.5 pl-1">
+            <li class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-blue-100 text-tn-primary font-black text-xs flex items-center justify-center shrink-0 mt-0.5">•</span>
+              <span><strong>Permite implementar la tecnología necesaria sin realizar todo el desembolso al inicio</strong>, programando los desembolsos de acuerdo a las entregas de los equipos.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-800 font-black text-xs flex items-center justify-center shrink-0 mt-0.5">•</span>
+              <span><strong>Ayuda a cuidar la liquidez y distribuir la inversión en cuotas.</strong></span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-800 font-black text-xs flex items-center justify-center shrink-0 mt-0.5">•</span>
+              <span><strong>Facilita la renovación planificada</strong>, evitando equipos obsoletos y su reciclaje, teniendo garantía y soporte durante el contrato y generando menos asistencia de mesas de apoyo.</span>
+            </li>
+          </ul>
+
+          <div class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-slate-600">
+            <span>Adjunto también un par de cotizaciones que podrían ser útiles para tu reunión con el cliente. Quedo muy atenta a cualquier duda o consulta. Saludos,</span>
+            <strong class="text-tn-navy">CRECE CAPITAL &middot; Carolina Guevara</strong>
+          </div>
+        </div>
+
+        <!-- Pseudo Cálculo Comparativo (36 Meses Operativo vs 12 Meses Financiero) -->
+        <div class="space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <h4 class="text-sm font-extrabold text-tn-navy uppercase tracking-wider">
+              Pseudo Cálculo Referencial de Cuotas &amp; Cartas Oferta Crece Capital
+            </h4>
+            <span class="text-[11px] text-slate-500 font-medium">* Base simulada en carta Crece Capital: $ 50.179.740 neto ($ 59.713.890 c/IVA)</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Opción 1: Leasing Operativo 36 Meses -->
+            <div class="p-6 rounded-2xl bg-white border-2 border-tn-primary shadow-sm flex flex-col justify-between space-y-4">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-0.5 rounded-full bg-blue-100 text-tn-primary font-black text-[11px] uppercase">
+                    Modalidad 1 &middot; Leasing Operativo 36 Meses
+                  </span>
+                  <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                    100% Gasto (OPEX)
+                  </span>
+                </div>
+                <h5 class="text-lg font-black text-tn-navy">
+                  Cuota Mensual Neta: $ 1.694.713 / mes
+                </h5>
+                <div class="space-y-1.5 text-xs text-slate-600 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                  <div class="flex justify-between">
+                    <span>Valor Equipos Ref. (Sin IVA):</span>
+                    <strong class="font-mono text-slate-800">$ 50.179.740 neto</strong>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Plazo de Arrendamiento:</span>
+                    <strong class="font-mono text-slate-800">36 Meses</strong>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Valor Cuota Neta Mensual:</span>
+                    <strong class="font-mono text-tn-primary font-bold">$ 1.694.712,92</strong>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>I.V.A. Mensual (19%):</span>
+                    <span class="font-mono text-slate-700">$ 321.995,46</span>
+                  </div>
+                  <div class="flex justify-between pt-1 border-t border-slate-200 text-sm font-black">
+                    <span class="text-tn-navy">Valor Cuota Mensual c/IVA:</span>
+                    <span class="font-mono text-tn-navy">$ 2.016.708,38</span>
+                  </div>
+                  <div class="flex justify-between text-[11px] text-slate-500 pt-1">
+                    <span>Estimado sobre ASUS 45 Eq. ($ 50,46M neto):</span>
+                    <strong class="font-mono text-emerald-700">~ $ 1.704.200 neto/mes</strong>
+                  </div>
+                  <div class="flex justify-between text-[11px] text-slate-500">
+                    <span>Estimado sobre LENOVO 45 Eq. ($ 51,59M neto):</span>
+                    <strong class="font-mono text-tn-primary">~ $ 1.742.500 neto/mes</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <a href="docs/LEASING%20OPERATIVO%2036%20MESES%20(1).pdf" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-tn-primary hover:bg-tn-navy text-white text-xs font-bold transition shadow-sm">
+                  <i data-lucide="file-text" class="w-4 h-4"></i>
+                  <span>Ver / Descargar LEASING OPERATIVO 36 MESES.pdf</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Opción 2: Leasing Financiero 12 Meses -->
+            <div class="p-6 rounded-2xl bg-white border border-slate-300 shadow-sm flex flex-col justify-between space-y-4">
+              <div class="space-y-3">
+                <div class="flex items-center justify-between">
+                  <span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-800 font-black text-[11px] uppercase">
+                    Modalidad 2 &middot; Leasing Financiero 12 Meses
+                  </span>
+                  <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded">
+                    12 Cuotas + Opción Compra
+                  </span>
+                </div>
+                <h5 class="text-lg font-black text-tn-navy">
+                  Cuota Mensual c/IVA: $ 4.354.209 / mes
+                </h5>
+                <div class="space-y-1.5 text-xs text-slate-600 bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+                  <div class="flex justify-between">
+                    <span>Valor Total Equipos (c/IVA):</span>
+                    <strong class="font-mono text-slate-800">$ 59.713.890 c/IVA</strong>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Plazo del Financiamiento:</span>
+                    <strong class="font-mono text-slate-800">12 Meses (12 rentas + 1 opción compra)</strong>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Cuota Mensual Neta Ref.:</span>
+                    <strong class="font-mono text-slate-800">$ 3.658.998,75</strong>
+                  </div>
+                  <div class="flex justify-between pt-1 border-t border-slate-200 text-sm font-black">
+                    <span class="text-tn-navy">Valor Cuota Mensual c/IVA:</span>
+                    <span class="font-mono text-tn-navy">$ 4.354.208,51</span>
+                  </div>
+                  <div class="flex justify-between text-[11px] text-slate-500 pt-1">
+                    <span>Propiedad del Parque Tecnológico:</span>
+                    <strong class="text-slate-700">100% de Positronpharma al mes 13</strong>
+                  </div>
+                  <div class="flex justify-between text-[11px] text-slate-500">
+                    <span>Garantía Oficial de Fábrica:</span>
+                    <strong class="text-slate-700">Continúa vigente por 36 meses</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <a href="docs/LEASING%20FINANCIERO%2012%20MESES%20(1).pdf" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-tn-navy text-white text-xs font-bold transition shadow-sm">
+                  <i data-lucide="file-text" class="w-4 h-4"></i>
+                  <span>Ver / Descargar LEASING FINANCIERO 12 MESES.pdf</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Antecedentes para Evaluación -->
+        <div class="p-4 rounded-xl bg-slate-100 border border-slate-200 text-xs text-slate-700 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div class="space-y-0.5">
+            <span class="font-bold text-tn-navy uppercase tracking-wider text-[11px] block">Documentación Solicitada por Crece Capital para Cursar Operación:</span>
+            <span>• Estados Financieros 2024, 2025 y 2026 &middot; • Carpeta Tributaria Digital para solicitar créditos &middot; • Malla Societaria.</span>
+          </div>
+          <div class="shrink-0 text-right">
+            <span class="text-[11px] text-slate-500 block">Validez de la oferta de leasing:</span>
+            <strong class="text-tn-navy font-bold text-xs">7 días (sujeta a evaluación comité)</strong>
           </div>
         </div>
       </div>
@@ -1029,17 +1328,50 @@
       <div class="border-b border-tn-border pb-4 mb-6">
         <span class="text-xs font-bold uppercase tracking-wider text-tn-primary">Documentación de Respaldo</span>
         <h2 class="text-xl sm:text-2xl font-extrabold text-tn-navy mt-1">
-          Fichas Técnicas Oficiales en Formato PDF
+          Fichas Técnicas &amp; Cotizaciones de Leasing en PDF
         </h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+        <a href="docs/LEASING%20OPERATIVO%2036%20MESES%20(1).pdf" target="_blank" class="p-3.5 rounded-xl bg-blue-50/80 hover:bg-blue-100 border border-blue-200 flex items-center justify-between group transition">
+          <div class="flex items-center gap-3">
+            <i data-lucide="badge-dollar-sign" class="w-5 h-5 text-tn-primary group-hover:scale-110 transition"></i>
+            <div>
+              <strong class="text-tn-navy block">Crece Capital · Leasing 36M</strong>
+              <span class="text-tn-muted">Cotización Leasing Operativo 36 Meses</span>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-tn-primary"></i>
+        </a>
+
+        <a href="docs/LEASING%20FINANCIERO%2012%20MESES%20(1).pdf" target="_blank" class="p-3.5 rounded-xl bg-blue-50/80 hover:bg-blue-100 border border-blue-200 flex items-center justify-between group transition">
+          <div class="flex items-center gap-3">
+            <i data-lucide="calculator" class="w-5 h-5 text-tn-navy group-hover:scale-110 transition"></i>
+            <div>
+              <strong class="text-tn-navy block">Crece Capital · Leasing 12M</strong>
+              <span class="text-tn-muted">Cotización Leasing Financiero 12 Meses</span>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-tn-navy"></i>
+        </a>
+
+        <a href="docs/garantias_asus_2026.pdf" target="_blank" class="p-3.5 rounded-xl bg-indigo-50/50 hover:bg-indigo-50 border border-indigo-200 flex items-center justify-between group transition">
+          <div class="flex items-center gap-3">
+            <i data-lucide="shield-check" class="w-5 h-5 text-indigo-700 group-hover:scale-110 transition"></i>
+            <div>
+              <strong class="text-tn-navy block">Garantías Business+ 2026</strong>
+              <span class="text-tn-muted">Cobertura 36M NBD + ADP + HDD Ret.</span>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-indigo-700"></i>
+        </a>
+
         <a href="docs/ficha_thinkbook_14_i5.pdf" target="_blank" class="p-3.5 rounded-xl bg-tn-surface hover:bg-blue-50 border border-tn-border flex items-center justify-between group transition">
           <div class="flex items-center gap-3">
             <i data-lucide="file-text" class="w-5 h-5 text-tn-primary group-hover:scale-110 transition"></i>
             <div>
-              <strong class="text-tn-navy block">Laptop Estándar</strong>
-              <span class="text-tn-muted">Lenovo ThinkBook 14 G8 (i5)</span>
+              <strong class="text-tn-navy block">Lenovo Laptop Estándar</strong>
+              <span class="text-tn-muted">ThinkPad E16 Gen 3 (Core Ultra 5)</span>
             </div>
           </div>
           <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-tn-primary"></i>
@@ -1049,8 +1381,8 @@
           <div class="flex items-center gap-3">
             <i data-lucide="file-text" class="w-5 h-5 text-tn-primary group-hover:scale-110 transition"></i>
             <div>
-              <strong class="text-tn-navy block">Laptop Corporativo</strong>
-              <span class="text-tn-muted">Lenovo ThinkPad T14 Gen 6 (U7)</span>
+              <strong class="text-tn-navy block">Lenovo Laptops Jefatura</strong>
+              <span class="text-tn-muted">ThinkPad T14 Gen 6 / Pro (Ultra 7)</span>
             </div>
           </div>
           <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-tn-primary"></i>
@@ -1060,22 +1392,44 @@
           <div class="flex items-center gap-3">
             <i data-lucide="file-text" class="w-5 h-5 text-tn-primary group-hover:scale-110 transition"></i>
             <div>
-              <strong class="text-tn-navy block">All-in-One 23.8"</strong>
-              <span class="text-tn-muted">Lenovo ThinkCentre Neo 50a</span>
+              <strong class="text-tn-navy block">Lenovo All-in-One 23.8"</strong>
+              <span class="text-tn-muted">ThinkCentre Neo 55a 24 Gen 6</span>
             </div>
           </div>
           <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-tn-primary"></i>
         </a>
 
-        <a href="docs/ficha_honeywell_eda52_4g.pdf" target="_blank" class="p-3.5 rounded-xl bg-tn-surface hover:bg-blue-50 border border-tn-border flex items-center justify-between group transition">
+        <a href="docs/ficha_asus_b3406.pdf" target="_blank" class="p-3.5 rounded-xl bg-indigo-50/50 hover:bg-indigo-50 border border-indigo-200 flex items-center justify-between group transition">
           <div class="flex items-center gap-3">
-            <i data-lucide="file-text" class="w-5 h-5 text-amber-600 group-hover:scale-110 transition"></i>
+            <i data-lucide="file-text" class="w-5 h-5 text-indigo-700 group-hover:scale-110 transition"></i>
             <div>
-              <strong class="text-tn-navy block">Handheld 4G LTE</strong>
-              <span class="text-tn-muted">Honeywell ScanPal EDA52</span>
+              <strong class="text-tn-navy block">ASUS Laptop Estándar &amp; U7 16G</strong>
+              <span class="text-tn-muted">ExpertBook B3406CCA / B3405</span>
             </div>
           </div>
-          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-amber-600"></i>
+          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-indigo-700"></i>
+        </a>
+
+        <a href="docs/ficha_asus_b5405.pdf" target="_blank" class="p-3.5 rounded-xl bg-indigo-50/50 hover:bg-indigo-50 border border-indigo-200 flex items-center justify-between group transition">
+          <div class="flex items-center gap-3">
+            <i data-lucide="file-text" class="w-5 h-5 text-indigo-700 group-hover:scale-110 transition"></i>
+            <div>
+              <strong class="text-tn-navy block">ASUS Laptop Jefatura 32G</strong>
+              <span class="text-tn-muted">ExpertBook B5405CAA (Ultra 7 32G)</span>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-indigo-700"></i>
+        </a>
+
+        <a href="docs/ficha_asus_p440va_aio.pdf" target="_blank" class="p-3.5 rounded-xl bg-indigo-50/50 hover:bg-indigo-50 border border-indigo-200 flex items-center justify-between group transition">
+          <div class="flex items-center gap-3">
+            <i data-lucide="file-text" class="w-5 h-5 text-indigo-700 group-hover:scale-110 transition"></i>
+            <div>
+              <strong class="text-tn-navy block">ASUS All-in-One 23.8"</strong>
+              <span class="text-tn-muted">ExpertCenter P440VA AiO</span>
+            </div>
+          </div>
+          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-indigo-700"></i>
         </a>
 
         <a href="docs/ficha_lenovo_tablet_5g.pdf" target="_blank" class="p-3.5 rounded-xl bg-tn-surface hover:bg-blue-50 border border-tn-border flex items-center justify-between group transition">
@@ -1094,54 +1448,10 @@
             <i data-lucide="file-text" class="w-5 h-5 text-tn-success group-hover:scale-110 transition"></i>
             <div>
               <strong class="text-tn-navy block">Multifuncional RRHH</strong>
-              <span class="text-tn-muted">Epson WorkForce / EcoTank</span>
+              <span class="text-tn-muted">Epson WorkForce Pro WF-C5891</span>
             </div>
           </div>
           <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-tn-success"></i>
-        </a>
-
-        <a href="docs/ficha_asus_b3406.pdf" target="_blank" class="p-3.5 rounded-xl bg-indigo-50/50 hover:bg-indigo-50 border border-indigo-200 flex items-center justify-between group transition">
-          <div class="flex items-center gap-3">
-            <i data-lucide="file-text" class="w-5 h-5 text-indigo-700 group-hover:scale-110 transition"></i>
-            <div>
-              <strong class="text-tn-navy block">ASUS Laptop Estándar</strong>
-              <span class="text-tn-muted">ExpertBook B3406CCAP (U5)</span>
-            </div>
-          </div>
-          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-indigo-700"></i>
-        </a>
-
-        <a href="docs/ficha_asus_b5405.pdf" target="_blank" class="p-3.5 rounded-xl bg-indigo-50/50 hover:bg-indigo-50 border border-indigo-200 flex items-center justify-between group transition">
-          <div class="flex items-center gap-3">
-            <i data-lucide="file-text" class="w-5 h-5 text-indigo-700 group-hover:scale-110 transition"></i>
-            <div>
-              <strong class="text-tn-navy block">ASUS Laptop Corporativo</strong>
-              <span class="text-tn-muted">ExpertBook B5405CAA (U7 32G)</span>
-            </div>
-          </div>
-          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-indigo-700"></i>
-        </a>
-
-        <a href="docs/ficha_asus_p440va_aio.pdf" target="_blank" class="p-3.5 rounded-xl bg-indigo-50/50 hover:bg-indigo-50 border border-indigo-200 flex items-center justify-between group transition">
-          <div class="flex items-center gap-3">
-            <i data-lucide="file-text" class="w-5 h-5 text-indigo-700 group-hover:scale-110 transition"></i>
-            <div>
-              <strong class="text-tn-navy block">ASUS All-in-One 23.8"</strong>
-              <span class="text-tn-muted">ExpertCenter P400 (P440VA)</span>
-            </div>
-          </div>
-          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-indigo-700"></i>
-        </a>
-
-        <a href="docs/garantias_asus_2026.pdf" target="_blank" class="p-3.5 rounded-xl bg-indigo-50/50 hover:bg-indigo-50 border border-indigo-200 flex items-center justify-between group transition">
-          <div class="flex items-center gap-3">
-            <i data-lucide="shield-check" class="w-5 h-5 text-indigo-700 group-hover:scale-110 transition"></i>
-            <div>
-              <strong class="text-tn-navy block">Garantías Business+ 2026</strong>
-              <span class="text-tn-muted">Cobertura NBD + ADP + BSP ASUS</span>
-            </div>
-          </div>
-          <i data-lucide="external-link" class="w-4 h-4 text-tn-muted group-hover:text-indigo-700"></i>
         </a>
       </div>
     </section>
@@ -1167,7 +1477,7 @@
           <div class="font-extrabold text-tn-navy text-xs uppercase tracking-wider">Datos Facturación &amp; Transferencia</div>
           <p class="text-tn-ink"><strong>Banco Santander</strong> · Cta. Cte. N° <strong>76189390</strong></p>
           <p class="text-tn-ink">Notificar pago / OC: <strong>finanzas@tecnovoa.cl</strong></p>
-          <p class="text-tn-muted pt-1">Indicar en la OC: Cotización COT 1370 Global Positronpharma.</p>
+          <p class="text-tn-muted pt-1">Indicar en la OC: Cotización COT 1370 Global Positronpharma (Lenovo o ASUS).</p>
         </div>
       </div>
     </footer>
@@ -1176,203 +1486,225 @@
 
   <script>
     const CLIENT_BUDGET = 52050000;
-    const BASE_QUANTITIES = { lapStd: 29, lapCorp: 6, aioStd: 3, handheld: 8, tablet: 5, multi: 2 };
-    let quantities = { ...BASE_QUANTITIES };
-    let selectedBrand = 'lenovo';
-    let selectedTier = 'pro';
-    let paymentMode = 'directa';
-
-    const PRICING = {
-      lenovo: {
-        lapStd: 1058824,
-        lapCorp: {
-          pro: 1764706,
-          balanceado: 1427807,
-        },
-        aioStd: 1078047,
-        names: {
-          lapStd: 'Lenovo ThinkBook 14 G8 / E14 (i5 · 16G · 512G)',
-          lapCorp: {
-            pro: 'Lenovo ThinkPad T14 Gen 6 (Ultra 7 · 32G · 512G)',
-            balanceado: 'Lenovo ThinkPad T14 Gen 6 (Ultra 7 · 16G · 512G)',
-            mixto: '3× T14 Gen 6 (U7 16G) + 3× T14 Gen 6 (U7 32G)',
-          },
-          aioStd: 'Lenovo ThinkCentre Neo 50a 24 (i5 · 16G · 512G)',
-        },
-      },
-      asus: {
-        lapStdOptions: {
-          b3406: { name: 'ASUS ExpertBook B3406CCAP (Ultra 5 225H · 16G · 512G)', price: 1244706 },
-          p1403: { name: 'ASUS ExpertBook P1403 (i5 · 16G · 512G · Econ.)', price: 1058824 },
-        },
-        lapCorp: {
-          pro: 2138824,
-          balanceado: 1314902,
-        },
-        aioStd: 1147647,
-        names: {
-          lapCorp: {
-            pro: 'ASUS ExpertBook B5405CAA (Ultra 7 356H · 32G · 512G)',
-            balanceado: 'ASUS ExpertBook B3405CCA (Ultra 7 255H · 16G · 512G)',
-            mixto: '3× B3405 (U7 16G) + 3× B5405CAA (U7 32G)',
-          },
-          aioStd: 'ASUS ExpertCenter P440VA AiO (Core 5 210H · 16G · 512G)',
-        },
-      },
-      handheld: {
-        gold: 830694,
-        standard: 690035,
-      },
-      tablet: 322859,
-      printers: {
-        wfc5891: { name: 'Epson WorkForce Pro WF-C5891', price: 538141 },
-        emc800: { name: 'Epson WorkForce Pro EM-C800', price: 609859 },
-      },
+    const BASE_QUANTITIES = {
+      lapStd: 29,
+      lapCorp32: 3,
+      lapCorp16: 3,
+      aioStd: 3,
+      tablet: 5,
+      multi: 2
     };
 
-    let budgetChart = null;
+    let quantities = { ...BASE_QUANTITIES };
+    let selectedBrand = 'lenovo';
+    let paymentMode = 'directa';
+
+    // Catálogo oficial con los SKUs, descripciones y precios exactos de las dos planillas de Cristián
+    const CATALOG = {
+      lenovo: {
+        lapStd: {
+          itemNum: '1.0',
+          sku: '21SS000LCL',
+          vendor: 'LENOVO',
+          cat: 'LAPTOP Estándar',
+          model: 'ThinkPad E16 Gen 3, Intel® Core™ Ultra 5 225U (E-cores up to 3.80GHz, 12MB), 16" WUXGA Non-Touch, W11P64 SP/MX/EN, 16.0GB, 1x512GB SSD M.2 2242 PCIe Gen4 TLC Opal, Intel® Graphics, BT 5.3, Wi-Fi 6 2x2 AX, FPR, 5MP RGB, 4 Cell Li-ion 64Wh, 65W, Black with Number Pad-Spanish (LA) Windows 11 Pro, 3Y On Site',
+          price: 1256000
+        },
+        lapCorp32: {
+          itemNum: '2.0',
+          sku: '21R20014CL',
+          vendor: 'Lenovo',
+          cat: 'Notebook Pro ultra 7 - 32G -',
+          model: 'Intel Core Ultra 7 255U, 12C (2P + 8E + 2LPE) / 14T, Gen 6, Max Turbo up to 5.2GHz, 12MB Intel Smart Cache, 32GB Soldered LPDDR5X-7467, 1TB SSD M.2 2280 PCIe 4.0x4 NVMe Opal 2.0, Integrated Intel Graphics, Windows 11 Pro, Spanish / Mexican Spanish / English, Case color - Black, 3Y Onsite upgrade',
+          price: 1990000
+        },
+        lapCorp16: {
+          itemNum: '3.0',
+          sku: '21QD001GCL',
+          vendor: 'Lenovo',
+          cat: 'Laptop Pro U7 - 16 - ABS',
+          model: 'ThinkPad T14 Gen6, Intel Core Ultra 7 255U, 12C (2P + 8E + 2LPE) / 14T, 16 G Arrow Lake: two DDR5 SODIMM / CSODIMM slots Max 64GB, 512GB SSD M.2 2280 PCIe® 4.0x4 Performance NVMe® Opal 2.0, 14" WUXGA (1920x1200) IPS 400nits Anti-glare, 45% NTSC, Windows® 11 Pro Spanish, 3 años onsite. Peso 1.38kg',
+          price: 1100000
+        },
+        aioStd: {
+          itemNum: '4.0',
+          sku: '13FA0032CS',
+          vendor: 'Lenovo',
+          cat: 'All-in-One',
+          model: 'ThinkCentre Neo 55a 24 Gen 6 AMD Ryzen 5 220 (6C / 12T, 3.2 / 4.9GHz, 6MB L2 / 16MB L3) 1x 16GB SODIMM DDR5-5600 512GB SSD M.2 2280 PCIe 4.0x4 NVMe Integrated AMD Radeon 740M Graphics Windows 11 Pro, Spanish Case color - Luna Grey 1-year, Onsite',
+          price: 1070000
+        },
+        tablet: {
+          itemNum: '5.0',
+          sku: 'ZAFM0221CL',
+          vendor: 'Lenovo',
+          cat: 'Tablet 5G Kit',
+          model: 'Lenovo IdeaTab 11" 2.5K 5G Kit (MediaTek Dimensity 6300 · 8 GB RAM · 256 GB Storage · Android 15 + Folio Keyboard + Lenovo Tab Pen)',
+          price: 322859
+        },
+        multi: {
+          itemNum: '6.0',
+          sku: 'C11CJ08301',
+          vendor: 'Epson',
+          cat: 'Impresora Multifuncional',
+          model: 'Epson WorkForce Pro WF-C5891 (Heat-Free 25 ppm, Impresión Confidencial con PIN RRHH, Dúplex Automático, Red Ethernet/Wi-Fi)',
+          price: 538141
+        }
+      },
+      asus: {
+        lapStd: {
+          itemNum: '1.0',
+          sku: '90NX0AP1-M001V0',
+          vendor: 'ASUS',
+          cat: 'Notebook estándar',
+          model: 'ExpertBook B3406CCA U5 16GB 512GB W11P 36M NBD+ADP+HDD Ret.',
+          price: 1190000
+        },
+        lapCorp32: {
+          itemNum: '2.0',
+          sku: '90NX0A21-M00H50',
+          vendor: 'ASUS',
+          cat: 'Notebook Pro u7 32',
+          model: 'ExpertBook B5405CAA U7 32GB 512GB W11P 36M NBD+ADP+HDD Ret.',
+          price: 2040000
+        },
+        lapCorp16: {
+          itemNum: '3.0',
+          sku: '90NX0AP1-M000T0',
+          vendor: 'ASUS',
+          cat: 'Notebook Pro u7 16',
+          model: 'U7 255H, 512G, 16G, 14"WUXGA, W11P 36M NBD+ADP+HDD Ret.',
+          price: 1260000
+        },
+        aioStd: {
+          itemNum: '4.0',
+          sku: '90PT03X6-M0B7L0',
+          vendor: 'ASUS',
+          cat: 'All-in-One',
+          model: 'ExpertCenter P440VA AiO 23.8 i5 16GB 512GB 36M On-Site+ADP',
+          price: 1120000
+        },
+        tablet: {
+          itemNum: '5.0',
+          sku: 'ZAFM0221CL',
+          vendor: 'Lenovo',
+          cat: 'Tablet 5G Kit',
+          model: 'Lenovo IdeaTab 11" 2.5K 5G Kit (MediaTek Dimensity 6300 · 8 GB RAM · 256 GB Storage · Android 15 + Folio Keyboard + Lenovo Tab Pen)',
+          price: 322859
+        },
+        multi: {
+          itemNum: '6.0',
+          sku: 'C11CJ08301',
+          vendor: 'Epson',
+          cat: 'Impresora Multifuncional',
+          model: 'Epson WorkForce Pro WF-C5891 (Heat-Free 25 ppm, Impresión Confidencial con PIN RRHH, Dúplex Automático, Red Ethernet/Wi-Fi)',
+          price: 538141
+        }
+      }
+    };
 
     function fmtCLP(val) {
+      return '$' + Math.round(val).toLocaleString('es-CL');
+    }
+
+    function fmtCLPSpace(val) {
       return '$ ' + Math.round(val).toLocaleString('es-CL');
+    }
+
+    function selectPresetInPlanilla(brand, includeExtras) {
+      setHardwareBrand(brand);
+      setJefaturaPreset(3, 3);
+      toggleExtras(includeExtras);
+      document.getElementById('planilla').scrollIntoView({ behavior: 'smooth' });
     }
 
     function setHardwareBrand(brand) {
       selectedBrand = brand;
-      ['lenovo', 'asus'].forEach((b) => {
-        const btn = document.getElementById(`brand-${b}`);
-        if (b === brand) {
-          btn.classList.add('active');
-          btn.classList.remove('bg-white', 'text-tn-ink');
-        } else {
-          btn.classList.remove('active');
-          btn.classList.add('bg-white', 'text-tn-ink');
-        }
-      });
-
-      const asusSelect = document.getElementById('asus-lap-std-selector');
-      if (brand === 'asus') {
-        asusSelect.classList.remove('hidden');
+      const bLen = document.getElementById('brand-lenovo');
+      const bAsus = document.getElementById('brand-asus');
+      if (brand === 'lenovo') {
+        bLen.className = 'px-4 py-2 rounded-lg text-xs font-extrabold transition shadow-sm bg-tn-navy text-white';
+        bAsus.className = 'px-4 py-2 rounded-lg text-xs font-extrabold transition text-slate-700 hover:text-tn-navy';
       } else {
-        asusSelect.classList.add('hidden');
+        bAsus.className = 'px-4 py-2 rounded-lg text-xs font-extrabold transition shadow-sm bg-indigo-900 text-white';
+        bLen.className = 'px-4 py-2 rounded-lg text-xs font-extrabold transition text-slate-700 hover:text-tn-navy';
       }
 
-      updateBrandUI();
+      renderPlanilla();
       calculateTotal();
     }
 
-    function setHardwareTier(tier) {
-      selectedTier = tier;
-      ['pro', 'balanceado', 'mixto'].forEach((t) => {
-        const btn = document.getElementById(`tier-${t}`);
-        if (t === tier) {
-          btn.className = 'tier-btn px-3 py-1.5 rounded-lg border border-tn-navy bg-tn-navy text-white text-xs font-extrabold transition';
-        } else {
-          btn.className = 'tier-btn px-3 py-1.5 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-extrabold transition';
-        }
-      });
+    function setJefaturaPreset(q32, q16) {
+      quantities.lapCorp32 = q32;
+      quantities.lapCorp16 = q16;
 
-      updateBrandUI();
+      const btnMixto = document.getElementById('preset-jef-mixto');
+      const btnPro = document.getElementById('preset-jef-pro');
+      const btnBal = document.getElementById('preset-jef-bal');
+
+      const isMixto = (q32 === 3 && q16 === 3);
+      const isPro = (q32 === 6 && q16 === 0);
+      const isBal = (q32 === 0 && q16 === 6);
+
+      if (btnMixto) {
+        btnMixto.className = isMixto
+          ? 'px-3 py-1.5 rounded-lg border border-tn-primary bg-blue-50 text-tn-primary text-xs font-bold transition'
+          : 'px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-xs font-semibold transition';
+      }
+      if (btnPro) {
+        btnPro.className = isPro
+          ? 'px-3 py-1.5 rounded-lg border border-tn-primary bg-blue-50 text-tn-primary text-xs font-bold transition'
+          : 'px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-xs font-semibold transition';
+      }
+      if (btnBal) {
+        btnBal.className = isBal
+          ? 'px-3 py-1.5 rounded-lg border border-tn-primary bg-blue-50 text-tn-primary text-xs font-bold transition'
+          : 'px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-xs font-semibold transition';
+      }
+
+      renderPlanilla();
       calculateTotal();
     }
 
-    function applyScenario5() {
-      quantities = { lapStd: 29, lapCorp: 6, aioStd: 3, handheld: 0, tablet: 5, multi: 2 };
-      Object.keys(quantities).forEach((k) => {
-        document.getElementById(`qty-${k}`).innerText = quantities[k];
-      });
-      document.getElementById('printer-model').value = 'wfc5891';
-      if (document.getElementById('asus-lap-select')) {
-        document.getElementById('asus-lap-select').value = 'b3406';
-      }
-      selectedTier = 'mixto';
-      ['pro', 'balanceado', 'mixto'].forEach((t) => {
-        const btn = document.getElementById(`tier-${t}`);
-        btn.className = t === 'mixto'
-          ? 'tier-btn px-3 py-1.5 rounded-lg border border-tn-navy bg-tn-navy text-white text-xs font-extrabold transition'
-          : 'tier-btn px-3 py-1.5 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-extrabold transition';
-      });
-      setHardwareBrand('asus');
-    }
-
-    function loadPreset(brand, tier, handheldQty, tabletQty) {
-      quantities = { lapStd: 29, lapCorp: 6, aioStd: 3, handheld: handheldQty, tablet: tabletQty, multi: 2 };
-      Object.keys(quantities).forEach((k) => {
-        document.getElementById(`qty-${k}`).innerText = quantities[k];
-      });
-      document.getElementById('printer-model').value = 'wfc5891';
-      if (document.getElementById('asus-lap-select')) {
-        document.getElementById('asus-lap-select').value = 'b3406';
-      }
-      selectedTier = tier;
-      ['pro', 'balanceado', 'mixto'].forEach((t) => {
-        const btn = document.getElementById(`tier-${t}`);
-        btn.className = t === tier
-          ? 'tier-btn px-3 py-1.5 rounded-lg border border-tn-navy bg-tn-navy text-white text-xs font-extrabold transition'
-          : 'tier-btn px-3 py-1.5 rounded-lg border border-tn-border bg-white text-tn-ink text-xs font-extrabold transition';
-      });
-      setHardwareBrand(brand);
-      document.getElementById('simulador').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    function updateBrandUI() {
-      const brandData = PRICING[selectedBrand];
-      let lapStdName, lapStdPrice;
-
-      if (selectedBrand === 'lenovo') {
-        lapStdName = brandData.names.lapStd;
-        lapStdPrice = brandData.lapStd;
+    function toggleExtras(includeExtras) {
+      if (includeExtras) {
+        quantities.tablet = 5;
+        quantities.multi = 2;
       } else {
-        const asusOptionKey = document.getElementById('asus-lap-select') ? document.getElementById('asus-lap-select').value : 'b3406';
-        const asusOption = brandData.lapStdOptions[asusOptionKey];
-        lapStdName = asusOption.name;
-        lapStdPrice = asusOption.price;
+        quantities.tablet = 0;
+        quantities.multi = 0;
       }
-
-      const lapCorpName = brandData.names.lapCorp[selectedTier];
-      const aioName = brandData.names.aioStd;
-      const aioPrice = brandData.aioStd;
-
-      document.getElementById('lbl-lap-std-brand').innerText = lapStdName;
-      document.getElementById('lbl-lap-corp-brand').innerText = lapCorpName;
-      document.getElementById('lbl-aio-std-brand').innerText = aioName;
-
-      document.getElementById('lbl-lap-std-price').innerText = `Unitario neto: ${fmtCLP(lapStdPrice)} (3Y On-Site + ADP)`;
-      if (selectedTier === 'mixto') {
-        const avgPrice = Math.round((brandData.lapCorp.balanceado + brandData.lapCorp.pro) / 2);
-        document.getElementById('lbl-lap-corp-price').innerText = `Unitario: ${fmtCLP(brandData.lapCorp.balanceado)} (16G) / ${fmtCLP(brandData.lapCorp.pro)} (32G) · Prom. ${fmtCLP(avgPrice)}`;
-      } else {
-        const lapCorpPrice = brandData.lapCorp[selectedTier];
-        document.getElementById('lbl-lap-corp-price').innerText = `Unitario neto: ${fmtCLP(lapCorpPrice)} (3Y On-Site + ADP)`;
-      }
-      document.getElementById('lbl-aio-std-price').innerText = `Unitario neto: ${fmtCLP(aioPrice)} (3Y On-Site + ADP)`;
-
-      const brandLabel = selectedBrand === 'lenovo' ? 'COT 1370 LENOVO' : 'COT 1370 ASUS';
-      const tierLabel = selectedTier === 'pro'
-        ? 'NIVEL PRO (32 GB)'
-        : selectedTier === 'balanceado'
-          ? 'NIVEL BALANCEADO (16 GB)'
-          : 'MIXTO 3+3 (3×16 GB + 3×32 GB)';
-      document.getElementById('res-scenario-title').innerText = `${brandLabel} · ${tierLabel}`;
+      updateScopeButtons();
+      renderPlanilla();
+      calculateTotal();
     }
 
-    function updateQty(item, delta) {
-      quantities[item] = Math.max(0, quantities[item] + delta);
-      document.getElementById(`qty-${item}`).innerText = quantities[item];
+    function updateScopeButtons() {
+      const hasExtras = (quantities.tablet > 0 || quantities.multi > 0);
+      const bFull = document.getElementById('scope-full');
+      const bComp = document.getElementById('scope-computo');
+      if (bFull && bComp) {
+        bFull.className = hasExtras
+          ? 'px-3 py-1.5 rounded-lg border border-emerald-600 bg-emerald-50 text-emerald-800 text-xs font-bold transition'
+          : 'px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-xs font-semibold transition';
+        bComp.className = !hasExtras
+          ? 'px-3 py-1.5 rounded-lg border border-tn-primary bg-blue-50 text-tn-primary text-xs font-bold transition'
+          : 'px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 text-xs font-semibold transition';
+      }
+    }
+
+    function updateQty(itemKey, delta) {
+      quantities[itemKey] = Math.max(0, (quantities[itemKey] || 0) + delta);
+      updateScopeButtons();
+      renderPlanilla();
       calculateTotal();
     }
 
     function resetBaseline() {
       quantities = { ...BASE_QUANTITIES };
-      Object.keys(BASE_QUANTITIES).forEach((k) => {
-        document.getElementById(`qty-${k}`).innerText = quantities[k];
-      });
-      document.getElementById('printer-model').value = 'wfc5891';
-      document.getElementById('handheld-warranty').value = 'gold';
-      if (document.getElementById('asus-lap-select')) {
-        document.getElementById('asus-lap-select').value = 'b3406';
-      }
       setHardwareBrand('lenovo');
-      setHardwareTier('pro');
+      setJefaturaPreset(3, 3);
+      updateScopeButtons();
       setPaymentMode('directa');
     }
 
@@ -1380,148 +1712,181 @@
       paymentMode = mode;
       ['directa', 'cuotas3', 'leasing36'].forEach((m) => {
         const btn = document.getElementById(`mode-${m}`);
-        if (m === mode) {
-          btn.classList.add('active');
-          btn.classList.remove('bg-white/5');
-        } else {
-          btn.classList.remove('active');
-          btn.classList.add('bg-white/5');
+        if (btn) {
+          btn.className = (m === mode)
+            ? 'px-3 py-1.5 rounded-lg font-bold transition bg-white text-tn-navy shadow-sm'
+            : 'px-3 py-1.5 rounded-lg font-bold transition text-slate-600 hover:text-tn-navy';
         }
       });
       const leasingBox = document.getElementById('leasing-controls');
-      leasingBox.classList.toggle('hidden', mode !== 'leasing36');
+      if (leasingBox) {
+        leasingBox.classList.toggle('hidden', mode !== 'leasing36');
+      }
       calculateTotal();
     }
 
-    function calculateTotal() {
-      const brandData = PRICING[selectedBrand];
-      let lapStdPrice;
-      if (selectedBrand === 'lenovo') {
-        lapStdPrice = brandData.lapStd;
-      } else {
-        const asusOptionKey = document.getElementById('asus-lap-select') ? document.getElementById('asus-lap-select').value : 'b3406';
-        lapStdPrice = brandData.lapStdOptions[asusOptionKey].price;
-      }
-      const aioPrice = brandData.aioStd;
+    function renderPlanilla() {
+      const tbody = document.getElementById('planilla-tbody');
+      if (!tbody) return;
 
-      const hType = document.getElementById('handheld-warranty').value;
-      const hPrice = PRICING.handheld[hType];
-      document.getElementById('lbl-handheld-price').innerText = `Unitario neto: ${fmtCLP(hPrice)} (${hType === 'gold' ? 'con Gold 3Y' : 'sin Gold 3Y'})`;
+      const brandData = CATALOG[selectedBrand];
+      const rowsConfig = [
+        { key: 'lapStd', ...brandData.lapStd },
+        { key: 'lapCorp32', ...brandData.lapCorp32 },
+        { key: 'lapCorp16', ...brandData.lapCorp16 },
+        { key: 'aioStd', ...brandData.aioStd },
+        { key: 'tablet', ...brandData.tablet },
+        { key: 'multi', ...brandData.multi }
+      ];
 
-      const pKey = document.getElementById('printer-model').value;
-      const printer = PRICING.printers[pKey];
-      document.getElementById('lbl-multi-price').innerText = `Unitario neto: ${fmtCLP(printer.price)} (${printer.name})`;
+      let html = '';
+      rowsConfig.forEach((row) => {
+        const qty = quantities[row.key] || 0;
+        const total = qty * row.price;
+        const rowOpacity = qty === 0 ? 'opacity-50 bg-slate-50' : 'bg-[#f3f6fb]/75 hover:bg-blue-50/70';
 
-      const sLapStd = quantities.lapStd * lapStdPrice;
-      const sLapCorp = selectedTier === 'mixto'
-        ? Math.floor(quantities.lapCorp / 2) * brandData.lapCorp.pro + Math.ceil(quantities.lapCorp / 2) * brandData.lapCorp.balanceado
-        : quantities.lapCorp * brandData.lapCorp[selectedTier];
-      const sAIO = quantities.aioStd * aioPrice;
-      const sComputo = sLapStd + sLapCorp + sAIO;
+        html += `
+          <tr class="${rowOpacity} transition border-b border-slate-300 text-slate-800">
+            <td class="py-4 px-3 text-center font-semibold border-r border-slate-300">${row.itemNum}</td>
+            <td class="py-4 px-3 text-center font-medium border-r border-slate-300">${row.sku}</td>
+            <td class="py-4 px-3 text-center font-semibold border-r border-slate-300">${row.vendor}</td>
+            <td class="py-4 px-3 text-center font-medium border-r border-slate-300">${row.cat}</td>
+            <td class="py-4 px-4 text-center leading-relaxed border-r border-slate-300 text-[12px]">${row.model}</td>
+            <td class="py-4 px-2 border-r border-slate-300 text-center">
+              <div class="inline-flex items-center gap-1 bg-white border border-slate-300 rounded-lg p-0.5 shadow-sm">
+                <button type="button" onclick="updateQty('${row.key}', -1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-black text-slate-700 text-xs flex items-center justify-center transition">－</button>
+                <span class="w-8 text-center font-bold text-slate-900 text-xs">${qty}</span>
+                <button type="button" onclick="updateQty('${row.key}', 1)" class="w-6 h-6 rounded bg-slate-100 hover:bg-slate-200 font-black text-slate-700 text-xs flex items-center justify-center transition">＋</button>
+              </div>
+            </td>
+            <td class="py-4 px-3 text-right font-medium border-r border-slate-300 whitespace-nowrap">${fmtCLP(row.price)}</td>
+            <td class="py-4 px-4 text-right font-semibold text-slate-900 whitespace-nowrap">${fmtCLP(total)}</td>
+          </tr>
+        `;
+      });
 
-      const sHandheld = quantities.handheld * hPrice;
-      const sTablet = quantities.tablet * PRICING.tablet;
-      const sMulti = quantities.multi * printer.price;
-      const sMovil = sHandheld + sTablet + sMulti;
-
-      const totalNeto = sComputo + sMovil;
-      const iva = Math.round(totalNeto * 0.19);
-      const totalCiva = totalNeto + iva;
-      const totalUnits = Object.values(quantities).reduce((a, b) => a + b, 0);
-
-      document.getElementById('total-units').innerText = totalUnits;
-      document.getElementById('subtotal-computo').innerText = `${fmtCLP(sComputo)} neto`;
-      document.getElementById('subtotal-movil').innerText = `${fmtCLP(sMovil)} neto`;
-
-      const diff = totalNeto - CLIENT_BUDGET;
-      const diffEl = document.getElementById('budget-diff');
-      const badgeEl = document.getElementById('budget-badge');
-      if (diff <= 0) {
-        diffEl.innerText = `−${fmtCLP(Math.abs(diff))}`;
-        diffEl.className = 'font-bold text-emerald-300';
-        badgeEl.innerText = 'Bajo Ppto. Cliente';
-        badgeEl.className = 'px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30';
-      } else {
-        diffEl.innerText = `+${fmtCLP(diff)}`;
-        diffEl.className = 'font-bold text-indigo-300';
-        badgeEl.innerText = 'Sobre Ppto. Ref.';
-        badgeEl.className = 'px-2.5 py-1 rounded-full text-[11px] font-bold bg-indigo-500/20 text-indigo-200 border border-indigo-400/30';
-      }
-
-      const labelEl = document.getElementById('primary-metric-label');
-      const valueEl = document.getElementById('primary-metric-value');
-      const secEl = document.getElementById('secondary-metric-value');
-
-      if (paymentMode === 'directa') {
-        labelEl.innerText = 'Inversión Total Neta (Contado / 30 días)';
-        valueEl.innerText = fmtCLP(totalNeto);
-        secEl.innerText = `IVA 19%: ${fmtCLP(iva)} · Total c/IVA: ${fmtCLP(totalCiva)}`;
-      } else if (paymentMode === 'cuotas3') {
-        const cuotaNeto = Math.round(totalNeto / 3);
-        const cuotaCiva = Math.round(totalCiva / 3);
-        labelEl.innerText = 'Cuota Mensual Neta (3 Cuotas · 30/60/90d)';
-        valueEl.innerText = `${fmtCLP(cuotaNeto)} /mes`;
-        secEl.innerText = `Cuota c/IVA: ${fmtCLP(cuotaCiva)} · Total Neto: ${fmtCLP(totalNeto)}`;
-      } else {
-        const factorPct = parseFloat(document.getElementById('leasing-factor').value);
-        document.getElementById('leasing-factor-label').innerText = `${factorPct.toFixed(2).replace('.', ',')}% / mes`;
-        const cuotaLeasing = Math.round(totalNeto * (factorPct / 100));
-        labelEl.innerText = 'Cuota Referencial Leasing 36 Meses (Neto)';
-        valueEl.innerText = `~${fmtCLP(cuotaLeasing)} /mes`;
-        secEl.innerText = `Base financiada: ${fmtCLP(totalNeto)} neto · Cuota 100% gasto operacional`;
-      }
-
-      updateChart([sLapStd, sLapCorp, sAIO, sHandheld, sTablet, sMulti]);
+      tbody.innerHTML = html;
     }
 
-    function updateChart(values) {
-      const ctx = document.getElementById('budgetChart').getContext('2d');
-      const data = {
-        labels: ['Lap Std (29)', 'Lap Corp (6)', 'AIO Std (3)', 'Handheld (8)', 'Tablet 5G (5)', 'Multi Corp (2)'],
-        datasets: [{
-          data: values,
-          backgroundColor: ['#0758a6', '#031a3d', '#4f46e5', '#d97706', '#00add7', '#0f9d6b'],
-          borderWidth: 2,
-          borderColor: '#ffffff',
-        }],
-      };
+    function computeBrandTotals(brandKey) {
+      const b = CATALOG[brandKey];
+      const q = quantities;
+      const sComputo =
+        (q.lapStd || 0) * b.lapStd.price +
+        (q.lapCorp32 || 0) * b.lapCorp32.price +
+        (q.lapCorp16 || 0) * b.lapCorp16.price +
+        (q.aioStd || 0) * b.aioStd.price;
+      const sExtras =
+        (q.tablet || 0) * b.tablet.price +
+        (q.multi || 0) * b.multi.price;
+      const totalNeto = sComputo + sExtras;
+      const iva = Math.round(totalNeto * 0.19);
+      const totalCiva = totalNeto + iva;
+      return { sComputo, sExtras, totalNeto, iva, totalCiva };
+    }
 
-      if (budgetChart) {
-        budgetChart.data = data;
-        budgetChart.update();
-        return;
+    function calculateTotal() {
+      const q = quantities;
+      const totalUnits = (q.lapStd || 0) + (q.lapCorp32 || 0) + (q.lapCorp16 || 0) + (q.aioStd || 0) + (q.tablet || 0) + (q.multi || 0);
+
+      const cur = computeBrandTotals(selectedBrand);
+      const lenTotals = computeBrandTotals('lenovo');
+      const asusTotals = computeBrandTotals('asus');
+
+      // Actualizar botones superiores con el valor actual
+      const bLen = document.getElementById('brand-lenovo');
+      const bAsus = document.getElementById('brand-asus');
+      if (bLen) bLen.innerText = `LENOVO (${fmtCLPSpace(lenTotals.totalNeto)})`;
+      if (bAsus) bAsus.innerText = `ASUS (${fmtCLPSpace(asusTotals.totalNeto)})`;
+
+      // Pie de planilla
+      const elTotalQty = document.getElementById('tbl-total-qty');
+      const elSubtotalNeto = document.getElementById('tbl-subtotal-neto');
+      const elFootIva = document.getElementById('tbl-foot-iva');
+      const elFootTotalciva = document.getElementById('tbl-foot-totalciva');
+
+      if (elTotalQty) elTotalQty.innerText = totalUnits;
+      if (elSubtotalNeto) elSubtotalNeto.innerText = fmtCLP(cur.totalNeto);
+      if (elFootIva) elFootIva.innerText = fmtCLP(cur.iva);
+      if (elFootTotalciva) elFootTotalciva.innerText = fmtCLP(cur.totalCiva);
+
+      // Subtotales informativos
+      const elSubComp = document.getElementById('tbl-sub-computo');
+      const elSubExt = document.getElementById('tbl-sub-extras');
+      if (elSubComp) elSubComp.innerText = fmtCLPSpace(cur.sComputo);
+      if (elSubExt) elSubExt.innerText = fmtCLPSpace(cur.sExtras);
+
+      // Comparativa rápida entre marcas
+      const elCmpLen = document.getElementById('cmp-lenovo-neto');
+      const elCmpAsus = document.getElementById('cmp-asus-neto');
+      const elCmpDiff = document.getElementById('cmp-brand-diff');
+      if (elCmpLen) elCmpLen.innerText = fmtCLPSpace(lenTotals.totalNeto);
+      if (elCmpAsus) elCmpAsus.innerText = fmtCLPSpace(asusTotals.totalNeto);
+      if (elCmpDiff) {
+        const brandDiff = lenTotals.totalNeto - asusTotals.totalNeto;
+        if (brandDiff > 0) {
+          elCmpDiff.innerText = `ASUS es ${fmtCLPSpace(brandDiff)} más económico`;
+        } else if (brandDiff < 0) {
+          elCmpDiff.innerText = `LENOVO es ${fmtCLPSpace(Math.abs(brandDiff))} más económico`;
+        } else {
+          elCmpDiff.innerText = 'Ambas marcas empatadas';
+        }
       }
 
-      budgetChart = new Chart(ctx, {
-        type: 'doughnut',
-        data,
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          cutout: '62%',
-          plugins: {
-            legend: {
-              position: 'right',
-              labels: {
-                color: '#0a2347',
-                boxWidth: 10,
-                font: { size: 10, family: 'Figtree' },
-              },
-            },
-            tooltip: {
-              callbacks: {
-                label: (item) => `${item.label}: ${fmtCLP(item.raw)} neto`,
-              },
-            },
-          },
-        },
-      });
+      // Evaluación vs Presupuesto ($ 52.050.000)
+      const diff = cur.totalNeto - CLIENT_BUDGET;
+      const elDiffBadge = document.getElementById('tbl-diff-badge');
+      const elDiffVal = document.getElementById('tbl-diff-val');
+      if (elDiffBadge && elDiffVal) {
+        if (diff <= 0) {
+          elDiffBadge.className = 'px-2.5 py-1 rounded-full text-xs font-black bg-emerald-100 text-emerald-800 border border-emerald-300';
+          elDiffBadge.innerText = 'Bajo Presupuesto ✅';
+          elDiffVal.className = 'font-extrabold text-sm text-emerald-700 font-mono';
+          elDiffVal.innerText = `−${fmtCLPSpace(Math.abs(diff))}`;
+        } else {
+          elDiffBadge.className = 'px-2.5 py-1 rounded-full text-xs font-black bg-amber-100 text-amber-800 border border-amber-300';
+          elDiffBadge.innerText = 'Sobre Presupuesto';
+          elDiffVal.className = 'font-extrabold text-sm text-amber-800 font-mono';
+          elDiffVal.innerText = `+${fmtCLPSpace(diff)}`;
+        }
+      }
+
+      // Métrica según modalidad de pago
+      const elMetricLabel = document.getElementById('tbl-metric-label');
+      const elMetricVal = document.getElementById('tbl-metric-value');
+      const elMetricSec = document.getElementById('tbl-metric-secondary');
+
+      if (elMetricLabel && elMetricVal && elMetricSec) {
+        const brandTitle = selectedBrand.toUpperCase();
+        if (paymentMode === 'directa') {
+          elMetricLabel.innerText = `Inversión Total Neta ${brandTitle} (Contado / 30d)`;
+          elMetricVal.innerText = fmtCLPSpace(cur.totalNeto);
+          elMetricSec.innerText = `IVA 19%: ${fmtCLPSpace(cur.iva)} · Total a Pagar: ${fmtCLPSpace(cur.totalCiva)}`;
+        } else if (paymentMode === 'cuotas3') {
+          const cuotaNeto = Math.round(cur.totalNeto / 3);
+          const cuotaCiva = Math.round(cur.totalCiva / 3);
+          elMetricLabel.innerText = `Cuota Mensual Neta ${brandTitle} (3 Cuotas · 30/60/90d)`;
+          elMetricVal.innerText = `${fmtCLPSpace(cuotaNeto)} /mes`;
+          elMetricSec.innerText = `Cuota c/IVA: ${fmtCLPSpace(cuotaCiva)} · Total Neto: ${fmtCLPSpace(cur.totalNeto)}`;
+        } else {
+          const factorEl = document.getElementById('leasing-factor');
+          const factorPct = factorEl ? parseFloat(factorEl.value) : 3.38;
+          const factorLabel = document.getElementById('leasing-factor-label');
+          if (factorLabel) factorLabel.innerText = `${factorPct.toFixed(2).replace('.', ',')}% / mes`;
+          const cuotaLeasing = Math.round(cur.totalNeto * (factorPct / 100));
+          const cuotaLeasingCiva = Math.round(cuotaLeasing * 1.19);
+          elMetricLabel.innerText = `Canon Leasing 36 Meses ${brandTitle} (Neto)`;
+          elMetricVal.innerText = `~ ${fmtCLPSpace(cuotaLeasing)} /mes`;
+          elMetricSec.innerText = `Cuota c/IVA: ~ ${fmtCLPSpace(cuotaLeasingCiva)}/mes · Base: ${fmtCLPSpace(cur.totalNeto)} neto`;
+        }
+      }
     }
 
     window.addEventListener('DOMContentLoaded', () => {
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
       setHardwareBrand('lenovo');
-      setHardwareTier('pro');
+      setJefaturaPreset(3, 3);
+      updateScopeButtons();
     });
   </script>
 </body>
